@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idsesion cipher='6WjkoF994IgNP0pwok2jg2iphmuILY2xiUTnn32YHME=' />
+			<idservicio value='liberacion_cheques' />
+			<comando value='SOLICITUD' />
+			<tipo_solicitud value='CUENTAS' />
+		</request>
+	</eservices>
+</bancoazteca>

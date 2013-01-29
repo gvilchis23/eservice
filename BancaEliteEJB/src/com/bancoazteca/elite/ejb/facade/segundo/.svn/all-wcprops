@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/facade/segundo
+END
+ResourceFacadeSegundoSL.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/facade/segundo/ResourceFacadeSegundoSL.java
+END
+ResourceFacadeSegundoSLBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/facade/segundo/ResourceFacadeSegundoSLBean.java
+END
+ResourceFacadeSegundoSLHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/facade/segundo/ResourceFacadeSegundoSLHome.java
+END

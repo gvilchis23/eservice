@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idsesion cipher="obCrAgh1tLIeE1ixMxKeNtqtIsfPPSK2+9aZidr6Zo0=" />
+			<idservicio value="TRASPASOS" />
+			<tipo_operacion value="TERCEROS" />
+			<comando value="SOLICITUD" />
+		</request>
+	</eservices>
+</bancoazteca>

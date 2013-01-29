@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/tarjeta_otrosbancos
+END
+EditarEliminarFrecuentesPagoTarjetaOtrosBancosForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/tarjeta_otrosbancos/EditarEliminarFrecuentesPagoTarjetaOtrosBancosForm.java
+END
+AltaFrecuentesPagoTarjetaOtrosBancosCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/tarjeta_otrosbancos/AltaFrecuentesPagoTarjetaOtrosBancosCommand.java
+END
+AltaFrecuentesPagoTarjetaOtrosBancosForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/tarjeta_otrosbancos/AltaFrecuentesPagoTarjetaOtrosBancosForm.java
+END
+ConsultaFrecuentesPagoTarjetaOtrosBancosCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/tarjeta_otrosbancos/ConsultaFrecuentesPagoTarjetaOtrosBancosCommand.java
+END
+EditarEliminarFrecuentesPagoTarjetaOtrosBancosCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/tarjeta_otrosbancos/EditarEliminarFrecuentesPagoTarjetaOtrosBancosCommand.java
+END

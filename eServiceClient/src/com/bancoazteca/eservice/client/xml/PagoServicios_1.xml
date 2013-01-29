@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idsesion
+				cipher="J76V7xWYTmm2FLw=" />
+			<idservicio value="PAGO_SERVICIO" />
+			<tipo_operacion value="TELMEX" />
+			<comando value="SOLICITUD" />
+		</request>
+	</eservices>
+</bancoazteca>
+

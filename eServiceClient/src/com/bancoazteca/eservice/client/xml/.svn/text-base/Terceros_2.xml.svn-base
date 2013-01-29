@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idsesion cipher="obCrAgh1tLIeE1ixMxKeNloz7zoQxAEVVwIL3zCVeLc=" />
+			<idservicio value="TRASPASOS" />
+			<tipo_operacion value="TERCEROS" />
+			<comando value="VALIDACION" />
+			<cuenta_cargo value="01720181405560" />
+			<cuenta_destino value="01721348234073" />
+			<concepto value="Pago de reloj" />
+			<referencia value="Cobro de reloj" />
+			<importe value="1.00" />
+		</request>
+	</eservices>
+</bancoazteca>

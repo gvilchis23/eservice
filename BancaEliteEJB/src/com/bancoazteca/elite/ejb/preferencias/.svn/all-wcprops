@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/eService/!svn/ver/94/BancaEliteEJB/src/com/bancoazteca/elite/ejb/preferencias
+END
+PreferenciasSL.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/eService/!svn/ver/94/BancaEliteEJB/src/com/bancoazteca/elite/ejb/preferencias/PreferenciasSL.java
+END
+PreferenciasDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/eService/!svn/ver/34/BancaEliteEJB/src/com/bancoazteca/elite/ejb/preferencias/PreferenciasDAO.java
+END
+PreferenciasSLBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/94/BancaEliteEJB/src/com/bancoazteca/elite/ejb/preferencias/PreferenciasSLBean.java
+END
+PreferenciasRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/34/BancaEliteEJB/src/com/bancoazteca/elite/ejb/preferencias/PreferenciasRule.java
+END
+PreferenciasSLHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/preferencias/PreferenciasSLHome.java
+END

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<response>
+			<data_service>
+				<transferencias_spei_ejecucion>
+					<titular_cuenta_destino
+						value="DIANA BERENICE CAMACHO CARRASCO" />
+					<rfc_curp value="CACD860124" />
+					<fecha_aplicacion value="13-10-2010" />
+					<cuenta_destino value="4152310866354245" />
+					<iva value="0.00" />
+					<concepto value="cobro" />
+					<referencia value="PAGO" />
+					<folio_aclaracion value="1713103910133410" />
+					<titular_cuenta_cargo
+						value="DIANA BERENICE CAMACHO CARRASCO" />
+					<comision value="0.00" />
+					<importe value="1.00" />
+					<cuenta_cargo value="01720181405560" />
+				</transferencias_spei_ejecucion>
+			</data_service>
+			<status>
+				<idservicio value="transferencias" />
+				<error_sistema />
+				<descripcion_codigo value="Transaccion Exitosa" />
+				<idsesion
+					cipher="+A4s6Fl/WdKpTJn9cTDrcAqg3uaOB5j59jdvWiaGuK4=" />
+				<codigo_operacion value="0" />
+				<tipo_operacion value="spei" />
+			</status>
+		</response>
+	</eservices>
+</bancoazteca>

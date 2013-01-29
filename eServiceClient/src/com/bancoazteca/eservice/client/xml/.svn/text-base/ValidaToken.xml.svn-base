@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idsesion cipher="rL09PbkIxdi+gNTuZb0aSmvPfFqn3iVoiE82Wop34FY=" />
+			<idservicio value="valida_token" />
+			<comando value="ejecutar" />
+			<user value="login" />
+			<token_code cipher="FGDFGdfg6df8g" />
+		</request>
+	</eservices>
+</bancoazteca>
+

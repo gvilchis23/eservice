@@ -1,0 +1,7 @@
+#Fri Aug 22 13:41:58 CDT 2008
+eclipse.preferences.version=1
+j2ee.deployment.ear.deploy_exported_jars=false
+j2ee.deployment.ear.deploy_exported_user_libs=true
+j2ee.deployment.ear.jar_dependent_projects=true
+j2ee.deployment.ear.manual_application_xml=false
+j2ee.deployment.ear.use_workspace_settings=false

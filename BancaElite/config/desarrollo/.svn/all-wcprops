@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo
+END
+eServiceUsers.properties
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/eServiceUsers.properties
+END
+eMail.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/eMail.properties
+END
+dummy.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/dummy.properties
+END
+Tesoreria.properties
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/Tesoreria.properties
+END
+filtro.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/filtro.properties
+END
+CuentasInversion.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/CuentasInversion.properties
+END
+preguntas_frecuentes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/preguntas_frecuentes.xml
+END
+filter-manager.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/filter-manager.xml
+END
+filter-manager-cuentas.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/filter-manager-cuentas.xml
+END
+AperturaCuentaPlata.properties
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/AperturaCuentaPlata.properties
+END
+rfc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/rfc.properties
+END
+elite.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/elite.keystore
+END
+eMailPlantillas.properties
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/eMailPlantillas.properties
+END
+eBanking.properties
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/eBanking.properties
+END
+CatalogoBibliotecaRecibos.properties
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/CatalogoBibliotecaRecibos.properties
+END
+ConfiguracionesAlnova.properties
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/ConfiguracionesAlnova.properties
+END
+Alnova.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/Alnova.properties
+END
+monitoreo.sqlite
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/monitoreo.sqlite
+END
+eMailDestinatarios.properties
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/eService/!svn/ver/13/BancaElite/config/desarrollo/eMailDestinatarios.properties
+END

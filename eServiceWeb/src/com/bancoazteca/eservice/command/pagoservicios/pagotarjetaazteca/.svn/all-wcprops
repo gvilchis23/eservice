@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/pagoservicios/pagotarjetaazteca
+END
+EnvioMailCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/pagoservicios/pagotarjetaazteca/EnvioMailCommand.java
+END
+EnvioMailForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/pagoservicios/pagotarjetaazteca/EnvioMailForm.java
+END
+PagoTarjetaAztecaCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/pagoservicios/pagotarjetaazteca/PagoTarjetaAztecaCommand.java
+END
+PagoTarjetaAztecaForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/pagoservicios/pagotarjetaazteca/PagoTarjetaAztecaForm.java
+END

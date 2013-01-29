@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idsesion
+				cipher="obCrAgh1tLIeE1ixMxKeNhqiHnri4JK9PqjMK+DOrtI=" />
+			<idservicio value="TRANSFERENCIAS" />
+			<tipo_operacion value="SPEI" />
+			<comando value="VALIDACION" />
+			<cuenta_destino value="4152310866354245" />
+			<tipo_cuenta_destino value="TARJETA" />
+			<banco_destino value="BBVA BANCOMER" />
+			<rfc_curp value="CACD860124MDFMRN02" />
+			<beneficiario value="Diana Berenice Camacho Carrasco" />
+			<cuenta_cargo value="01720181405560" />
+			<importe value="1.00" />
+			<concepto value="Pago de reloj" />
+			<referencia value="Venta de reloj" />
+		</request>
+	</eservices>
+</bancoazteca>

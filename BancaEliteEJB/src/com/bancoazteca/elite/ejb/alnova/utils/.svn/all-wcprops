@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/eService/!svn/ver/94/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/utils
+END
+AlnovaException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/utils/AlnovaException.java
+END
+AlnovaConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/94/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/utils/AlnovaConnection.java
+END
+AlnovaExceptionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/utils/AlnovaExceptionTO.java
+END
+TerminalManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/utils/TerminalManager.java
+END
+AlnovaRequestAutomaticMulticall.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/utils/AlnovaRequestAutomaticMulticall.java
+END
+AlnovaTransactions.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/utils/AlnovaTransactions.java
+END
+TerminalNotAvailableException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/utils/TerminalNotAvailableException.java
+END
+NombreRecursosJNDI.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/utils/NombreRecursosJNDI.java
+END
+AlnovaCodec.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/utils/AlnovaCodec.java
+END

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idsesion cipher="T9XyzPvcUJFBNvz+qwiTyFk+n8AZRv3vnPAKkBoIDlA=" />
+			<idservicio value="OPERACION_FRECUENTE_AGREGAR" />
+			<comando value="ejecutar" />	
+			<operacion value="tiempo_aire.telcel"/>
+			<importe value="100"/>
+			<numero_telefonico value="5545535890"/>
+		</request>
+	</eservices>
+</bancoazteca>

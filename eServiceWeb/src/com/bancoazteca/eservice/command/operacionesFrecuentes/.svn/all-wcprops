@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/eService/!svn/ver/28/eServiceWeb/src/com/bancoazteca/eservice/command/operacionesFrecuentes
+END
+OperacionesFrecuentesForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/eService/!svn/ver/28/eServiceWeb/src/com/bancoazteca/eservice/command/operacionesFrecuentes/OperacionesFrecuentesForm.java
+END
+OperacionesFrecuentesAgregarCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/eService/!svn/ver/28/eServiceWeb/src/com/bancoazteca/eservice/command/operacionesFrecuentes/OperacionesFrecuentesAgregarCommand.java
+END
+OperacionesFrecuentesConsultarCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/eService/!svn/ver/28/eServiceWeb/src/com/bancoazteca/eservice/command/operacionesFrecuentes/OperacionesFrecuentesConsultarCommand.java
+END
+OperacionesFrecuentesEliminarCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/operacionesFrecuentes/OperacionesFrecuentesEliminarCommand.java
+END

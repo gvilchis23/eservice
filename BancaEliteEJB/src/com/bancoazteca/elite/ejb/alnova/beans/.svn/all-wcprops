@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/eService/!svn/ver/152/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans
+END
+B756QuitarRetencionResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B756QuitarRetencionResponseTO.java
+END
+P029ConsultaBeneficiariosRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/P029ConsultaBeneficiariosRequestTO.java
+END
+P011ConsultaDatosClienteRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/P011ConsultaDatosClienteRequestTO.java
+END
+B065AltaDatosComplementariosRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B065AltaDatosComplementariosRequestTO.java
+END
+P029ConsultaBeneficiariosResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/P029ConsultaBeneficiariosResponseTO.java
+END
+BB63AltaDatosBeneficiariosPreaperturaResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/BB63AltaDatosBeneficiariosPreaperturaResponseTO.java
+END
+B520TransaccionRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B520TransaccionRequestTO.java
+END
+QG83ConsultaTerminalResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/QG83ConsultaTerminalResponseTO.java
+END
+EjbAlnovaRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/EjbAlnovaRequestTO.java
+END
+B705BloqDesbCodigosRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B705BloqDesbCodigosRequestTO.java
+END
+B706RegistroRetencionRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B706RegistroRetencionRequestTO.java
+END
+M126AsignarTarjetaNominaCuentaRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/M126AsignarTarjetaNominaCuentaRequestTO.java
+END
+B706RegistroRetencionResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B706RegistroRetencionResponseTO.java
+END
+BB60AltaDatosClientePreaperturaResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/BB60AltaDatosClientePreaperturaResponseTO.java
+END
+P027LocalizacionClientesResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/P027LocalizacionClientesResponseTO.java
+END
+MP00ConsultaDatosTarjetasRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/MP00ConsultaDatosTarjetasRequestTO.java
+END
+B735CambioCentroContableRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B735CambioCentroContableRequestTO.java
+END
+MM23CambioStatusTarjetaPreRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/MM23CambioStatusTarjetaPreRequestTO.java
+END
+TC99ConsultaCodigoPostalResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/TC99ConsultaCodigoPostalResponseTO.java
+END
+F752ObtieneFechaHabilRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/94/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/F752ObtieneFechaHabilRequestTO.java
+END
+B011BusquedaCentroContableRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B011BusquedaCentroContableRequestTO.java
+END
+MM31AltaTarjetaPreEstampadaRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/MM31AltaTarjetaPreEstampadaRequestTO.java
+END
+P011AltaDatosClienteRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/P011AltaDatosClienteRequestTO.java
+END
+MM31AsignacionTarjetaRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/MM31AsignacionTarjetaRequestTO.java
+END
+B402_ActualizacionSaldoPorCuentaResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B402_ActualizacionSaldoPorCuentaResponse.java
+END
+F752ObtieneFechaHabilResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/eService/!svn/ver/94/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/F752ObtieneFechaHabilResponseTO.java
+END
+B011BusquedaCentroContableResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B011BusquedaCentroContableResponseTO.java
+END
+BB63AltaDatosBeneficiariosPreaperturaRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/BB63AltaDatosBeneficiariosPreaperturaRequestTO.java
+END
+QG83ConsultaTerminalRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/QG83ConsultaTerminalRequestTO.java
+END
+TC84_ConsultaValorPlataAlnovaResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/eService/!svn/ver/152/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/TC84_ConsultaValorPlataAlnovaResponseTO.java
+END
+P011AltaDatosClienteResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/P011AltaDatosClienteResponseTO.java
+END
+MM31AsignacionTarjetaResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/MM31AsignacionTarjetaResponseTO.java
+END
+B023CuentaConRedMovilAztecaWEBRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B023CuentaConRedMovilAztecaWEBRequestTO.java
+END
+P011ConsultaDatosClienteResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/P011ConsultaDatosClienteResponseTO.java
+END
+B065AltaDatosComplementariosResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B065AltaDatosComplementariosResponseTO.java
+END
+MM16CambioNipRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/MM16CambioNipRequestTO.java
+END
+QG32CambioCentroRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/QG32CambioCentroRequestTO.java
+END
+B520TransaccionResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B520TransaccionResponseTO.java
+END
+B023CuentaConRedMovilAztecaWEBResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B023CuentaConRedMovilAztecaWEBResponseTO.java
+END
+BB60AltaDatosClientePreaperturaRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/BB60AltaDatosClientePreaperturaRequestTO.java
+END
+PP14AltaPersPoliticExpuestasRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/PP14AltaPersPoliticExpuestasRequestTO.java
+END
+EjbAlnovaResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/EjbAlnovaResponseTO.java
+END
+B705BloqDesbCodigosResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B705BloqDesbCodigosResponseTO.java
+END
+P027LocalizacionClientesRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/P027LocalizacionClientesRequestTO.java
+END
+QG32CambioCentroResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/QG32CambioCentroResponseTO.java
+END
+TC99ConsultaCodigoPostalRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/TC99ConsultaCodigoPostalRequestTO.java
+END
+BB02AperturaCuentasRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/BB02AperturaCuentasRequestTO.java
+END
+PP14AltaPersPoliticExpuestasResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/PP14AltaPersPoliticExpuestasResponseTO.java
+END
+B402_ActualizacionSaldoPorCuentaRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B402_ActualizacionSaldoPorCuentaRequest.java
+END
+TC84_ConsultaValorPlataAlnovaRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/eService/!svn/ver/152/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/TC84_ConsultaValorPlataAlnovaRequest.java
+END
+B756QuitarRetencionRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/B756QuitarRetencionRequestTO.java
+END
+BB02AperturaCuentasResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/alnova/beans/BB02AperturaCuentasResponseTO.java
+END

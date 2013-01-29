@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idsesion
+				cipher="obCrAgh1tLIeE1ixMxKeNifF3zkARF3XYu7EgnBitEY=" />
+			<idservicio value="TRASPASOS" />
+			<tipo_operacion value="PROPIAS" />
+			<comando value="EJECUCION" />
+			<cuenta_cargo value="01720181405560" />
+			<cuenta_destino value="75661312857151" />
+			<concepto value="prueba azteca" />
+			<importe value="0.01" />
+		</request>
+	</eservices>
+</bancoazteca>

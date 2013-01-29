@@ -1,0 +1,1325 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/eService/!svn/ver/150/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans
+END
+Movimiento_inversion_reportoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Movimiento_inversion_reportoTO.java
+END
+Sincronizacion_Firma_AztecaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Sincronizacion_Firma_AztecaTO.java
+END
+Comportamiento_Estado_CuentaSocioplusTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Comportamiento_Estado_CuentaSocioplusTO.java
+END
+Regimen_operativo_fiscalTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Regimen_operativo_fiscalTO.java
+END
+Compra_venta_plataTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eService/!svn/ver/150/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Compra_venta_plataTO.java
+END
+Actualizar_Datos_UsuarioTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Actualizar_Datos_UsuarioTO.java
+END
+SucursalTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/eService/!svn/ver/134/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/SucursalTO.java
+END
+Validacion_huellaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Validacion_huellaTO.java
+END
+Transferencias_Internacionales_TO.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Transferencias_Internacionales_TO.java
+END
+Envio_Mail_EjecucionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Envio_Mail_EjecucionTO.java
+END
+BeneficiarioDineroExpresTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/56/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/BeneficiarioDineroExpresTO.java
+END
+Token_ValidacionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Token_ValidacionTO.java
+END
+Detalle_chequerasTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_chequerasTO.java
+END
+Mis_Finanzas_TotalesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Mis_Finanzas_TotalesTO.java
+END
+Resumen_cuenta_socio_plusTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Resumen_cuenta_socio_plusTO.java
+END
+Cuentas_CargoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cuentas_CargoTO.java
+END
+Frecuentes_Pago_Servicios_TelmexTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Frecuentes_Pago_Servicios_TelmexTO.java
+END
+Transferencia_Internacional_EjecucionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Transferencia_Internacional_EjecucionTO.java
+END
+Tiempo_Aire_ejecutarTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Tiempo_Aire_ejecutarTO.java
+END
+Detalle_Movimiento_SocioplusTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_Movimiento_SocioplusTO.java
+END
+Codigo_Swift_AbaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Codigo_Swift_AbaTO.java
+END
+Frecuente_ServicioTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Frecuente_ServicioTO.java
+END
+Cuenta_eje_eliteTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cuenta_eje_eliteTO.java
+END
+Detalle_TarjetaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_TarjetaTO.java
+END
+Cambio_sucursal_tarjetaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/134/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cambio_sucursal_tarjetaTO.java
+END
+Cuentas_FrecuentesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cuentas_FrecuentesTO.java
+END
+Tarjetas_creditoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Tarjetas_creditoTO.java
+END
+Movimientos_cuentas_inversionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Movimientos_cuentas_inversionTO.java
+END
+TarjetaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/TarjetaTO.java
+END
+Operaciones_FrecuentesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Operaciones_FrecuentesTO.java
+END
+Login_AplicacionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Login_AplicacionTO.java
+END
+MunicipioTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/MunicipioTO.java
+END
+Niveles_seguridadTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Niveles_seguridadTO.java
+END
+Paises_Dinero_ExpressTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Paises_Dinero_ExpressTO.java
+END
+Listado_chequerasTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Listado_chequerasTO.java
+END
+Generalidades_recibo_electronicoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Generalidades_recibo_electronicoTO.java
+END
+rendimientosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/rendimientosTO.java
+END
+TiendaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/TiendaTO.java
+END
+Disposicion_EfectivoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/56/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Disposicion_EfectivoTO.java
+END
+Detalle_chequera_roboTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_chequera_roboTO.java
+END
+DestinoMailTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/DestinoMailTO.java
+END
+Inversion_ReportosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Inversion_ReportosTO.java
+END
+Pago_tarjeta_creditoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Pago_tarjeta_creditoTO.java
+END
+Transferencias_Spei_EjecucionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/eService/!svn/ver/94/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Transferencias_Spei_EjecucionTO.java
+END
+Frecuentes_Otros_BancosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Frecuentes_Otros_BancosTO.java
+END
+Movimientos_inversion_directoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Movimientos_inversion_directoTO.java
+END
+CuentaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/CuentaTO.java
+END
+Informacion_chequeraTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Informacion_chequeraTO.java
+END
+Comisiones_Dinero_ExpressTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Comisiones_Dinero_ExpressTO.java
+END
+Apertura_cuenta_socio_plusTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Apertura_cuenta_socio_plusTO.java
+END
+EstadoCuentaInteraccionEjecucionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/EstadoCuentaInteraccionEjecucionTO.java
+END
+ServicioTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/eService/!svn/ver/56/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/ServicioTO.java
+END
+Cuenta_NipTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cuenta_NipTO.java
+END
+Posicion_AnteriorTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Posicion_AnteriorTO.java
+END
+Estatus_CuentaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Estatus_CuentaTO.java
+END
+Detalle_pago_creditoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_pago_creditoTO.java
+END
+StatusTransactionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/StatusTransactionTO.java
+END
+Transferencias_TEF_EjecucionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Transferencias_TEF_EjecucionTO.java
+END
+Pago_tarjeta_datosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Pago_tarjeta_datosTO.java
+END
+Frecuente_Tiempo_AireTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Frecuente_Tiempo_AireTO.java
+END
+Cambia_Estatus_TarjetaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cambia_Estatus_TarjetaTO.java
+END
+Rastreo_Pedido_DispositivoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Rastreo_Pedido_DispositivoTO.java
+END
+Recibos_ElectronicosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Recibos_ElectronicosTO.java
+END
+Agentes_Dinero_ExpressTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/eService/!svn/ver/56/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Agentes_Dinero_ExpressTO.java
+END
+Frecuente_Servicio_TelmexTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Frecuente_Servicio_TelmexTO.java
+END
+Comprobante_Inversion_ReportosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Comprobante_Inversion_ReportosTO.java
+END
+CuentasTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/CuentasTO.java
+END
+Confirmacion_datos_clienteTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Confirmacion_datos_clienteTO.java
+END
+Tipo_ChequeTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Tipo_ChequeTO.java
+END
+Operacion_Frecuente_TransferenciasTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Operacion_Frecuente_TransferenciasTO.java
+END
+Estatus_CuentasTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Estatus_CuentasTO.java
+END
+Beneficiarios_Dinero_ExpressTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Beneficiarios_Dinero_ExpressTO.java
+END
+Operacion_Frecuente_Transferencias_TercerosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Operacion_Frecuente_Transferencias_TercerosTO.java
+END
+Pago_Servicio_EjecucionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Pago_Servicio_EjecucionTO.java
+END
+Estado_cuentaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Estado_cuentaTO.java
+END
+Movimiento_Mercado_DineroTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Movimiento_Mercado_DineroTO.java
+END
+Liberacion_chequesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Liberacion_chequesTO.java
+END
+Movimiento_socio_plusTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Movimiento_socio_plusTO.java
+END
+Bloquea_cuentaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Bloquea_cuentaTO.java
+END
+Actualizar_Datos_Usuario_ConfirmacionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Actualizar_Datos_Usuario_ConfirmacionTO.java
+END
+Ejecucion_apertura_cuenta_plataTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Ejecucion_apertura_cuenta_plataTO.java
+END
+Pago_ServicioTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Pago_ServicioTO.java
+END
+CreditoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/eService/!svn/ver/56/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/CreditoTO.java
+END
+Confirmacion_Entrega_DispositivosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Confirmacion_Entrega_DispositivosTO.java
+END
+Catalogos_DispositivosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Catalogos_DispositivosTO.java
+END
+Detalle_Otros_CreditosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_Otros_CreditosTO.java
+END
+Comportamiento_Estado_CuentaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Comportamiento_Estado_CuentaTO.java
+END
+Resumen_Operaciones_Mercado_DineroTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Resumen_Operaciones_Mercado_DineroTO.java
+END
+Frecuentes_Pago_ServiciosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Frecuentes_Pago_ServiciosTO.java
+END
+Detalle_Movimiento_InfiniteTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_Movimiento_InfiniteTO.java
+END
+Cuentas_clienteTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cuentas_clienteTO.java
+END
+Recibo_ServicioTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/eService/!svn/ver/56/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Recibo_ServicioTO.java
+END
+Resumen_MovimientosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Resumen_MovimientosTO.java
+END
+Presolicitud_cheques_ejecucionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Presolicitud_cheques_ejecucionTO.java
+END
+Delegaciones_MuniciposTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/eService/!svn/ver/134/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Delegaciones_MuniciposTO.java
+END
+Movimientos_socio_plusTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Movimientos_socio_plusTO.java
+END
+Detalle_OperacionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_OperacionTO.java
+END
+Cuenta_Mercado_DineroTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cuenta_Mercado_DineroTO.java
+END
+HuellaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/HuellaTO.java
+END
+Operacion_Frecuente_Pago_ServiciosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Operacion_Frecuente_Pago_ServiciosTO.java
+END
+BeneficiarioTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/BeneficiarioTO.java
+END
+TokenTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/TokenTO.java
+END
+Envio_DineroTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Envio_DineroTO.java
+END
+Solicitud_apertura_cuenta_plataTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Solicitud_apertura_cuenta_plataTO.java
+END
+Movimiento_inversionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Movimiento_inversionTO.java
+END
+MensajeTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/MensajeTO.java
+END
+StatusTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/StatusTO.java
+END
+Detalle_recibo_electronicoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_recibo_electronicoTO.java
+END
+Direccion_Entrega_DispositivosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Direccion_Entrega_DispositivosTO.java
+END
+Activacion_Firma_AztecaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Activacion_Firma_AztecaTO.java
+END
+Pago_tarjeta_aztecaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Pago_tarjeta_aztecaTO.java
+END
+Movimiento_Mis_FinanzasTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Movimiento_Mis_FinanzasTO.java
+END
+EservicesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/EservicesTO.java
+END
+Recibo_ElectronicoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Recibo_ElectronicoTO.java
+END
+Tarjeta_FrecuenteTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Tarjeta_FrecuenteTO.java
+END
+Operacion_Frecuente_Tiempo_AireTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Operacion_Frecuente_Tiempo_AireTO.java
+END
+Medios_Pago_RequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Medios_Pago_RequestTO.java
+END
+Operacion_Frecuente_Pago_TarjetaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/eService/!svn/ver/28/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Operacion_Frecuente_Pago_TarjetaTO.java
+END
+Tarjetas_FrecuentesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Tarjetas_FrecuentesTO.java
+END
+Alerta_Celular_Datos_InicialTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Alerta_Celular_Datos_InicialTO.java
+END
+Biblioteca_recibosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Biblioteca_recibosTO.java
+END
+Detalle_AsignacionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_AsignacionTO.java
+END
+Frecuente_Servicio_ParametrizadoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Frecuente_Servicio_ParametrizadoTO.java
+END
+Cuenta_ChequeTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cuenta_ChequeTO.java
+END
+Cambiar_ContrasenaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cambiar_ContrasenaTO.java
+END
+Traspasos_PropiasTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Traspasos_PropiasTO.java
+END
+Posicion_ActualTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Posicion_ActualTO.java
+END
+CuentaSocioTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/CuentaSocioTO.java
+END
+Cambia_Estatus_TarjetaResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cambia_Estatus_TarjetaResponseTO.java
+END
+TarjetasTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/TarjetasTO.java
+END
+EnbedTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/EnbedTO.java
+END
+Robo_extravio_motivo_reporteTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Robo_extravio_motivo_reporteTO.java
+END
+PaisesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/PaisesTO.java
+END
+Datos_TarjetaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/eService/!svn/ver/134/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Datos_TarjetaTO.java
+END
+Medios_pagoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Medios_pagoTO.java
+END
+Estado_cuenta_mercado_dinero_solicitudTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Estado_cuenta_mercado_dinero_solicitudTO.java
+END
+Beneficiario_Dinero_ExpressTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/eService/!svn/ver/56/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Beneficiario_Dinero_ExpressTO.java
+END
+Detalle_Historal_CreditoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_Historal_CreditoTO.java
+END
+Data_ServiceTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Data_ServiceTO.java
+END
+Tarjeta_Otros_Bancos_EjecucionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Tarjeta_Otros_Bancos_EjecucionTO.java
+END
+Todito_CardTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Todito_CardTO.java
+END
+ChequeraTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/ChequeraTO.java
+END
+Compania_celularTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Compania_celularTO.java
+END
+Ejecucion_Cuenta_SocioTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Ejecucion_Cuenta_SocioTO.java
+END
+Entidad_FederativaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Entidad_FederativaTO.java
+END
+Detalle_cargos_aplicarTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_cargos_aplicarTO.java
+END
+Entrega_DispositivosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Entrega_DispositivosTO.java
+END
+Inversion_mercado_dineroTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Inversion_mercado_dineroTO.java
+END
+DataValueTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/DataValueTO.java
+END
+Companias_celularesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Companias_celularesTO.java
+END
+Estados_Dinero_ExpressTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Estados_Dinero_ExpressTO.java
+END
+Presolicitud_cheques_validacionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Presolicitud_cheques_validacionTO.java
+END
+Activacion_Express_EjecucionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Activacion_Express_EjecucionTO.java
+END
+Detalle_pagoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_pagoTO.java
+END
+Detalle_MovimientoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_MovimientoTO.java
+END
+Mis_FinanzasTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Mis_FinanzasTO.java
+END
+PagoserviciosTelmexEjecucionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/PagoserviciosTelmexEjecucionTO.java
+END
+Biblioteca_Recibos_SolicitudTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/56/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Biblioteca_Recibos_SolicitudTO.java
+END
+Presolicitud_ChequesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Presolicitud_ChequesTO.java
+END
+GrupoMovimientosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/GrupoMovimientosTO.java
+END
+Mis_Finanzas_ColeccionesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Mis_Finanzas_ColeccionesTO.java
+END
+Detalle_chequesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_chequesTO.java
+END
+Acuerdo_conformidadTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Acuerdo_conformidadTO.java
+END
+Activacion_ExpressTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Activacion_ExpressTO.java
+END
+Cuenta_CargoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cuenta_CargoTO.java
+END
+Resumen_activacion_chequeraTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Resumen_activacion_chequeraTO.java
+END
+Movimientos_InfiniteTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Movimientos_InfiniteTO.java
+END
+Cuenta_Cambio_NipTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cuenta_Cambio_NipTO.java
+END
+Catalogo_tipo_cancelacionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Catalogo_tipo_cancelacionTO.java
+END
+ReciboTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/56/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/ReciboTO.java
+END
+Tiempo_Aire_CompaniaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Tiempo_Aire_CompaniaTO.java
+END
+BancosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/BancosTO.java
+END
+Listado_detalle_chequeraTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Listado_detalle_chequeraTO.java
+END
+Pago_Servicios_LuzTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Pago_Servicios_LuzTO.java
+END
+ServiciosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/ServiciosTO.java
+END
+Traspasos_Terceros_EjecucionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Traspasos_Terceros_EjecucionTO.java
+END
+MonitoreoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/MonitoreoTO.java
+END
+Recibo_ImpuestosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/56/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Recibo_ImpuestosTO.java
+END
+Catalogo_ParentescoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Catalogo_ParentescoTO.java
+END
+Confirmacion_Firma_AztecaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Confirmacion_Firma_AztecaTO.java
+END
+Envio_Dinero_Express_EjecucionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/eService/!svn/ver/56/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Envio_Dinero_Express_EjecucionTO.java
+END
+Estado_cuentaSocioPlusTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Estado_cuentaSocioPlusTO.java
+END
+Cuenta_FrecuenteTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/94/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cuenta_FrecuenteTO.java
+END
+Login_ConciliacionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Login_ConciliacionTO.java
+END
+Pago_tarjetasTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Pago_tarjetasTO.java
+END
+Inversion_directoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Inversion_directoTO.java
+END
+Detalle_CuentaCargoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_CuentaCargoTO.java
+END
+Foto_UnicaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/118/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Foto_UnicaTO.java
+END
+Banco_InternacionalTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Banco_InternacionalTO.java
+END
+Envio_Dinero_ExpressTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Envio_Dinero_ExpressTO.java
+END
+Ciudades_Dinero_ExpressTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Ciudades_Dinero_ExpressTO.java
+END
+Solicitud_DispositivoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Solicitud_DispositivoTO.java
+END
+Lugar_Entrega_DispositivosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Lugar_Entrega_DispositivosTO.java
+END
+ResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/ResponseTO.java
+END
+Localizar_Sucursal_TO.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Localizar_Sucursal_TO.java
+END
+Detalle_chequera_robo_validacionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_chequera_robo_validacionTO.java
+END
+Estructura_carteraTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Estructura_carteraTO.java
+END
+Sucursales_Dinero_ExpressTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/56/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Sucursales_Dinero_ExpressTO.java
+END
+EstadosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/eService/!svn/ver/134/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/EstadosTO.java
+END
+EstadoCuentaInteraccionPeriodosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/EstadoCuentaInteraccionPeriodosTO.java
+END
+MensajesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/MensajesTO.java
+END
+Chequera_tipo_cancelacionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Chequera_tipo_cancelacionTO.java
+END
+LoginTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/LoginTO.java
+END
+Estado_cuenta_mercado_dineroTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Estado_cuenta_mercado_dineroTO.java
+END
+Detalle_CuentaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_CuentaTO.java
+END
+MovimientosTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/MovimientosTO.java
+END
+Operaciones_Firma_AztecaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Operaciones_Firma_AztecaTO.java
+END
+Catalogo_estatus_chequesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Catalogo_estatus_chequesTO.java
+END
+Cuenta_socio_plusTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cuenta_socio_plusTO.java
+END
+Frecuentes_Tiempo_AireTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Frecuentes_Tiempo_AireTO.java
+END
+CiudadesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/CiudadesTO.java
+END
+Cuentas_Cambio_NipTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Cuentas_Cambio_NipTO.java
+END
+Envio_Dinero_Express_validacionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/eService/!svn/ver/56/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Envio_Dinero_Express_validacionTO.java
+END
+Disposicion_Efectivo_ResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/eService/!svn/ver/78/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Disposicion_Efectivo_ResponseTO.java
+END
+MovimientoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/MovimientoTO.java
+END
+Detalle_chequeraTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Detalle_chequeraTO.java
+END
+Apertura_cuenta_eje_eliteTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Apertura_cuenta_eje_eliteTO.java
+END
+SucursalesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/134/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/SucursalesTO.java
+END
+Estructura_mercado_dineroTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Estructura_mercado_dineroTO.java
+END
+Preguntas_FrecuentesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/beans/Preguntas_FrecuentesTO.java
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers
+END
+B706_RegistroRetencionRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers/B706_RegistroRetencionRequestTO.java
+END
+B065_AltaDatosComplementariosRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers/B065_AltaDatosComplementariosRequest.java
+END
+B520_TransaccionRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers/B520_TransaccionRequest.java
+END
+B706_RegistroRetencionResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers/B706_RegistroRetencionResponseTO.java
+END
+B011_BusquedaCentroContableRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers/B011_BusquedaCentroContableRequest.java
+END
+B756_QuitarRetencionRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers/B756_QuitarRetencionRequest.java
+END
+BB02_AperturaCuentaEjeEliteRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers/BB02_AperturaCuentaEjeEliteRequest.java
+END
+P011_DatosClienteRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers/P011_DatosClienteRequest.java
+END
+B065_AltaDatosComplementariosResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers/B065_AltaDatosComplementariosResponse.java
+END
+BB02_AperturaCuentasResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers/BB02_AperturaCuentasResponse.java
+END
+B520_TransaccionResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers/B520_TransaccionResponse.java
+END
+B011_BusquedaCentroContableResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers/B011_BusquedaCentroContableResponse.java
+END
+B756_QuitarRetencionResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers/B756_QuitarRetencionResponse.java
+END
+P011_DatosClienteResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/wrappers/P011_DatosClienteResponse.java
+END

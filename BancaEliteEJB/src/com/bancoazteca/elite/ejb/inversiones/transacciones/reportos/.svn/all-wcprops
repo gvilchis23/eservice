@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos
+END
+ReportosRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/ReportosRequest.java
+END
+ReportosTransactions.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/ReportosTransactions.java
+END
+ReportosCodec.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/ReportosCodec.java
+END
+ReportosResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/ReportosResponse.java
+END

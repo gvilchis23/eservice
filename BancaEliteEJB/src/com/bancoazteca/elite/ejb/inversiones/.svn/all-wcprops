@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones
+END
+InversionesGenericException.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/InversionesGenericException.java
+END
+InversionesSL.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/InversionesSL.java
+END
+TransactionsManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/TransactionsManager.java
+END
+InversionesSLBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/InversionesSLBean.java
+END
+InversionesSLHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/InversionesSLHome.java
+END
+SeguridadInversiones.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/SeguridadInversiones.java
+END

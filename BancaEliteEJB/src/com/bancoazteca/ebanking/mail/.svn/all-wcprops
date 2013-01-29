@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/eService/!svn/ver/133/BancaEliteEJB/src/com/bancoazteca/ebanking/mail
+END
+MailSenderException.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/129/BancaEliteEJB/src/com/bancoazteca/ebanking/mail/MailSenderException.java
+END
+MailSender.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/eService/!svn/ver/129/BancaEliteEJB/src/com/bancoazteca/ebanking/mail/MailSender.java
+END
+MailDO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/eService/!svn/ver/129/BancaEliteEJB/src/com/bancoazteca/ebanking/mail/MailDO.java
+END
+EnviarMail.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/eService/!svn/ver/133/BancaEliteEJB/src/com/bancoazteca/ebanking/mail/EnviarMail.java
+END

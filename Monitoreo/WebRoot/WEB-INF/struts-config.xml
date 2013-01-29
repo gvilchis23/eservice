@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+  <form-beans >
+  	<form-bean name="loginForm" type="com.bancoazteca.monitoreo.login.LoginForm"/>
+  	<form-bean name="registroForm" type="com.bancoazteca.monitoreo.registro.RegistroForm"/>
+  	<form-bean name="consultaForm" type="com.bancoazteca.monitoreo.consulta.ConsultaForm"/>
+  	<form-bean name="redireccionForm" type="com.bancoazteca.monitoreo.MonitoreoRedireccionForm"/>
+  	<form-bean name="consultaMonitorForm" type="com.bancoazteca.monitoreo.consultas.estadisticas.ConsultasForm"/>
+  </form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+  	
+  	<action path="/LoginAction" 
+  			type="com.bancoazteca.monitoreo.login.LoginAction"
+  			name="loginForm"
+  			input="/index.jsp" 
+  			parameter="metodo"
+  			validate="true">
+  			<forward name="success" path="/monitoreo/SeleccionAlmacenamiento.jsp"></forward>
+  			<forward name="administrador" path="/pages/Registro.jsp"></forward>
+  			<forward name="failed" path="/index.jsp"></forward>
+  	</action>
+  	
+  	<action path="/SeleccionAction" 
+  			type="com.bancoazteca.monitoreo.MonitoreoRedireccion"
+  			name="redireccionForm"
+  			input="/index.jsp" 
+  			parameter="metodo">
+  			<forward name="new" path="/monitor/seleccionMonitoreo.jsp"></forward>
+  			<forward name="old" path="/monitoreo/SeleccionMonitoreo.jsp"></forward>
+  			<forward name="failed" path="/index.jsp"></forward>
+  	</action>
+  	
+  	<action path="/LogoutAction" 
+  			type="com.bancoazteca.monitoreo.Logout.LogoutAction"
+  			parameter="metodo">
+  			<forward name="success" path="/index.jsp"></forward>
+  	</action>
+  	
+  	<action path="/RegistroAction" 
+  			type="com.bancoazteca.monitoreo.registro.RegistroAction" 
+  			name="registroForm" 
+  			input="Registro.jsp" 
+  			parameter="metodo" 
+  			validate="false">
+  			<forward name="success" path="/pages/RegistroExitoso.jsp"></forward>
+  	</action>
+  	
+  	<action path="/ConsultaAction"
+  			type="com.bancoazteca.monitoreo.consulta.ConsultaAction"
+  			name="consultaForm"
+  			input="/monitoreo/SeleccionMonitoreo.jsp"
+  			parameter="metodo"
+  			validate="true">
+			<forward name="aplicacion" path="/monitoreo/UsuariosporAplicacion.jsp"></forward>
+			<forward name="usuario" path="/monitoreo/UsuariosdiferenteAplicacion.jsp"></forward>
+  	</action>
+  	
+  	<action path="/ConsultaMonitorAction"
+  			type="com.bancoazteca.monitoreo.consultas.estadisticas.ConsultasAction"
+  			name="consultaMonitorForm"
+  			input="/monitor/seleccionMonitoreo.jsp"
+  			parameter="metodo"
+  			validate="true">
+			<forward name="totalUsuariosAplicacion" path="/monitor/totalUsuariosAplicacion.jsp" />
+			<forward name="listaUsuariosRegistrados" path="/monitor/listaUsuariosRegistrados.jsp" />
+			<forward name="totalConexionesUsuario" path="/monitor/totalConexionesUsuario.jsp" />
+			<forward name="totalOperacionesUsuario" path="/monitor/totalOperacionesUsuario.jsp" />
+			<forward name="listaOperacionesRealizadas" path="/monitor/listaOperacionesRealizadas.jsp" />
+			<forward name="listaOperacionesMonto" path="/monitor/listaOperacionesMonto.jsp" />
+			<forward name="failed" path="/monitor/seleccionMonitoreo.jsp" />
+  	</action>
+  	
+  </action-mappings>
+  <message-resources parameter="properties.pruebas.ApplicationResources" />
+</struts-config>
+

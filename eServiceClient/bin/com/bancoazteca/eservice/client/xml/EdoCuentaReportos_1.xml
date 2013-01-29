@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idportal value='user_iusacell' />
+			<idservicio value="estado_cuenta_mercado_dinero" />
+			<comando value="SOLICITUD" />
+			<idsesion cipher="QsMgMZFdGVv8sgSZl7NPwbSYovAWf4wthruMli3JchA=" />
+			<portal value='Elite' />
+		</request>
+	</eservices>
+</bancoazteca>

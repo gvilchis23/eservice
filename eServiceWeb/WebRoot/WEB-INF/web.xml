@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	
+	<servlet>
+		<servlet-name>AxisServlet</servlet-name>
+		<servlet-class>
+			com.bancoazteca.eservice.ws.ProcessWS
+		</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>SessionValidator</servlet-name>
+		<servlet-class>
+			com.bancoazteca.eservice.command.base.session.SessionValidator
+		</servlet-class>
+		<init-param>
+            <param-name>TiempoChequeoMS</param-name>
+            <param-value>180000</param-value>
+        </init-param>
+        <init-param>
+            <param-name>SetDeamon</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>TiempoVidaSesionInactivaMS</param-name>
+            <param-value>660000</param-value>
+        </init-param>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	
+	
+	<servlet>
+		<servlet-name>command</servlet-name>
+		<servlet-class>com.bancoazteca.elite.command.base.CommandService</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>command</servlet-name>
+		<url-pattern>*.de</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>
+			org.apache.axis.transport.http.AdminServlet
+		</servlet-class>
+		<load-on-startup>100</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>*.jws</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/servlet/AxisServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/servlet/AdministracionAxis</url-pattern>
+	</servlet-mapping>
+
+	<mime-mapping>
+		<extension>wsdl</extension>
+		<mime-type>text/xml</mime-type>
+	</mime-mapping>
+	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+	<ejb-local-ref>
+		<ejb-ref-name>ejb/ResourceFacadeSL</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<local-home>
+			com.bancoazteca.elite.ejb.facade.ResourceFacadeSLHome
+		</local-home>
+		<local>com.bancoazteca.elite.ejb.facade.ResourceFacadeSL</local>
+		<ejb-link>BancaEliteEJB.jar#ResourceFacadeSL</ejb-link>
+	</ejb-local-ref>
+	
+	<ejb-local-ref>
+		<ejb-ref-name>ejb/ResourceFacadeSegundoSL</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<local-home>com.bancoazteca.elite.ejb.facade.segundo.ResourceFacadeSegundoSLHome</local-home>
+		<local>com.bancoazteca.elite.ejb.facade.segundo.ResourceFacadeSegundoSL</local>
+		<ejb-link>BancaEliteEJB.jar#ResourceFacadeSegundoSL</ejb-link>
+	</ejb-local-ref>
+	
+</web-app>

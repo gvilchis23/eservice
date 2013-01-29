@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/inversiones/db/dao
+END
+ConciliacionesDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/inversiones/db/dao/ConciliacionesDAO.java
+END
+InversionesDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/inversiones/db/dao/InversionesDAO.java
+END
+InversionesDAOAbstracto.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/inversiones/db/dao/InversionesDAOAbstracto.java
+END

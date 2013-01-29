@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/dispositivos
+END
+DispositivoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/dispositivos/DispositivoDAO.java
+END
+DispositivoSLBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/dispositivos/DispositivoSLBean.java
+END
+DispositivoRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/dispositivos/DispositivoRule.java
+END
+DispositivoSLHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/dispositivos/DispositivoSLHome.java
+END
+DispositivoException.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/dispositivos/DispositivoException.java
+END
+DispositivoSL.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/dispositivos/DispositivoSL.java
+END

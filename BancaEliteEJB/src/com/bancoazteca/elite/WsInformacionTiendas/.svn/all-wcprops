@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/WsInformacionTiendas
+END
+Estado.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/WsInformacionTiendas/Estado.java
+END
+InformacionTiendasSoap.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/WsInformacionTiendas/InformacionTiendasSoap.java
+END
+InformacionTiendasDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/WsInformacionTiendas/InformacionTiendasDAO.java
+END
+InformacionTiendasLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/WsInformacionTiendas/InformacionTiendasLocator.java
+END
+InformacionTiendasSoap12Stub.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/WsInformacionTiendas/InformacionTiendasSoap12Stub.java
+END
+InformacionTiendasSoapProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/WsInformacionTiendas/InformacionTiendasSoapProxy.java
+END
+Tienda.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/WsInformacionTiendas/Tienda.java
+END
+InformacionTiendas.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/WsInformacionTiendas/InformacionTiendas.java
+END
+Municipio.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/WsInformacionTiendas/Municipio.java
+END
+InformacionTiendasSoapStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/WsInformacionTiendas/InformacionTiendasSoapStub.java
+END

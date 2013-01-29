@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Class-Path: antlr.jar axis.jar commons-beanutils.jar commons-collectio
+ ns.jar commons-digester.jar commons-discovery-0.4.jar commons-fileupl
+ oad.jar commons-lang.jar commons-logging.jar commons-validator.jar ht
+ tpclient-4.0-alpha4.jar httpcore-4.0-beta2.jar jakarta-oro.jar jboss-
+ jaxrpc.jar jboss-saaj.jar jdom.jar log4j-1.2.8.jar regexp-1_2.jar sax
+ on9.jar struts.jar xmlbeans-qname.jar
+

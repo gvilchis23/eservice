@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding="ISO-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idsesion
+				cipher="obCrAgh1tLIeE1ixMxKeNukMmMa2BNozHrS8XjrdVOk=" />
+			<idservicio value="OPERACION_FRECUENTE_AGREGAR" />
+			<tipo_operacion value="PAGO_SERVICIO.SKY" />
+			<comando value="EJECUCION" />
+			<importe value="100" />
+			<numero_referencia value="571075795252"/>
+		</request>
+	</eservices>
+</bancoazteca>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/org/mx/tas/ws
+END
+ReportosWSBindingStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/org/mx/tas/ws/ReportosWSBindingStub.java
+END
+EjecutaTransaccion.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/org/mx/tas/ws/EjecutaTransaccion.java
+END
+ReportosWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/org/mx/tas/ws/ReportosWS.java
+END
+ReportosWSService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/org/mx/tas/ws/ReportosWSService.java
+END
+ReportosWSProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/org/mx/tas/ws/ReportosWSProxy.java
+END
+ReportosWSServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/org/mx/tas/ws/ReportosWSServiceLocator.java
+END

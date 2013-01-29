@@ -1,0 +1,3 @@
+mail.smtp.host=10.50.70.77
+mail.from="Banca por Internet" <bancaporinternet@bancoazteca.com.mx>
+mail.smtp.connectiontimeout=1000

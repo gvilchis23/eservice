@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/eService/!svn/ver/27/BancaEliteEJB/src/com/bancoazteca/elite/ejb/traspasos
+END
+TraspasosDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/traspasos/TraspasosDAO.java
+END
+TraspasosSLBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/eService/!svn/ver/27/BancaEliteEJB/src/com/bancoazteca/elite/ejb/traspasos/TraspasosSLBean.java
+END
+TraspasosRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/traspasos/TraspasosRule.java
+END
+TraspasosSLHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/traspasos/TraspasosSLHome.java
+END
+TraspasosException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/traspasos/TraspasosException.java
+END
+TraspasosSL.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/traspasos/TraspasosSL.java
+END

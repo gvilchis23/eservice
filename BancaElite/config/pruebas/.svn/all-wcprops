@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/eService/!svn/ver/26/BancaElite/config/pruebas
+END
+TipoCambio.properties
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/TipoCambio.properties
+END
+eMail.properties
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/eMail.properties
+END
+BaseDatosCuentas.properties
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/BaseDatosCuentas.properties
+END
+dummy.properties
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/dummy.properties
+END
+Tesoreria.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/Tesoreria.properties
+END
+principalesBancos.properties
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/principalesBancos.properties
+END
+preguntas_frecuentes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/preguntas_frecuentes.xml
+END
+DiasInhabiles.properties
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/eService/!svn/ver/94/BancaElite/config/pruebas/DiasInhabiles.properties
+END
+filter-manager.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/filter-manager.xml
+END
+filter-manager-cuentas.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/filter-manager-cuentas.xml
+END
+BaseDatos.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/eService/!svn/ver/94/BancaElite/config/pruebas/BaseDatos.properties
+END
+webServicesInversiones.properties
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/webServicesInversiones.properties
+END
+elite.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/eService/!svn/ver/138/BancaElite/config/pruebas/elite.keystore
+END
+eMailPlantillas.properties
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/eMailPlantillas.properties
+END
+Monitoreo.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/Monitoreo.properties
+END
+ConfiguracionesAlnova.properties
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/ConfiguracionesAlnova.properties
+END
+InstanciaAlterna.properties
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/eService/!svn/ver/26/BancaElite/config/pruebas/InstanciaAlterna.properties
+END
+CuentaPlataFiltro.properties
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/CuentaPlataFiltro.properties
+END
+eMailDestinatarios.properties
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/eMailDestinatarios.properties
+END
+Prueba.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/Prueba.xml
+END
+mail.properties
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/eService/!svn/ver/129/BancaElite/config/pruebas/mail.properties
+END
+datosConexionFotoUnica.properties
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/eService/!svn/ver/123/BancaElite/config/pruebas/datosConexionFotoUnica.properties
+END
+eServiceUsers.properties
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/eServiceUsers.properties
+END
+CatalogoMunicipiosSolicitudDispositivos.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/CatalogoMunicipiosSolicitudDispositivos.xml
+END
+CuentasInversion.properties
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/CuentasInversion.properties
+END
+ContratosCuentas.properties
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/ContratosCuentas.properties
+END
+filtro.properties
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/filtro.properties
+END
+Spei30.properties
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/eService/!svn/ver/121/BancaElite/config/pruebas/Spei30.properties
+END
+mailspei.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/eService/!svn/ver/129/BancaElite/config/pruebas/mailspei.properties
+END
+AperturaCuentaPlata.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/AperturaCuentaPlata.properties
+END
+rfc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/rfc.properties
+END
+ConciliacionesUsuarios.properties
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/ConciliacionesUsuarios.properties
+END
+PagoServicioParametrizable.properties
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/PagoServicioParametrizable.properties
+END
+monitorService.sqlite
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/monitorService.sqlite
+END
+CatalogoBibliotecaRecibos.properties
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/CatalogoBibliotecaRecibos.properties
+END
+eBanking.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/eBanking.properties
+END
+monitoreo.sqlite
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/monitoreo.sqlite
+END
+Alnova.properties
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/eService/!svn/ver/13/BancaElite/config/pruebas/Alnova.properties
+END

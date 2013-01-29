@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/eService/!svn/ver/128/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/enviodineroexpress
+END
+AltaFrecuenteDineroExpressComand.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/eService/!svn/ver/128/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/enviodineroexpress/AltaFrecuenteDineroExpressComand.java
+END
+AltaFrecuenteDineroExpressForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/eService/!svn/ver/53/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/enviodineroexpress/AltaFrecuenteDineroExpressForm.java
+END
+ConsultaFrecuenteDineroExpressComand.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/eService/!svn/ver/53/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/enviodineroexpress/ConsultaFrecuenteDineroExpressComand.java
+END
+BusquedaFrecuenteDineroExpressComand.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/eService/!svn/ver/53/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/enviodineroexpress/BusquedaFrecuenteDineroExpressComand.java
+END
+ConsultaFrecuenteDineroExpressForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/enviodineroexpress/ConsultaFrecuenteDineroExpressForm.java
+END
+BusquedaFrecuenteDineroExpressForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/enviodineroexpress/BusquedaFrecuenteDineroExpressForm.java
+END

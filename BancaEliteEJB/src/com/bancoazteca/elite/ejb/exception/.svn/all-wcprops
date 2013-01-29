@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/exception
+END
+DecryptionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/exception/DecryptionException.java
+END
+EliteException.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/exception/EliteException.java
+END
+DAOException.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/exception/DAOException.java
+END
+SessionExpiredException.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/exception/SessionExpiredException.java
+END
+LoginException.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/exception/LoginException.java
+END
+InvalidCertificateException.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/exception/InvalidCertificateException.java
+END
+EncryptionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/exception/EncryptionException.java
+END
+EliteDataException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/exception/EliteDataException.java
+END
+KeyGeneratorException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/exception/KeyGeneratorException.java
+END

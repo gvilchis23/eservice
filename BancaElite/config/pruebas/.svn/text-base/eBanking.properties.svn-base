@@ -1,0 +1,47 @@
+ebanking.ip=https://gerenciaebanking:8081/eBanking
+ebanking.ip.port=8081
+ebanking.ip.protocol=https
+
+#ebanking.ip=https://gerenciaebanking:8081/eBanking
+#ebanking.ip.port=8081
+#ebanking.ip.protocol=https
+
+#ebanking.ip=https://www.bancoazteca.com.mx/eBanking
+#ebanking.ip.port=81
+#ebanking.ip.protocol=https
+
+#Ebanking TEST
+#ebanking.ip=http://10.63.8.53:8181/eBanking
+#ebanking.ip.port=8181
+#ebanking.ip.protocol=http
+
+#ALDO
+#ebanking.ip=http://10.50.70.180:8080/eBanking
+#ebanking.ip.port=8080
+#ebanking.ip.protocol=http
+
+#JON
+#ebanking.ip=http://10.50.70.126:9090/eBanking
+#ebanking.ip.port=9090
+#ebanking.ip.protocol=http
+
+
+#TOÑO
+#ebanking.ip=http://10.50.70.214:9090/eBanking
+#ebanking.ip.port=9090
+#ebanking.ip.protocol=http
+
+#Ferrusca
+#ebanking.ip=http://10.50.70.165:9090/eBanking
+#ebanking.ip.port=9090
+#ebanking.ip.protocol=http
+
+#ebanking.ip=http://10.63.100.124:8181/eBanking
+#ebanking.ip.port=8181
+#ebanking.ip.protocol=http
+
+elite.certificate=elite.keystore
+elite.certificate.password=adminadmin
+
+http.socket.timeout = 12000000
+#http.socket.timeout = 1200000000

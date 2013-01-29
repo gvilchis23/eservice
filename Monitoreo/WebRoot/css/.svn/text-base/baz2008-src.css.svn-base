@@ -1,0 +1,844 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding:10px;
+}
+#load {
+	position:absolute; 
+	background-color:#FFFFFF; 
+	width:100%; 
+	height:405px;
+	top:99px;
+	left:0px;
+}
+.fndSubmenu {
+	background-color:#E2E4E5;
+	background-image:url(../images/estructura/submenu05.jpg);
+	background-repeat:repeat-x;
+}
+.Titulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 27px;
+	font-weight: normal;
+	color: #040404;
+	text-decoration: none;
+	text-align:center;
+}
+.SubTitulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #4c555c;
+	text-decoration: none;
+	text-align:center;
+}
+
+.sepVisual{
+
+height:5px;
+font-size:smaller;
+color:#990000;
+background-image: url(../images/estructura/pleca_division.png);
+background-repeat:no-repeat;
+margin-top:5px;
+}
+
+.Subtitulo_ay {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #4c555c;
+	text-decoration: none;
+	text-align:left;
+}
+.SubTitulo02 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #15252b;
+	text-decoration: none;
+	text-align:left;
+	padding-left:5px;
+	padding-top:5px;
+	width:200px;
+}
+.textoCorrido {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #4c555c;
+	text-decoration: none;
+}
+.textoFecha {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #818080;
+	text-decoration: none;
+}
+.textoDerechos {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #858383;
+	text-decoration: none;
+}
+.textoCaptura {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.textoPq {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.textoBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #4c555c;
+	text-decoration: none;
+}
+.textoBoldBeige {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #e9e9dd;
+	text-decoration: none;
+}
+.textoUsuario {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.textoBanner {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.textoBoldRojo {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #820000;
+	text-decoration: none;
+}
+.textoBoldRojo02 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #820000;
+	text-decoration: none;
+}
+.textoImportanteRojo {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #bf2d1a;
+	text-decoration: none;
+}
+.textoImportanteRojoItalica {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	font-style:italic;
+	color: #bf2d1a;
+	text-decoration: none;
+}
+.Opciones {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #5b5a5a;
+	text-decoration: none;
+}
+.textoPasosNegro {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.textoPasosRojo {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #bf2d1a;
+	text-decoration: none;
+}
+.textoPasosGris {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #eae7e7;
+	text-decoration: none;
+}
+.textogrisMediano {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	
+	
+}
+
+.textoBienvenido {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #3E5C6A;
+	text-decoration: none;
+}
+.textoNomLogin {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#353535;
+}
+.tabla01 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align : center;
+	text-decoration: none;	
+	background-color: #646566;
+	border: 1;
+	padding-left: 0px;
+}
+.tabla02 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #BC2815;
+	text-decoration: none;
+	background-color: #E1E3E5;
+}
+.tabla03 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #605F5F;
+	text-decoration: none;
+	background-color: #FFFFFF;
+}
+.tabla04 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #605F5F;
+	text-decoration: none;
+	background-color: #EDEFF2;
+}
+.liga_ay {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #4C555C;
+	text-decoration: none;
+}
+a.liga_ay:hover {
+	color: #820000;
+}
+.liga01 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #999999;
+	text-decoration: none;
+	cursor:pointer;
+}
+a.liga01:hover {
+	color: #990000;
+}
+.liga02 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #820000;
+	text-decoration: underline;
+}
+a.liga02:hover {
+	color: #CCCCCC;
+}
+.liga03 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #BC2815;
+	text-decoration: underline;
+}
+a.liga03:hover {
+	color: #646566;
+}
+.liga04 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #646566;
+	text-decoration: none;
+}
+a.liga04:hover {
+	color: #f98202;
+}
+.liga05 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #820000;
+	text-decoration: underline;
+}
+a.liga05:hover {
+	color: #CCCCCC;
+}
+.liga06 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #999999;
+	text-decoration: none;
+}
+a.liga06:hover {
+	color: #990000;
+}
+.ligaEmergencias {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+a.ligaEmergencias:hover {
+	color:#bc2815;
+}
+.ligaActivate {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.ligaActivate:hover {
+	color: #FF9900;
+}
+.ligaSubmenu{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#605f5f;
+	cursor:pointer;
+	font-weight:normal;
+	text-decoration:none;
+	padding-left:26px;
+	padding-top:1px;
+	padding-bottom:1px;
+	background-image:url(../images/bullets/flecha.gif);
+	background-repeat: no-repeat;
+	background-position: 15px 4px;
+	display: none;
+}
+.ligaSubmenu:hover{
+	color:#bc2815;
+	background-image:url(../images/bullets/flecha_over.gif);
+	background-color:#e2e4e5;
+}
+.textoligaSubmenu{
+	color:#bc2815;
+	background-image:url(../images/bullets/flecha_over.gif);
+	background-color:#e2e4e5;
+}
+.ligaSubmenu02{
+	height:auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#605f5f;
+	cursor:pointer;
+	font-weight:normal;
+	text-decoration:none;
+}
+.ligaSubmenu02:hover{
+	color:#bc2815;
+}
+.textoligaSubmenu02{
+	color:#bc2815;
+}
+.ligaMenu{
+	padding-left:16px;
+	padding-top:5px;
+	background-image:url(../images/bullets/flecha.gif);
+	background-repeat: no-repeat;
+	background-position: 5px 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#333333;
+	cursor:pointer;
+	font-weight:bold;
+	text-decoration:none;
+}
+.ligaMenu:hover{
+	background-image:url(../images/bullets/flecha_over.gif);
+	color:#bc2815;
+}
+.textoligaMenu{
+	color:#bc2815;
+	background-image:url(../images/bullets/flecha_over.gif);
+}
+.textoligaMenu02{
+	color:#bc2815;
+	background-image:url(../images/bullets/flecha_over.gif);
+	background-color:#e2e4e5;
+	background-repeat: no-repeat;
+	background-position: 15px 4px;
+}
+.ligafndPestanas{
+	cursor:pointer;
+	background-image:url(../images/estructura/fnd_pestanas.jpg);
+}
+.ligafndPestanas:hover{
+	background-image:url(../images/estructura/fnd_pestanas_over.jpg);
+}
+.textofndligaPestanas{
+	background-image:url(../images/estructura/fnd_pestanas_over.jpg);
+}
+.ligaPestanas{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	cursor:pointer;
+	font-weight:bold;
+	text-decoration:none;
+	padding-top:16px;
+	padding-left:21px;
+	padding-right:21px;
+	padding-bottom:16px;
+	color:#353535;
+}
+.ligaPestanas:hover{
+	color:#fdfdfd;
+}
+.textoligaPestanas{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight:bold;
+	text-decoration:none;
+	padding-top:16px;
+	padding-left:21px;
+	padding-right:21px;
+	padding-bottom:16px;
+	color:#fdfdfd;
+}
+.loadDiv{
+	width:527px; 
+	height:407px;
+	background-color:#FFFFFF;
+}
+.options{
+	width:197px;
+	height:auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#605f5f;
+	cursor:pointer;
+	font-weight:normal;
+	text-decoration:none;
+	padding-left:5px;
+	padding-top:1px;
+	padding-bottom:1px;
+}
+#fijo_inf_drcha {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+div > div#fijo_inf_drcha {
+	position: fixed;
+} 
+a:active, a:focus {
+      outline: 0;
+}
+.body, html {
+	scrollbar-face-color: #E8E8E1;
+	scrollbar-highlight-color: #F9F9F9;
+	scrollbar-3dlight-color: #ECEBE4;
+	scrollbar-darkshadow-color: #CDCDBD;
+	scrollbar-shadow-color: #FCFCFC;
+	scrollbar-arrow-color: #C7C7B4;
+	scrollbar-track-color: #FBFBF9;
+}
+
+/* This is the style of your browser text */
+
+#Pestanas {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	cursor:pointer;
+	text-decoration:none;
+	padding-top:16px;
+	padding-left:21px;
+	padding-right:21px;
+	padding-bottom:16px;
+	color:#353535;
+	font-size: 13px;
+}
+#Menu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	cursor:pointer;
+	text-decoration:none;
+	padding-top:11px;
+	width:400px;
+	padding-bottom:11px;
+	color:#333333;
+	font-size: 13px;
+}
+
+/* These are standard sIFR styles... do not modify */
+
+.sIFR-flash {
+	visibility: visible !important;
+	margin: 0;
+}
+.sIFR-replaced {
+	visibility: visible !important;
+}
+span.sIFR-alternate {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	display: block;
+	overflow: hidden;
+}
+
+
+/*start*/
+.opcionesSubMenu{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#605f5f;
+	cursor:pointer;
+	font-weight:normal;
+	text-decoration:none;
+	padding-left:45px;
+	background-image:url(../images/bullets/flecha.gif);
+	background-repeat: no-repeat;
+	background-position: 30px 4px;
+	display: none;
+}
+.opcionesSubMenu:hover{
+	color:#bc2815;
+	background-image:url(../images/bullets/flecha_over.gif);
+	background-color:#e2e4e5;
+}
+.textoopcionesSubMenu{
+	color:#bc2815;
+	background-image:url(../images/bullets/flecha_over.gif);
+	background-color:#e2e4e5;
+}
+.subopcionesSubMenu{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#605f5f;
+	cursor:pointer;
+	font-weight:normal;
+	text-decoration:none;
+	padding-left:65px;
+	background-image:url(../images/bullets/flecha.gif);
+	background-repeat: no-repeat;
+	background-position: 50px 4px;
+}
+.subopcionesSubMenu:hover{
+	color:#bc2815;
+	background-image:url(../images/bullets/flecha_over.gif);
+	background-color:#e2e4e5;
+}
+.textosubopcionesSubMenu{
+	color:#bc2815;
+	background-image:url(../images/bullets/flecha_over.gif);
+	background-color:#e2e4e5;
+}
+#ocula {
+	position:absolute;
+	left:0px;
+	top:390px;
+	width:234px;
+	height:80px;
+	z-index:1;
+	background-color:#666666;
+	background:url(../images/estructura/fnd_submenu.jpg) 0px -390px no-repeat;
+}
+.ligaSubmenuCont{
+	background-color:#e2e4e5;
+}
+.imgAyuda{
+	cursor:help;
+	visibility:hidden;
+	padding-left:7px
+}
+.filaForm{
+	padding-left:20px;
+	vertical-align:50%;
+	height:25px;
+}
+#backgroundAlerta{
+	background-color:#666666;
+	color:#FF0000;
+	position:absolute;
+	text-align:center;
+	left:0px;
+	height:0px;
+	width:100%;
+	height:100%;
+	vertical-align: 50%;
+	visibility:hidden;
+}
+#alerta{
+	width:50%;
+	top:50%;
+	left:50%;
+	background-color:#FFFFFF;
+	border: 1px dashed #FFFF00;	
+}
+/*end*/
+
+/*BANNERS PROMOCIONES*/
+#banners{
+	display:none;
+	position:absolute;
+	width: 634px; 
+	height: auto;
+	float:inherit;
+}
+#modalOverlay {background-color:#000; cursor:wait;}
+#modalContainer {height:auto; width:500px; left:55%; top:15%; margin-left:-300px; background-color:#fff; border:3px solid #ccc;}
+#modalContainer a.modalCloseImg {
+	width:25px;
+	height:29px;
+	display:inline;
+	z-index:3200;
+	position:absolute;
+	top:-15px;
+	right:-18px;
+	cursor:pointer;
+	background-image: url(../images/btns/x.png);
+	background-repeat: no-repeat;
+}
+#modalContainer #basicModalContent {padding:8px;}
+
+.messageTran{
+	
+	height: 100px;
+	width: 350px;	
+	cursor:pointer;
+	border-style: groove;
+	border-color: silver;
+	text-align: center;
+	background-color: #e2e4e5; 
+	position: absolute;
+	left: 550;
+	
+} 
+
+.text1Transfer{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#605f5f;
+	cursor:pointer;
+	font-weight: bold;
+	text-decoration:none;
+	font-size: 16px;
+	color: red;
+	padding-top: 20px;
+}
+
+.text2Transfer{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#605f5f;
+	cursor:pointer;
+	font-weight: bold;
+	text-decoration:none;
+	font-size: 16px;
+	color: red;
+}
+
+.messageSend{
+	height: 25;
+	width: 25;
+	cursor:pointer;
+	background-color: blue;
+}
+#container{
+	background-image:url(../images/estructura/pleca_fondo.jpg);
+		 
+	width: 100%;
+	height: 100%;
+	margin-top:0px;
+	margin-right: auto;	
+	margin-bottom: 0px;
+	margin-left: auto;	
+}
+#principal{
+	width:953px;
+	height:640px;
+	display:table;
+	margin-right: auto;
+	margin-left: auto;
+	background-image:url(../images/estructura/pleca_lateral.jpg);
+}
+#superior_izquierdo{
+	margin-left:10px;
+	width:504px;
+	height:74px;
+	background-image:url(../images/estructura/pleca_superior_fgris.jpg);
+	float:left;
+}
+#superior_derecho{
+	padding-top:25px;
+	padding-bottom:0px;
+	background-image:url(../images/estructura/pleca_superior_gris.jpg);
+	width:429px;
+	height:49px;
+	float:left;
+}
+#barra_roja{
+	margin-left:10px;
+	background-image:url("../images/estructura/pleca_superior_roja.jpg");
+	width:933px;
+	height:32px;
+	float:left;
+	padding-bottom: 0px;
+}
+#buscador{
+	margin-left:600px;
+	margin-top:5px;
+	width:300px;
+	height:20px;
+}
+#menu_all{
+	background-image:url(../images/fondos/fondo01.jpg);
+	background-repeat:no-repeat;
+	margin-left:15px;
+	background-color:#FFFFFF;
+	width:205px;
+	height:400px;
+	float:left;
+	
+}
+#menu_display{
+width:50px;
+padding-left:10px;
+float:left;
+}
+#content{
+	width:713px; 
+	height:477px;
+	margin-top:0px;
+	margin-left:0px;
+	background-image:url(../images/estructura/fondo_contenido.jpg);
+	
+	float:left;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #e8e8e8;
+}
+#pie{
+	background-image:url(../images/estructura/pleca_inferiorcafe.jpg);
+	margin-left:10px;
+	width:933px;
+	height:57px;
+	float:left;
+
+}
+#ligas_inferiores{
+	width:525px;
+	height:20px;
+	margin-top:14px;
+	padding-top:21px;
+	padding-left:10px;
+	float:left;
+}
+#linea_azteca{
+	background-image:url(../images/estructura/linea_azteca.jpg);
+	background-repeat:no-repeat;
+	width:382px;
+	margin-top:14px;
+	height:20px;
+	padding-top:21px;
+	float:right;
+}
+/*ESTILOS*/
+
+.sligas_inferiores{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	color:#646353;
+	text-decoration: none;
+}
+.sligas_infemergencias{
+	color:#990000;
+}
+.texto_blanco{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#FFFFFF;
+}
+
+.transferencias_td{
+color:#FFFFFF;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:10px;
+font-weight:bold;
+text-decoration:none;
+}
+
+
+.texto_captura{
+font-size:10px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+color:#000000;
+}
+
+.textogrisGrande {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #4c555c;
+	text-decoration: none;
+}
+
+.textomedianoRojo {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #990000;
+	text-decoration: none;
+}
+
+.textochicoRojo {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #990000;
+	text-decoration: none;
+}
+
+.liga07 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #bc2815;
+	text-decoration: none;
+}

@@ -1,0 +1,191 @@
+package com.bancoazteca.eservice.command.pagoservicios.aztecaweb;
+
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Map;
+import java.util.Set;
+
+import com.bancoazteca.elite.beans.ClienteTO;
+import com.bancoazteca.elite.beans.CuentaTO;
+import com.bancoazteca.elite.beans.DispositivoHuellaTO;
+import com.bancoazteca.elite.beans.PagoServicioAztecaWebRequestTO;
+import com.bancoazteca.elite.beans.PagoServicioAztecaWebResponseTO;
+import com.bancoazteca.elite.ejb.exception.EliteDataException;
+import com.bancoazteca.elite.ejb.facade.ResourceFacadeSL;
+import com.bancoazteca.elite.util.Formatter;
+import com.bancoazteca.eservice.command.base.CommandBase;
+import com.bancoazteca.eservice.command.base.beans.Cuenta_CargoTO;
+import com.bancoazteca.eservice.command.base.beans.HuellaTO;
+import com.bancoazteca.eservice.command.base.beans.Pago_ServicioTO;
+import com.bancoazteca.eservice.command.base.beans.Pago_Servicio_EjecucionTO;
+import com.bancoazteca.eservice.command.base.beans.ServiciosTO;
+import com.bancoazteca.eservice.command.base.session.Session;
+import com.bancoazteca.eservice.command.response.Response;
+
+public class PagoServicioAztecaWebCommand extends CommandBase {	
+	
+
+	final private static String  digito_verificador="0";
+	
+	
+	@SuppressWarnings("unchecked")
+	public Response solicitud(Session session) throws Exception {	
+		Response response = new Response();
+		ResourceFacadeSL resourceFacadeSL = getDelegate();
+		Pago_ServicioTO pago_servicioTO=new Pago_ServicioTO();
+		
+		String cuenta;
+		try{
+			ClienteTO clienteTO=(ClienteTO)session.getAttribute(CLIENTE_TO);
+			PagoServicioAztecaWebRequestTO pagoServicioAztecaWebRequestTO = new PagoServicioAztecaWebRequestTO();			
+			pagoServicioAztecaWebRequestTO.setUser(clienteTO.getUserName());
+			PagoServicioAztecaWebResponseTO pagoServicioAztecaWebResponseTO =  resourceFacadeSL.setInitialAztecaWebPayment(pagoServicioAztecaWebRequestTO);
+			Map<String, String> cuentas = pagoServicioAztecaWebResponseTO.getMapCuentas();
+			
+			Collection<Cuenta_CargoTO> collectionCuentasCargoTO=new ArrayList<Cuenta_CargoTO>();
+			Cuenta_CargoTO cuenta_cargoTO;
+				
+			for(String cuentaNum:cuentas.keySet()){
+					cuenta = cuentaNum.substring(0,14);
+					CuentaTO cuentaClieteTO = super.getAccountsPrdicate(clienteTO.getCuentas(), cuenta);
+					if(cuentaClieteTO!=null){
+						cuenta_cargoTO=new Cuenta_CargoTO();
+						cuenta_cargoTO.setNumero_cuenta(cuenta);
+						cuenta_cargoTO.setProducto(cuentaClieteTO.getDescripcion());
+						cuenta_cargoTO.setSaldo_disponible(cuentaClieteTO.getDisponible().toString());						
+						collectionCuentasCargoTO.add(cuenta_cargoTO);
+					}
+			}
+			Set<String> setServicios=pagoServicioAztecaWebResponseTO.getMapServicios().keySet();
+			Collection<ServiciosTO> collectionServiciosTO=new ArrayList<ServiciosTO>();
+			ServiciosTO serviciosTO;
+			
+			for(String servicio:setServicios){
+				serviciosTO=new ServiciosTO();
+				serviciosTO.setConcepto_pago(servicio);
+				collectionServiciosTO.add(serviciosTO);
+			}
+			
+			pago_servicioTO.setColeccion_cuentas(collectionCuentasCargoTO);
+			pago_servicioTO.setColeccion_servicios(collectionServiciosTO);
+			session.addAttribute(PAGO_SERVICIO_AZTECAWEB_RESPONSE, pagoServicioAztecaWebResponseTO);
+			response.addAttribute(pago_servicioTO);
+			
+		}catch (EliteDataException e) {
+			buildErrorResponse(e, response);
+		}
+		return response;
+	}
+	
+	
+	@SuppressWarnings("unchecked")
+	public Response validacion(Session session) throws Exception {		
+		
+		PagoServicioAztecaWebForm forma = (PagoServicioAztecaWebForm) getFormBean();
+		ResourceFacadeSL resourceFacadeSL = getDelegate();
+		Response response=new Response();
+
+		try{
+			ClienteTO clienteTO=(ClienteTO)session.getAttribute(CLIENTE_TO);
+			PagoServicioAztecaWebResponseTO pagoServicioAztecaWebResponseTO = (PagoServicioAztecaWebResponseTO) 
+			session.getAttribute(PAGO_SERVICIO_AZTECAWEB_RESPONSE);
+
+			Map<String, String> serviciosMap = pagoServicioAztecaWebResponseTO.getMapServicios();
+			Map<String, String> cuentasMap = pagoServicioAztecaWebResponseTO.getMapCuentas();
+
+			Set<String> setCuentas=cuentasMap.keySet();
+			String cuentaTemp="";
+			String cuentaForma=forma.getCuenta_cargo();
+			for(String cuentaConcat:setCuentas){
+				if(cuentaConcat.startsWith(cuentaForma)){
+					cuentaTemp=cuentaForma;
+					break;
+				}
+			}
+			
+			PagoServicioAztecaWebRequestTO pagoServicioAztecaWebRequestTO = new PagoServicioAztecaWebRequestTO();
+			pagoServicioAztecaWebRequestTO.setCuentaCargo(Formatter.removeSpaces(cuentaTemp));
+			pagoServicioAztecaWebRequestTO.setCuentaReferencia(Formatter.removeSpaces(forma.getNumero_referencia()));
+			pagoServicioAztecaWebRequestTO.setDigitoVerificador(digito_verificador);
+			pagoServicioAztecaWebRequestTO.setTipoServicio(forma.getConcepto_pago());
+			pagoServicioAztecaWebRequestTO.setImporte(forma.getImporte());
+			pagoServicioAztecaWebRequestTO.setUser(clienteTO.getUserName());
+			
+			pagoServicioAztecaWebResponseTO = resourceFacadeSL.setDataAztecaWebPayment(pagoServicioAztecaWebRequestTO);
+			pagoServicioAztecaWebResponseTO.setMapCuentas(cuentasMap);
+			pagoServicioAztecaWebResponseTO.setMapServicios(serviciosMap);
+			pagoServicioAztecaWebResponseTO.setConcepto_pago(forma.getConcepto_pago());
+									
+			DispositivoHuellaTO tdispositivoHuellaTO=pagoServicioAztecaWebResponseTO.getDispositivoHuellaTO();
+			HuellaTO huellaTO=new HuellaTO();
+			
+			huellaTO.setLlave_publica(tdispositivoHuellaTO.getLlavePublica());
+			huellaTO.setLongitud_huella(tdispositivoHuellaTO.getLongitudHuella());
+			
+			session.addAttribute(PAGO_SERVICIO_AZTECAWEB_RESPONSE, pagoServicioAztecaWebResponseTO);
+			response.addAttribute(huellaTO);
+			
+		}catch (EliteDataException e) {
+			buildErrorResponse(e, response);
+		}
+		
+		return response;
+	}
+	
+	@SuppressWarnings("unchecked")
+	public Response ejecucion(Session session) throws Exception{	
+		
+		PagoServicioAztecaWebForm forma = (PagoServicioAztecaWebForm) getFormBean();
+		Response response=new Response();
+		ClienteTO clienteTO=(ClienteTO)session.getAttribute(CLIENTE_TO);
+		ResourceFacadeSL resourceFacadeSL = getDelegate();
+		
+		try{
+			
+			PagoServicioAztecaWebResponseTO pagoServicioAztecaWebResponseTO = (PagoServicioAztecaWebResponseTO) 
+			session.getAttribute(PAGO_SERVICIO_AZTECAWEB_RESPONSE);
+			
+			
+			PagoServicioAztecaWebRequestTO pagoServicioAztecaWebRequestTO = new PagoServicioAztecaWebRequestTO();
+			
+			pagoServicioAztecaWebRequestTO.setCuentaReferencia(pagoServicioAztecaWebResponseTO.getCuentaReferencia());
+			pagoServicioAztecaWebRequestTO.setCuentaCargo(Formatter.removeSpaces(pagoServicioAztecaWebResponseTO.getCuentaCargo()));
+			pagoServicioAztecaWebRequestTO.setDigitoVerificador(digito_verificador);
+			pagoServicioAztecaWebRequestTO.setTipoServicio(pagoServicioAztecaWebResponseTO.getConcepto_pago());
+			pagoServicioAztecaWebRequestTO.setImporte(pagoServicioAztecaWebResponseTO.getImporte().toString());
+			pagoServicioAztecaWebRequestTO.setTotal(pagoServicioAztecaWebResponseTO.getTotal().toString());
+			pagoServicioAztecaWebRequestTO.setFechaAplicacion(pagoServicioAztecaWebResponseTO.getFechaAplicacion());
+			pagoServicioAztecaWebRequestTO.setUser(clienteTO.getUserName());
+			
+			String opc_seg=forma.getOpcion_seguridad();
+			 
+			if(opc_seg.equalsIgnoreCase(TAG_HUELLA)){
+				pagoServicioAztecaWebRequestTO.setOptionDispositive(OPCION_HUELLA);
+				pagoServicioAztecaWebRequestTO.setClave(forma.getHuella_seguridad().toString());
+			}else{
+				pagoServicioAztecaWebRequestTO.setOptionDispositive(OPCION_TOKEN);
+				pagoServicioAztecaWebRequestTO.setTokenCode(forma.getClave_seguridad().toString());
+			}
+			pagoServicioAztecaWebResponseTO = resourceFacadeSL.setConfimAztecaWebPayment(pagoServicioAztecaWebRequestTO);
+
+			Pago_Servicio_EjecucionTO pagoServicioEjecucionTO=new Pago_Servicio_EjecucionTO();
+			pagoServicioEjecucionTO.setComision(pagoServicioAztecaWebResponseTO.getComision().toString());
+			pagoServicioEjecucionTO.setCuenta_cargo(pagoServicioAztecaWebResponseTO.getCuentaCargo());
+			pagoServicioEjecucionTO.setTotal_pago(pagoServicioAztecaWebResponseTO.getTotal().toString());
+			pagoServicioEjecucionTO.setIva(pagoServicioAztecaWebResponseTO.getIva().toString());
+			pagoServicioEjecucionTO.setImporte(pagoServicioAztecaWebResponseTO.getImporte().toString());
+			pagoServicioEjecucionTO.setNumero_referencia(pagoServicioAztecaWebResponseTO.getCuentaReferencia());
+			pagoServicioEjecucionTO.setFecha_aplicacion(pagoServicioAztecaWebResponseTO.getFechaAplicacion());
+			pagoServicioEjecucionTO.setFolio_aclaraciones(pagoServicioAztecaWebResponseTO.getFolio());
+			pagoServicioEjecucionTO.setConcepto_pago(pagoServicioAztecaWebRequestTO.getTipoServicio());
+			updateBalance(session);
+			response.addAttribute(pagoServicioEjecucionTO);
+		}catch (EliteDataException e) {
+			buildErrorResponse(e, response);
+		}
+		
+		
+		return response;
+	}
+}

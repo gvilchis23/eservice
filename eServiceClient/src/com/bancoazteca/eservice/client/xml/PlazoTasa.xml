@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idaplicacion cipher="ac4Fp1mXJMK3wqWoozcj4l5+nSbyBu1b" />
+			<idservicio value="REPORTOS_PLAZO_TASA" />
+			<fecha_operacion value="01/07/2010" />
+			<hora_operacion value="09:51:19" />
+			<plazo_inversion value="1 dias, 7 dias, 14 dias, 21 dias, 28 dias" />
+			<tasa_inversion value="  4.56%,   4.57%,   4.58%,   4.59%,   4.60%" />
+		</request>
+	</eservices>
+</bancoazteca>

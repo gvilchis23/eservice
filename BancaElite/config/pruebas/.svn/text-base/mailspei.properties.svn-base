@@ -1,0 +1,52 @@
+mail.smtp.host = 10.50.70.77
+mail.debug = false
+mail.smtp.connectiontimeout = 1000 
+mail.smtp.timeout = 1000
+mail.smtp.sendpartial = true
+
+crear-alert.mail.savedb = false
+crear-alert.mail.subject = Banco Azteca - Error en SPEI programada
+crear-alert.mail.from = "Banca por Internet - Banco Azteca" <bancaporinternet@bancoazteca.com.mx>
+crear-alert.mail.to = bancaempresarial@localnetwork.net
+crear-alert.mail.html = mail/mailspeiError.html
+crear-alert.mail.cid = imagenH,imagenF
+crear-alert.mail.imagenH = mail/header0.jpg
+crear-alert.mail.imagenF = mail/footer0.jpg
+
+respuesta-alert.mail.savedb = false
+respuesta-alert.mail.subject = Banco Azteca - Error en SPEI programada
+respuesta-alert.mail.from = "Banca por Internet - Banco Azteca" <bancaporinternet@bancoazteca.com.mx>
+respuesta-alert.mail.to = bancaempresarial@localnetwork.net
+respuesta-alert.mail.bcc = bancaempresarial@localnetwork.net
+respuesta-alert.mail.html = mail/mailspeiError.html
+respuesta-alert.mail.cid = imagenH,imagenF
+respuesta-alert.mail.imagenH = mail/header0.jpg
+respuesta-alert.mail.imagenF = mail/footer0.jpg
+
+respuesta-alert2.mail.savedb = false
+respuesta-alert2.mail.subject = Banco Azteca - Error en SPEI programada
+respuesta-alert2.mail.from = "Banca por Internet - Banco Azteca" <bancaporinternet@bancoazteca.com.mx>
+respuesta-alert2.mail.to = bancaempresarial@localnetwork.net
+respuesta-alert2.mail.bcc = bancaempresarial@localnetwork.net
+respuesta-alert2.mail.html = mail/mailspeiError2.html
+respuesta-alert2.mail.cid = imagenH,imagenF
+respuesta-alert2.mail.imagenH = mail/header0.jpg
+respuesta-alert2.mail.imagenF = mail/footer0.jpg
+
+respuesta-fail.mail.savedb = false
+respuesta-fail.mail.subject = Banco Azteca - Transferencia SPEI Programada
+respuesta-fail.mail.from = "Banca por Internet - Banco Azteca" <bancaporinternet@bancoazteca.com.mx>
+respuesta-fail.mail.bcc = fhermq@localhost
+respuesta-fail.mail.html = mail/mailspeiFail.html
+respuesta-fail.mail.cid = imagenH,imagenF
+respuesta-fail.mail.imagenH = mail/header0.jpg
+respuesta-fail.mail.imagenF = mail/footer0.jpg
+
+respuesta-exitosa.mail.savedb = false
+respuesta-exitosa.mail.subject = Banco Azteca - Transferencia SPEI Programada
+respuesta-exitosa.mail.from = "Banca por Internet - Banco Azteca" <bancaporinternet@bancoazteca.com.mx>
+respuesta-exitosa.mail.bcc = fhermq@localhost
+respuesta-exitosa.mail.html = mail/mailspeiConfirmacion.html
+respuesta-exitosa.mail.cid = imagenH,imagenF
+respuesta-exitosa.mail.imagenH = mail/header0.jpg
+respuesta-exitosa.mail.imagenF = mail/footer0.jpg

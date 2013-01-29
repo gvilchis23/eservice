@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idsesion
+				cipher="qZrjNBHsqjro2mDeFpQFzRoKm4ZSqYcIRZjP+8X1pVE=" />
+			<idservicio value="MOSTRAR_FRECUENTES_TRANS" />
+			<tipo_transferencia value="TODOS" />
+			<comando value="EJECUCION" />
+		</request>
+	</eservices>
+</bancoazteca>

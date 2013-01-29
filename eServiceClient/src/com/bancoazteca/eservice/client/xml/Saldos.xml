@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idsesion cipher="Xti/hZxNRwt2rEEM+zuRgHu9a8HOS3MbRZjP+8X1pVE=" />
+			<idservicio value="SALDOS" />
+			<comando value="EJECUCION" />
+		</request>
+	</eservices>
+</bancoazteca>

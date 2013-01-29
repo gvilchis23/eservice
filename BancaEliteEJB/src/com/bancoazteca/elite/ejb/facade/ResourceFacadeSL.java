@@ -1,0 +1,693 @@
+package com.bancoazteca.elite.ejb.facade;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.Collection;
+
+import javax.ejb.EJBException;
+import javax.ejb.EJBLocalObject;
+
+import org.apache.http.HttpException;
+
+import com.bancoazteca.elite.beans.*;
+import com.bancoazteca.elite.commons.xml.XmlDecodeException;
+import com.bancoazteca.elite.ejb.cuentas.CuentasException;
+import com.bancoazteca.elite.ejb.dispositivos.DispositivoException;
+import com.bancoazteca.elite.ejb.exception.DAOException;
+import com.bancoazteca.elite.ejb.exception.EliteDataException;
+import com.bancoazteca.elite.ejb.exception.EliteException;
+import com.bancoazteca.elite.ejb.exception.LoginException;
+import com.bancoazteca.elite.ejb.exception.SessionExpiredException;
+import com.bancoazteca.elite.ejb.inversiones.InversionesGenericException;
+import com.bancoazteca.elite.ejb.inversiones.transacciones.reportos.wrappers.ReportosEstadoCuentaRequestTO;
+import com.bancoazteca.elite.ejb.inversiones.transacciones.reportos.wrappers.ReportosEstadoCuentaResponseTO;
+import com.bancoazteca.elite.ejb.pagoServicios.PagoServiciosException;
+import com.bancoazteca.elite.ejb.transferencias.TransferenciasException;
+import com.bancoazteca.elite.ejb.traspasos.TraspasosException;
+import com.bancoazteca.elite.ejb.usuario.UsuarioException;
+import com.bancoazteca.elite.monitoreo.db.dao.MonitoreoAdministradorResponseTO;
+
+/**
+ * @author Banco Azteca S.A. [JFAV] Agosto 20, 2008.
+ */
+
+public interface ResourceFacadeSL extends EJBLocalObject {
+	
+	public void setXmlBeanRules() throws  UsuarioException;
+
+	public LoginResponseTO login(LoginRequestTO loginRequestTO) throws EJBException, LoginException, SessionExpiredException, UsuarioException, EliteDataException;
+
+	public LoginResponseTO loginCliente(LoginRequestTO loginRequestTO) throws UsuarioException, LoginException, SessionExpiredException, EliteDataException;
+	
+	public LoginResponseTO getOnDemandAccounts(LoginRequestTO loginRequestTO) throws UsuarioException, LoginException, SessionExpiredException, EliteDataException;
+	
+	public LoginResponseTO sessionManagment(LoginRequestTO loginRequestTO) throws EJBException, LoginException, SessionExpiredException, UsuarioException, EliteDataException;
+	
+	public LoginResponseTO sessionManagmentCliente(LoginRequestTO loginRequestTO) throws SessionExpiredException, UsuarioException, EliteDataException;
+	
+	public LoginResponseTO getCuentasUsuario(LoginRequestTO loginRequestTO) throws EJBException, LoginException, SessionExpiredException, UsuarioException, EliteDataException;
+
+	public LoginResponseTO getActualizarCuentaUsuario( BalanceRequestTO balanceRequestTO ) throws EJBException, LoginException, SessionExpiredException, UsuarioException, EliteDataException;
+	
+	public LoginResponseTO getCuentasUsuarioParalelo(LoginRequestTO loginRequestTO) throws EJBException, LoginException, SessionExpiredException, UsuarioException, EliteDataException;
+
+	public ChangePasswordResponseTO changePassword(ChangePaswordRequestTO changePaswordRequestTO) throws EJBException, SessionExpiredException, UsuarioException, EliteDataException;
+
+	public void logout(String username) throws EJBException, SessionExpiredException, UsuarioException;
+
+	public BalanceResponseTO getMovimientosByIndex(BalanceRequestTO balanceRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public BalanceResponseTO getMovimientosByDate(BalanceRequestTO balanceRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+		
+	public BalanceResponseTO getPartnerPlusBalanceAccount(BalanceRequestTO balanceRequestTO)throws  CuentasException, SessionExpiredException, EliteDataException;
+
+	public TraspasosPropiasResponsetTO propiasInvocaTraspaso(TraspasosPropiasRequestTO traspasosPropiasRequestTO) throws EJBException, TraspasosException, SessionExpiredException, EliteDataException;
+	
+	public TraspasosPropiasResponsetTO propiasPreparaTraspaso(TraspasosPropiasRequestTO traspasosPropiasRequestTO) throws EJBException, TraspasosException, SessionExpiredException, EliteDataException;
+
+	public TraspasosPropiasResponsetTO ejecutaPropiasTraspaso(TraspasosPropiasRequestTO traspasosPropiasRequestTO) throws EJBException, TraspasosException, SessionExpiredException, EliteDataException;
+
+	public InternetSalesResponseTO getTarjetasComprasInternet(InternetSalesRequestTO internetSalesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public InternetSalesResponseTO getComprasInternetEstadoTarjeta(InternetSalesRequestTO internetSalesRequestTO) throws EJBException, EliteDataException, CuentasException, SessionExpiredException;
+
+	public InternetSalesResponseTO setComprasInternetActivacion(InternetSalesRequestTO internetSalesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public LockUnlockCardsResponseTO listCardsToLock(LockUnlockCardsRequestTO lockUnlockCardsRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public LockUnlockCardsResponseTO initBlockingCards(LockUnlockCardsRequestTO lockUnlockCardsRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteException, EliteDataException;
+
+	public LockUnlockCardsResponseTO initUnlockingCards(LockUnlockCardsRequestTO lockUnlockCardsRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteException, EliteDataException;
+
+	public LockUnlockCardsResponseTO confirmCardBlocking(LockUnlockCardsRequestTO lockUnlockCardsRequestTO) throws CuentasException, SessionExpiredException, EJBException, EliteException, EliteDataException;
+
+	public LockUnlockCardsResponseTO confirmCardUnlock(LockUnlockCardsRequestTO lockUnlockCardsRequestTO) throws CuentasException, SessionExpiredException, EJBException, EliteException, EliteDataException;
+
+	public CambioSucursalTO getCambioSucursalInicio(ChangeBranchRequestTO changeBranchRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	public CambioSucursalTO getDatosSucursalTarjeta(String user) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	public CambioSucursalTO getDatosBusquedaSucursalesTarjeta(String user) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	public CambioSucursalTO confirmaCambioSucursalTarjeta(ChangeBranchRequestTO branchRequestTO)throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public ChangeBranchResponseTO getMunicipiosEntidad(ChangeBranchRequestTO changeBranchRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public ChangeBranchResponseTO buscarCentrosCambioSucursal(ChangeBranchRequestTO changeBranchRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public RecuperaPasswordResponseTO findAccountOrCreditCardNumber(RecuperaPasswordRequestTO recuperaUsuarioPasswordTO) throws EJBException, UsuarioException, SessionExpiredException, EliteDataException;
+
+	public RecuperaPasswordResponseTO findPersonalData(RecuperaPasswordRequestTO recuperaUsuarioPasswordTO) throws EJBException, UsuarioException, SessionExpiredException, EliteDataException;
+	
+	public void findChangePersonalData(RecuperaPasswordRequestTO passwordRequestTO)	throws EJBException, EliteDataException, UsuarioException, SessionExpiredException;
+
+	public RecuperaPasswordResponseTO updateToNewPassword(RecuperaPasswordRequestTO recuperaUsuarioPasswordTO) throws EJBException, UsuarioException, SessionExpiredException, EliteDataException;
+
+	public AlertsDataResponseTO alertsLoadInitialData(String user) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public AlertsDataResponseTO setAlertsAcountsSelectedLink(AlertsDataRequest request) throws EJBException, CuentasException, EliteDataException, SessionExpiredException;
+	
+	public AlertsDataResponseTO getDataAlertFirstStep(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public AlertsDataResponseTO getDataAlertSecondStep(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public void getDataAlertThirdStep(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public AlertsDataResponseTO getAlertsAcountsSelectedLinkUpdate(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public AlertsDataResponseTO getDataForUpdateAlertFirstStep(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public AlertsDataResponseTO getDataForUpdateAlertFirstStepModificar(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public AlertsDataResponseTO getDataForUpdateAlertFinalStep(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public void getDataForUpdateAlertThirdStep(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public void getAlertCardAcountsSelectedLink(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public void getDataForActivateCardsFirstStep(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public void getDataForActivateCardsSecondStep(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public void getDataForActivateCardsThirdStep(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public void getAlertsCardSelectedLinkUpdate(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public void getDataForModifyCardsFirstStep(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public void getDataForModifyCardsSecondStep(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public void getDataForDeleteCards(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public AlertsDataResponseTO getDataForDeleteAccounts(AlertsDataRequest request) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public InfiniteMovimientosResponseTO getInfiniteDetalleMovimientos(InfiniteMovimientosRequestTO infiniteMovimientosRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public InfiniteMovimientosResponseTO getInfiniteAdicionalesDetalleMovimientos(InfiniteMovimientosRequestTO infiniteMovimientosRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public TarjetaCorporativaCreditoResponseTO getTarjetaCorporativaCredito(TarjetaCorporativaCreditoRequestTO corporativaCreditoRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public TarjetaCorporativaDebitoResponseTO getTarjetaCorporativaDebito(TarjetaCorporativaDebitoRequestTO tarjetaCorporativaDebitoRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public TransferenciaTercerosResponseTO getTransferenciaTercerosInvocacion(TransferenciaTercerosRequestTO transferenciaTercerosRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+
+	public TransferenciaTercerosResponseTO getTransferenciaTercerosEnvioDatos(TransferenciaTercerosRequestTO transferenciaTercerosRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+
+	public TransferenciaTercerosResponseTO getEjecutarTransferenciaTerceros(TransferenciaTercerosRequestTO transferenciaTercerosRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+
+	public EnvioMailResponseTO envioMailTerceros(EnvioMailRequestTO envioMailRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+
+	public TransferenciasSpeiResponseTO getTransferenciaSpeiInvocacion(TransferenciasSpeiRequestTO transferenciasSpeiRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+
+	public TransferenciasSpeiResponseTO getTransferenciaSpeiEnvioDatos(TransferenciasSpeiRequestTO transferenciasSpeiRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+
+	public TransferenciasSpeiResponseTO getEjecutarTransferenciaSpei(TransferenciasSpeiRequestTO transferenciasSpeiRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+
+	public EnvioMailResponseTO envioMailSpei(EnvioMailRequestTO envioMailRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+	
+	public EnvioMailResponseTO envioMailSpei30(EnvioMailRequestTO envioMailRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+
+	public TransferenciasTEFResponseTO getTransferenciaTefInvocacion(TransferenciasTEFRequestTO transferenciasTEFRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+
+	public TransferenciasTEFResponseTO getTransferenciaTefEnvioDatos(TransferenciasTEFRequestTO transferenciasTEFRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+
+	public TransferenciasTEFResponseTO getEjecutarTransferenciaTef(TransferenciasTEFRequestTO transferenciasTEFRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+
+	public EnvioMailResponseTO envioMailTef(EnvioMailRequestTO envioMailRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+
+	public TransferenciasInternacionalesResponseTO getTransferenciaInternacionalInvocacion(TransferenciasInternacionalesRequestTO transferenciasInternacionalesRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+	
+	public TransferenciasInternacionalesResponseTO getTransferenciaInternacionalEnvioDatos(TransferenciasInternacionalesRequestTO transferenciasInternacionalesRequestTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+	
+	public TransferenciasInternacionalesResponseTO getEjecutarTransferenciaInternacional (TransferenciasInternacionalesRequestTO transferenciasInternacionalesRequestTO)throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+	
+	public EnvioMailResponseTO envioMailInternacional(EnvioMailRequestTO envioMailRequestTO) throws EJBException,TransferenciasException, SessionExpiredException, EliteDataException;
+	
+	public CuentasFrecuentesResponseTO findAllFrequentAccounts(CuentasFrecuentesRequestTO cuentasFrecuentesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public CuentasFrecuentesResponseTO getCuentasFrecuentes(CuentasFrecuentesRequestTO cuentasFrecuentesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public CuentasFrecuentesResponseTO getHistoricasCuentasFrecuentes(CuentasFrecuentesRequestTO cuentasFrecuentesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public CuentasFrecuentesResponseTO setOtrosBancosPreparacionAgregarCuenta(CuentasFrecuentesRequestTO cuentasFrecuentesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public DispositivoHuellaTO setIntenationalesDatosAgregarCuenta(CuentasFrecuentesRequestTO cuentasFrecuentesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public void setOtrosBancosAgregarCuenta(CuentasFrecuentesRequestTO cuentasFrecuentesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public void setTercerosConfirmarAltaFrecuente(CuentasFrecuentesRequestTO cuentasFrecuentesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public DispositivoHuellaTO setTercerosDatosAgregarCuenta(CuentasFrecuentesRequestTO cuentasFrecuentesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public DispositivoHuellaTO setOtrosBancosDatosAgregarCuenta(CuentasFrecuentesRequestTO cuentasFrecuentesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public CuentasFrecuentesResponseTO getIntenationalesDatosEliminaCuenta(CuentasFrecuentesRequestTO cuentasFrecuentesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public void setIntenationalesEliminaCuenta(CuentasFrecuentesRequestTO cuentasFrecuentesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public InternacionalesBancosResponseTO getInternacionalesPaises(InternacionalesBancosRequestTO internacionalesBancosRequestTO) throws SessionExpiredException, TransferenciasException, EliteDataException;
+
+	public InternacionalesBancosResponseTO getInternacionalesCiudades(InternacionalesBancosRequestTO internacionalesBancosRequestTO) throws SessionExpiredException, TransferenciasException, EliteDataException;
+
+	public InternacionalesBancosResponseTO getInternacionalesBancos(InternacionalesBancosRequestTO internacionalesBancosRequestTO) throws SessionExpiredException, TransferenciasException, EliteDataException;
+
+	public Collection<CuentasTransferenciasTO> getListadoCuentasSuggest(Collection<LabelValueBeanTO> cuentasTodas, TransferenciaTercerosResponseTO tercerosResponseTO, TransferenciasTEFResponseTO tefResponseTO, TransferenciasSpeiResponseTO speiResponseTO, TransferenciasInternacionalesResponseTO internacionalesResponseTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+
+	public ChangeSecurityLevelResponseTO executeChangeLevel(ChangeSecurityLevelRequestTO changeSecurityLevelRequestTO) throws EJBException, UsuarioException, SessionExpiredException, EliteDataException;
+
+	public ChangeSecurityLevelResponseTO modifySecurityLevel(ChangeSecurityLevelRequestTO changeSecurityLevelRequestTO) throws EJBException, SessionExpiredException, UsuarioException, EliteDataException;
+
+	public ChangeSecurityLevelResponseTO waitChangeSecurityLevel(ChangeSecurityLevelRequestTO changeSecurityLevelRequestTO) throws EJBException, SessionExpiredException, UsuarioException, EliteDataException;
+
+	public Collection<TransferenciasOtrosBancosTO> getListadoBancosTefSpeiResponseTO(TransferenciasTEFResponseTO transferenciasTEFResponseTO, TransferenciasSpeiResponseTO transferenciasSpeiResponseTO) throws EJBException, TransferenciasException, SessionExpiredException, EliteDataException;
+
+	public PagoServiciosTelmexResponseTO setInitialTelmexPayment(PagoServiciosTelmexRequestTO pagoServiciosTelmexRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public PagoServiciosTelmexResponseTO setDataTelmexPayment(PagoServiciosTelmexRequestTO pagoServiciosTelmexRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public PagoServiciosTelmexResponseTO setConfimTelmexPayment(PagoServiciosTelmexRequestTO pagoServiciosTelmexRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public PagoServiciosIusacellResponseTO setInitialIusacellPayment(PagoServiciosIusacellRequestTO iusacellRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public PagoServiciosIusacellResponseTO setDataIusacellPayment(PagoServiciosIusacellRequestTO iusacellRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public PagoServiciosIusacellResponseTO setConfirmIusacellPayment(PagoServiciosIusacellRequestTO iusacellRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public PagoServicioLuzResponsetTO setInitialLuzPayment(PagoServicioLuzRequestTO pagoServicioLuzRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public PagoServicioLuzResponsetTO setDataLuzPayment(PagoServicioLuzRequestTO pagoServicioLuzRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public PagoServicioLuzResponsetTO setConfirmLuzPayment(PagoServicioLuzRequestTO pagoServicioLuzRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public void setEndLuzPayment(PagoServicioLuzRequestTO pagoServicioLuzRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public PagoServiciosSkyResponseTO setInitialSkyPayment(PagoServiciosSkyRequestTO skyRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public PagoServiciosSkyResponseTO setDataSkyPayment(PagoServiciosSkyRequestTO skyRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public PagoServiciosSkyResponseTO setConfirmSkyPayment(PagoServiciosSkyRequestTO skyRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public PagoServiciosMovistarResponseTO setInitialMovistarPayment(PagoServiciosMovistarRequestTO movistarRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public PagoServiciosMovistarResponseTO setDataMovistarPayment(PagoServiciosMovistarRequestTO movistarRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public PagoServiciosMovistarResponseTO setConfirmMovistarPayment(PagoServiciosMovistarRequestTO movistarRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+		
+	public PagoServiciosTiempoAireResponseTO setMenuTiempoAirePayment(PagoServiciosTiempoAireRequestTO tiempoAireRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public PagoServiciosTiempoAireResponseTO setInitialTiempoAirePayment(PagoServiciosTiempoAireRequestTO tiempoAireRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public PagoServiciosTiempoAireResponseTO setDataTiempoAirePayment(PagoServiciosTiempoAireRequestTO tiempoAireRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public PagoServiciosTiempoAireResponseTO setConfirmTiempoAirePayment(PagoServiciosTiempoAireRequestTO tiempoAireRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public FrecuentesResponseTO setInitialFrecuentesParametrizado(FrecuentesRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesResponseTO setEliminarFrecuentesEjecucionParametrizado(FrecuentesRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesResponseTO setEliminarFrecuentesValidacionParametrizado(FrecuentesRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public FrecuentesResponseTO setModificarFrecuentesParametrizado(FrecuentesRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesResponseTO setModificarFrecuentesValidacionParametrizado(FrecuentesRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesResponseTO setModificarFrecuentesEjecucionParametrizado(FrecuentesRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	
+	public FrecuentesResponseTO setAgregarFrecuenteParametrizado(FrecuentesRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;	
+	
+	public FrecuentesResponseTO setAgregarFrecuenteEjecucionParametrizado(FrecuentesRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public CuentaSocioPlusResponseTO setPartnerPlusStartOpenAccount(CuentaSocioPlusRequestTO cuentaSocioPlusRequestTO) throws CuentasException, SessionExpiredException, EliteDataException;
+
+	public CuentaSocioPlusResponseTO setPartnerPlusStartAceptConditions(CuentaSocioPlusRequestTO cuentaSocioPlusRequestTO) throws CuentasException, SessionExpiredException, EliteDataException;
+
+	public CuentaSocioPlusResponseTO setPartnerPlusData(CuentaSocioPlusRequestTO cuentaSocioPlusRequestTO) throws CuentasException, SessionExpiredException, EliteDataException;
+
+	public CuentaSocioPlusResponseTO setPartnerPlusConfirmData(CuentaSocioPlusRequestTO cuentaSocioPlusRequestTO) throws CuentasException, SessionExpiredException, EliteDataException;
+	
+	public CuentaSocioPlusResponseTO validaCuentaSocioPlus(CuentaSocioPlusRequestTO cuentaSocioPlusRequestTO) throws  CuentasException, SessionExpiredException, EliteDataException;
+	
+	public CuentaSocioPlusResponseTO getSocioPlusPDF(CuentaSocioPlusRequestTO cuentaSocioPlusRequestTO) throws  CuentasException, SessionExpiredException, EliteDataException;
+	
+	public PagoTarjetaCreditoResponseTO setInitialTarjetaCreditoPayment(PagoTarjetaCreditoRequestTO pagoTarjetaCreditoRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public PagoTarjetaCreditoResponseTO setDataTarjetaCreditoPayment(PagoTarjetaCreditoRequestTO pagoTarjetaCreditoRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public PagoTarjetaCreditoResponseTO setConfirmTarjetaCreditoPayment(PagoTarjetaCreditoRequestTO pagoTarjetaCreditoRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public PagoTarjetaOtrosBancosResponseTO getInitialTarjetaPaymentOthersBank(PagoTarjetaOtrosBancosRequestTO tarjetaOtrosBancosRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public PagoTarjetaOtrosBancosResponseTO getDataTarjetaPaymentOthersBank(PagoTarjetaOtrosBancosRequestTO tarjetaOtrosBancosRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public PagoTarjetaOtrosBancosResponseTO getConfirmTarjetaPaymentOthersBank(PagoTarjetaOtrosBancosRequestTO tarjetaOtrosBancosRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public String setSendMailTarjetaPaymentOthersBank(PagoTarjetaOtrosBancosRequestTO tarjetaOtrosBancosRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	public ConsultaTransferenciasResponseTO findInitialHistoricoTransferencias(ConsultaTransferenciasRequestTO consultaTransferenciasRequestTO)throws SessionExpiredException, TransferenciasException, EliteDataException;
+	
+	public ConsultaTransferenciasResponseTO findDataHistoricoTransferencias(ConsultaTransferenciasRequestTO consultaTransferenciasRequestTO)throws SessionExpiredException, TransferenciasException, EliteDataException;
+	
+	public ConsultaTransferenciasResponseTO findInitialHistoricoTraspasos(ConsultaTransferenciasRequestTO consultaTransferenciasRequestTO)throws SessionExpiredException, TransferenciasException, EliteDataException;
+	
+	public ConsultaTransferenciasResponseTO findDataHistoricoTraspasos(ConsultaTransferenciasRequestTO consultaTransferenciasRequestTO)throws SessionExpiredException, TransferenciasException, EliteDataException;
+	
+	public ConsultaTransferenciasResponseTO findInitialTransferenciasProgramadas(ConsultaTransferenciasRequestTO consultaTransferenciasRequestTO)throws SessionExpiredException, TransferenciasException, EliteDataException;
+	
+	public ConsultaTransferenciasResponseTO findDataTransferenciasProgramadas(ConsultaTransferenciasRequestTO consultaTransferenciasRequestTO)throws SessionExpiredException, TransferenciasException, EliteDataException;
+
+	public AperturaCuentaSocioResponseTO getCuentaSocioInvocacion(AperturaCuentaSocioRequestTO cuentaSocioRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException ;
+	
+	public AperturaCuentaSocioResponseTO getCuentaSocioEnvioDatos(AperturaCuentaSocioRequestTO cuentaSocioRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException ;
+	
+	public AperturaCuentaSocioResponseTO getCuentaSocioConfirmacion(AperturaCuentaSocioRequestTO cuentaSocioRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException ;
+
+	public AperturaCuentaPlataResponseTO getCuentaPlataInvocacion(AperturaCuentaPlataRequestTO cuentaPlataRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public AperturaCuentaPlataResponseTO getCuentaPlataContrato(AperturaCuentaPlataRequestTO cuentaPlataRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public AperturaCuentaPlataResponseTO getCuentaPlataAceptarContrato(AperturaCuentaPlataRequestTO cuentaPlataRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public AperturaCuentaPlataResponseTO getCuentaPlataEnvioDatos(AperturaCuentaPlataRequestTO cuentaPlataRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public AperturaCuentaPlataResponseTO getCuentaPlataEjecutar(AperturaCuentaPlataRequestTO cuentaPlataRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public ConsultaTransferenciasResponseTO findDetalleHistoricoTransferencias(ConsultaTransferenciasRequestTO consultaTransferenciasRequestTO)throws SessionExpiredException, TransferenciasException, EliteDataException;
+	
+	public FrecuentesResponseTO setConsultaCuentasFrecuentesTarjetasOtrosBancos(FrecuentesRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesResponseTO setAgregaCuentasFrecuentesTarjetasOtrosBancos(FrecuentesRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesResponseTO iniciarEditarEliminarCuentasFrecuentesTarjetasOtrosBancos(FrecuentesRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesResponseTO ejecutarEditarEliminarCuentasFrecuentesTarjetasOtrosBancos(FrecuentesRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesResponseTO setConsultaCuentasFrecuentesTiempoAire(FrecuentesRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	//nuevo referencias frecuentes tiempo aire
+	public FrecuentesTiempoAireResponseTO referenciasFrecuentesTiempoAireInit(FrecuentesTiempoAireRequestTO frecuentesTiempoAireRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesTiempoAireResponseTO setAgregaReferenciasFrecuentesTiempoAire(FrecuentesTiempoAireRequestTO frecuentesTiempoAireRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesTiempoAireResponseTO setBorraReferenciasFrecuentesTiempoAireValidacion(FrecuentesTiempoAireRequestTO frecuentesTiempoAireRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesTiempoAireResponseTO setBorraReferenciasFrecuentesTiempoAireEjecucion(FrecuentesTiempoAireRequestTO frecuentesTiempoAireRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesTiempoAireResponseTO setModificaReferenciasFrecuentesTiempoAireValidacion(FrecuentesTiempoAireRequestTO frecuentesTiempoAireRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesTiempoAireResponseTO setModificaReferenciasFrecuentesTiempoAireEjecucion(FrecuentesTiempoAireRequestTO frecuentesTiempoAireRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	//nuevo referencias frecuentes tiempo aire	
+	
+	public ERecibosNominaResponseTO liberaERecibosNominaInit(ERecibosNominaRequestTO eRecibosNominaRequestTO) throws CuentasException, SessionExpiredException, EliteDataException;
+	
+	public ERecibosNominaResponseTO liberaERecibosNominaDetalle(ERecibosNominaRequestTO eRecibosNominaRequestTO) throws CuentasException, SessionExpiredException, EliteDataException;
+	
+	public ERecibosNominaResponseTO liberaERecibosNominaEjecutar(ERecibosNominaRequestTO eRecibosNominaRequestTO) throws CuentasException, SessionExpiredException, EliteDataException;
+	
+	public CreditosResponseTO detailOtherCredits(CreditosRequestTO creditosRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public PagoServiciosMaxiGasResponseTO setInitialMaxiGasPayment(PagoServiciosMaxiGasRequestTO pagoServiciosMaxiGasRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public PagoServiciosMaxiGasResponseTO setDataMaxiGasPayment(PagoServiciosMaxiGasRequestTO pagoServiciosMaxiGasRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public PagoServiciosMaxiGasResponseTO setConfimMaxiGasPayment(PagoServiciosMaxiGasRequestTO pagoServiciosMaxiGasRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public LockUnlockCardsResponseTO informacionBloquearDesbloquear(LockUnlockCardsRequestTO lockUnlockCardsRequestTO) 
+	throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public LockUnlockCardsResponseTO aceptarCardBlocking(LockUnlockCardsRequestTO lockUnlockCardsRequestTO)
+	throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public CambioNipResponseTO getMediosPagoInvocation(CambioNipRequestTO cambioNipRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	public DisposicionEfectivoCajeroResponseTO getEjecucionDisposicionEfectivoCajero(DisposicionEfectivoCajeroRequestTO cajeroRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	public DisposicionEfectivoCajeroResponseTO getSolicitudDisposicionEfectivoCajero(DisposicionEfectivoCajeroRequestTO cajeroRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	public DisposicionEfectivoCajeroResponseTO getValidacionDisposicionEfectivoCajero(DisposicionEfectivoCajeroRequestTO cajeroRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+	public CambioNipResponseTO getNipChangeInvocation(CambioNipRequestTO cambioNipRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public CambioNipResponseTO setNipChangeExecution(CambioNipRequestTO cambioNipRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public CambioNipResponseTO setNipChangeConfirmation(CambioNipRequestTO cambioNipRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public LoginResponseTO getOnDemandDetailAccounts(LoginRequestTO loginRequestTO)throws EJBException, LoginException, SessionExpiredException, UsuarioException, EliteDataException;
+	
+	public EstadoCuentaResponseTO estadoCuentaGetCuentas(EstadoCuentaRequestTO estadoCuentaRequestTO)throws CuentasException, SessionExpiredException, EliteDataException;
+	
+	public EstadoCuentaResponseTO estadoCuentaSeleccionaCuenta(EstadoCuentaRequestTO estadoCuentaRequestTO)throws CuentasException, SessionExpiredException, EliteDataException;
+	
+	public EstadoCuentaResponseTO estadoCuentaEjecutar(EstadoCuentaRequestTO estadoCuentaRequestTO)throws CuentasException, SessionExpiredException, EliteDataException;
+	
+	public PagoServicioAztecaWebResponseTO setInitialAztecaWebPayment(PagoServicioAztecaWebRequestTO pagoServicioAztecaWebRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException ;
+	
+	public PagoServicioAztecaWebResponseTO setDataAztecaWebPayment(PagoServicioAztecaWebRequestTO pagoServicioAztecaWebRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException ;
+	
+	public PagoServicioAztecaWebResponseTO setConfimAztecaWebPayment(PagoServicioAztecaWebRequestTO pagoServicioAztecaWebRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException ;
+	
+	public PagoServiciosAvicolaResponseTO setInitialAvicolaPayment(PagoServiciosAvicolaRequestTO pagoServiciosAvicolaRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+    public PagoServiciosAvicolaResponseTO setDataAvicolaPayment(PagoServiciosAvicolaRequestTO pagoServiciosAvicolaRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+    public PagoServiciosAvicolaResponseTO setConfirmAvicolaPayment(PagoServiciosAvicolaRequestTO pagoServiciosAvicolaRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+    
+    public CuentasFrecuentesResponseTO getModificaDatosCuentaFrecuentesTraspasos(CuentasFrecuentesRequestTO cuentasFrecuentesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+
+    public CuentasFrecuentesResponseTO setModificaDatosCuentaFrecuentesTraspasosConf(CuentasFrecuentesRequestTO cuentasFrecuentesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+	public void setGuardaModificaCuentaFrecuentesTraspasos(CuentasFrecuentesRequestTO cuentasFrecuentesRequestTO) throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+    
+    public MisFinanzasResponseTO invokeMisFinanzas(BalanceRequestTO balanceRequestTO)throws EJBException, CuentasException, SessionExpiredException, EliteException, EliteDataException;
+    
+	public MisFinanzasResponseTO consultarMisFinanzas(BalanceRequestTO balanceRequestTO)throws EJBException, CuentasException, SessionExpiredException, EliteException, EliteDataException;
+	
+	public MisFinanzasResponseTO invokeMisFinanzasGrafica(BalanceRequestTO balanceRequestTO)throws EJBException, CuentasException, SessionExpiredException, EliteException, EliteDataException;
+	
+	public DonativosResponseTO setInitialDonativo(DonativosRequestTO donativosRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public DonativosResponseTO setDataDonativo(DonativosRequestTO donativosRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public DonativosResponseTO setConfirmDonativo(DonativosRequestTO donativosRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public LlaveSeguridadResponseTO obtenerLlaveSeguridad(LlaveSeguridadRequestTO llaveSeguridadRequestTO) throws EJBException, UsuarioException, EliteDataException;
+	
+	public Boolean validaHuella(HuellaDigitalTO huellaDigitalTO) throws EJBException, UsuarioException;
+	
+	public boolean validaToken(TokenTO tokenTO) throws SessionExpiredException, EliteDataException, UsuarioException;
+
+	public ActivarCuentaExpressResponseTO activacionExpressInicio(ActivarCuentaExpressRequestTO activarCuentaTO) throws UsuarioException, SessionExpiredException, EliteDataException;
+
+	public ActivarCuentaExpressResponseTO activacionExpressValidacion(ActivarCuentaExpressRequestTO activarCuentaTO) throws UsuarioException, SessionExpiredException, EliteDataException;
+	
+	public BibliotecaRecibosTO getServiciosBibliotecaRecibos(BibliotecaRecibosRequestTO user) throws SessionExpiredException, UsuarioException, EliteDataException;
+	public BibliotecaRecibosTO getBibliotecaRecibos(BibliotecaRecibosRequestTO bibliotecaRecibosRequestTO) throws SessionExpiredException, UsuarioException, EliteDataException;
+	public BibliotecaRecibosTO getDatosPDFBibliotecaRecibos(BibliotecaRecibosRequestTO user) throws SessionExpiredException, UsuarioException, EliteDataException;
+
+	
+	public void setParameterOnEBankSession(ParameterOnSessionTO onSessionTO) throws SessionExpiredException, URISyntaxException, HttpException, IOException, EJBException, UsuarioException;
+	
+	public BeneficiarioDineroExpressResponseTO setDataEnvioDineroExpressAltaFrecuente(BeneficiarioDineroExpressRequestTO donativosRequestTO) throws PagoServiciosException, SessionExpiredException,EliteDataException;
+	public BeneficiarioDineroExpressResponseTO setEnvioDineroExpressAltaFrecuenteEjecutar(BeneficiarioDineroExpressRequestTO donativosRequestTO) throws PagoServiciosException, SessionExpiredException,EliteDataException;
+	public BeneficiarioDineroExpressResponseTO setEnvioDineroExpressConsultarFrecuentesEjecutar(BeneficiarioDineroExpressRequestTO donativosRequestTO) throws PagoServiciosException, SessionExpiredException,EliteDataException;
+	
+	public MovimientosCuentasInversionTO getMovimientosCuentasInversion(MovimientosCuentaInversionRequest movimientosCuentaInversionRequest) throws EJBException, CuentasException, SessionExpiredException;
+		
+	public ChequeraPreaperturaResponseTO getChequeraSolicitud(ChequeraPreaperturaRequestTO chequeraRequestTO)throws EJBException, CuentasException, SessionExpiredException, EliteDataException;
+	
+public EnvioDineroExpressResponseTO envioDineroExpressInicio(EnvioDineroExpressRequestTO dineroExpressRequestTO) throws EJBException, PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public EnvioDineroExpressResponseTO envioDineroExpressValidacion(EnvioDineroExpressRequestTO dineroExpressRequestTO) throws EJBException, PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public EnvioDineroExpressResponseTO envioDineroExpressEjecucion(EnvioDineroExpressRequestTO dineroExpressRequestTO) throws EJBException, PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public EnvioDineroExpressResponseTO envioDineroExpressEstados(EnvioDineroExpressRequestTO dineroExpressRequestTO) throws EJBException, PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public EnvioDineroExpressResponseTO envioDineroExpressCiudades(EnvioDineroExpressRequestTO dineroExpressRequestTO) throws EJBException, PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public EnvioDineroExpressResponseTO envioDineroExpressAgentes(EnvioDineroExpressRequestTO dineroExpressRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	public EnvioDineroExpressResponseTO envioDineroExpressSucursal(EnvioDineroExpressRequestTO dineroExpressRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+		
+	public EnvioDineroExpressResponseTO enviaCorreoConfirmacionDineroExpress(EnvioDineroExpressRequestTO requestTO)throws SessionExpiredException,EliteDataException,PagoServiciosException;
+	
+	public EnvioDineroExpressResponseTO envioDineroExpressCalculoComision(EnvioDineroExpressRequestTO dineroExpressRequestTO) throws EJBException, PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public EstatusCuentaResponseTO getCuentasUsuarioStatus(EstatusCuentaRequestTO statusCuentaRequestTO) throws EJBException, UsuarioException, DAOException, SessionExpiredException, EliteDataException;
+	
+	public FiltroCuentaResponseTO filtraCuentasOcultas(FiltroCuentaRequestTO filtroCuentaRequestTO) throws EJBException, UsuarioException, DAOException, SessionExpiredException, EliteDataException;
+	
+	public EstatusCuentaResponseTO getCambiarEstatus(EstatusCuentaRequestTO statusCuentaRequestTO) throws EJBException, UsuarioException, DAOException, SessionExpiredException, EliteDataException;
+
+	public PreguntasFrecuentesResponseTO getPreguntasFrecuentes() throws EJBException, UsuarioException, SessionExpiredException, EliteDataException, IOException, XmlDecodeException;
+	
+	public PagoServiciosParametrizableResponseTO setInitialParametrizablePayment(PagoServiciosParametrizableRequestTO parametrizableRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public PagoServiciosParametrizableResponseTO setDataParametrizablePayment(PagoServiciosParametrizableRequestTO parametrizableRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public PagoServiciosParametrizableResponseTO setConfirmParametrizablePayment(PagoServiciosParametrizableRequestTO parametrizableRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public Conciliacion_ResponseTO conciliacionOperacionesMercadoDinero(ConciliacionRequestTO conciliacionRequestTO) throws EJBException,InversionesGenericException, SessionExpiredException, EliteDataException;
+
+	public ReportosEstadoCuentaResponseTO estadoCuentaMercadoDineroEjecucion(ReportosEstadoCuentaRequestTO requestTO) throws EJBException,InversionesGenericException, SessionExpiredException, EliteDataException ;
+	
+	public RastreoPedidoResponseTO rastreoPedido(RastreoPedidoRequestTO rastreoPedidoRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException;
+	
+	public BloqueoFirmaResponseTO solicitaBloqueoToken(BloqueoFirmaRequestTO bloqueoFirmaRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException ;
+
+	public BloqueoFirmaResponseTO validaBloqueoToken(BloqueoFirmaRequestTO bloqueoFirmaRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException ;
+	
+	public BloqueoFirmaResponseTO ejecutaBloqueoToken(BloqueoFirmaRequestTO bloqueoFirmaRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException ;
+	
+	public ActivacionFirmaResponseTO solicitudActivacionFirma(ActivacionFirmaRequestTO activacionFirmaRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException ;
+	
+	public ActivacionFirmaResponseTO validacionActivacionFirma(ActivacionFirmaRequestTO activacionFirmaRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException ;
+	
+	public ActivacionFirmaResponseTO ejecucionActivacionFirma(ActivacionFirmaRequestTO activacionFirmaRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException ;
+
+	public SolicitudDispositivoResponseTO setInitialSolicitudDispositivo(SolicitudDispositivoRequestTO solicitudDispositivoRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException;
+	
+	public SolicitudDispositivoResponseTO setCuentaSolicitudDispositivo(SolicitudDispositivoRequestTO solicitudDispositivoRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException ;
+	
+	public SolicitudDispositivoResponseTO setDataSolicitudDispositivo(SolicitudDispositivoRequestTO solicitudDispositivoRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException;
+	
+	public SolicitudDispositivoResponseTO setConfirmSolicitudDispositivo(SolicitudDispositivoRequestTO solicitudDispositivoRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException;
+	
+	public SincronizacionFirmaResponseTO solicitaSincronizaFirma(SincronizacionFirmaRequestTO sincronizacionFirmaRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException ;
+	
+	public SincronizacionFirmaResponseTO validaSincronizaFirma(SincronizacionFirmaRequestTO sincronizacionFirmaRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException ;
+	
+	public SincronizacionFirmaResponseTO ejecutaSincronizaFirma(SincronizacionFirmaRequestTO sincronizacionFirmaRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException ;
+	
+	public SolicitudDispositivoResponseTO getCatalogoEstadosDispositivos(SolicitudDispositivoRequestTO solicitudDispositivoRequestTO) throws EJBException, DispositivoException, SessionExpiredException, EliteDataException;
+	
+	public void insertaUsuarios(UsuariosTO usuarios) throws EJBException, UsuarioException;
+	
+	public void insertMapa(Integer idMapa,Integer idTracking,String campo,String valor) throws EJBException, UsuarioException;
+	
+	public void insertaUsuarioOperacion(UsuarioOperacionesTO usuarioOperacion) throws EJBException, UsuarioException;
+				
+	public Integer getIdUsuarioOperacion(String userName,String aplicacion) throws EJBException, UsuarioException;
+	
+	public Integer getIdTracking(String idUsuarioOperacion) throws EJBException, UsuarioException;
+	
+	public Integer getIdUsuario(String userName,String aplicacion) throws EJBException, UsuarioException;
+	
+	public void insertXml(DetalleMonitoreoTO detalle) throws EJBException, UsuarioException;
+	
+	public void insertError(UsuarioOperacionesTO usuarioOperacion,DetalleMonitoreoTO detalle) throws EJBException, UsuarioException;
+	
+	//nuevo reportes
+	
+	public MonitoreoResponseTO getTotalUsuariosAplicacion(ConsultaMonitoreoRequestTO requestTO)throws EJBException, UsuarioException, EliteDataException;
+	
+	public MonitoreoResponseTO getUsuariosAplicacion(ConsultaMonitoreoRequestTO requestTO)throws EJBException, UsuarioException, EliteDataException;
+	
+	public MonitoreoResponseTO getTotalOperacionesByUsuarios(ConsultaMonitoreoRequestTO requestTO)throws EJBException, UsuarioException, EliteDataException;
+	
+	public MonitoreoResponseTO getTrackingUsuariosAplicacion(ConsultaMonitoreoRequestTO requestTO)throws EJBException, UsuarioException, EliteDataException;
+	
+	public MonitoreoResponseTO getOperacionMonto(ConsultaMonitoreoRequestTO requestTO)throws EJBException, UsuarioException, EliteDataException;
+	
+	public MonitoreoResponseTO getAllTotalUsuariosAplicacion()throws EJBException, UsuarioException, EliteDataException;
+	
+	public MonitoreoResponseTO getAllUsuariosAplicacion()throws EJBException, UsuarioException, EliteDataException;
+	
+	public MonitoreoResponseTO getAllTotalOperaByUser()throws EJBException, UsuarioException, EliteDataException;
+	
+	public MonitoreoResponseTO getAllTrackingUserAplica()throws EJBException, UsuarioException, EliteDataException;
+	
+	//termina nuevos reportes
+
+		
+	public MonitoreoResponseTO getTotalUsuariosPorAplicacion(ConsultaMonitoreoRequestTO requestTO)throws EJBException, UsuarioException, EliteDataException;
+	
+	public MonitoreoResponseTO getUsuariosPorAplicacion(ConsultaMonitoreoRequestTO requestTO)throws EJBException, UsuarioException, EliteDataException;
+	
+	public MonitoreoResponseTO getTrackingUsuariosPorAplicacion(ConsultaMonitoreoRequestTO requestTO)throws EJBException, UsuarioException, EliteDataException;
+	
+	public MonitoreoResponseTO getTotalOperacionesUsuarios(ConsultaMonitoreoRequestTO requestTO)throws EJBException, UsuarioException, EliteDataException;
+		
+	public MonitoreoResponseTO getTotalConexionesUsuarios(ConsultaMonitoreoRequestTO requestTO)throws EJBException, UsuarioException, EliteDataException;
+
+	public void insertaUsuariosAdministrador(MonitoreoAdministradorRequestTO administradorRequestTO)throws EJBException, UsuarioException;
+	
+	public MonitoreoAdministradorResponseTO validarUsuarioAdministrador(MonitoreoAdministradorRequestTO administradorRequestTO) throws EJBException, UsuarioException;
+
+//	TODO LOGICA DE INSERCION HACIA MONITOREO PAUL
+
+	public MonitoreoResponseTO getDatosMonitoreoPorUsuario(ConsultaMonitoreoRequestTO monitoreoRequestTO)throws EJBException, UsuarioException;
+
+	public MonitoreoResponseTO getDatosMonitoreoPorAplicacion(ConsultaMonitoreoRequestTO monitoreoRequestTO)throws EJBException, UsuarioException;
+
+	public ActualizaDatosResponseTO getInitialActualizaDatos(ActualizaDatosRequestTO datosUsuarioRequestTO) throws EJBException, UsuarioException, EliteDataException, SessionExpiredException;
+	
+	public ActualizaDatosResponseTO getActualizaDatos(ActualizaDatosRequestTO datosUsuarioRequestTO) throws EJBException, UsuarioException, EliteDataException, SessionExpiredException;
+	
+	public ActualizaDatosResponseTO getEjecutaActualizaDatos(ActualizaDatosRequestTO datosUsuarioRequestTO) throws EJBException, UsuarioException, EliteDataException, SessionExpiredException;
+	
+	public ChangePasswordResponseTO getInitialCambiarContrasena(ChangePaswordRequestTO cambiarContrasenaRequestTO) throws EJBException, UsuarioException, EliteDataException, SessionExpiredException;
+
+	public ChangePasswordResponseTO getEjecutaCambiarContrasena(ChangePaswordRequestTO cambiarContrasenaRequestTO) throws EJBException, UsuarioException, EliteDataException, SessionExpiredException;
+	
+	public PagoServiciosToditoCardResponseTO getInitialToditoCard(PagoServiciosToditoCardRequestTO toditoCardRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	
+//Pago de Tarjeta Azteca
+	
+	public PagoTarjetaAztecaResponseTO solicitudPagoTarjetaAzteca(PagoTarjetaAztecaRequestTO pagoTarjetaAztecaRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	public PagoTarjetaAztecaResponseTO validacionPagoTarjetaAzteca(PagoTarjetaAztecaRequestTO pagoTarjetaAztecaRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	public PagoTarjetaAztecaResponseTO confirmacionPagoTarjetaAzteca(PagoTarjetaAztecaRequestTO pagoTarjetaAztecaRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	//Alta y edicion de Cuentas Frecuentes para Pago de Tarjeta Azteca
+	
+	public FrecuentesAztecaResponseTO AgregaCuentasFrecuentesTarjetasAzteca(FrecuentesAztecaRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesAztecaResponseTO iniciarEditarCuentasFrecuentesTarjetasAzteca(FrecuentesAztecaRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesAztecaResponseTO ejecutarEditarCuentasFrecuentesTarjetasAzteca(FrecuentesAztecaRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	
+	//Validacion de alta y edicion para mandar la huella y el token
+	
+	public FrecuentesAztecaResponseTO validarAltaCuentasFrecuentes(FrecuentesAztecaRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesAztecaResponseTO validarEdicionCuentasFrecuentes(FrecuentesAztecaRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	//Envio de email pago de tarjeta Azteca
+	
+	public PagoTarjetaAztecaResponseTO envioMail(PagoTarjetaAztecaRequestTO pagoTarjetaAztecaRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	//Consulta de Cuentas Frecuentes para Pago de Tarjeta Azteca
+	
+	public FrecuentesAztecaResponseTO consultaCuentasFrecuentesTarjetasAzteca(FrecuentesAztecaRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	
+	//Eliminacion de Tarjetas Frecuentes en Pago de Tarjeta Azteca
+		
+	public FrecuentesAztecaResponseTO iniciarEliminarCuentasFrecuentesTarjetasAzteca(FrecuentesAztecaRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+	
+	public FrecuentesAztecaResponseTO ejecutarEliminarCuentasFrecuentesTarjetasAzteca(FrecuentesAztecaRequestTO frecuentesRequestTO) throws PagoServiciosException, SessionExpiredException, EliteDataException;
+
+	
+	//Consulta de Carta Informativa de Retenciones Socio Plus
+	
+	public RetencionesResponseTO consultarCartaRetenciones(RetencionesRequestTO retencionesRequestTO) throws CuentasException, SessionExpiredException, EliteDataException;
+
+	//Consulta de Movimientos por Fechas
+	
+	public BalanceResponseTO consultarMovimientosFecha(BalanceRequestTO balanceRequestTO) throws CuentasException, SessionExpiredException, EliteDataException;
+	
+	//Consulta de Movimientos por fecha para Cuentas de Nomina y Guardadito
+	
+	public BalanceResponseTO consultarMovimientosFechaOtrasCuentas(BalanceRequestTO balanceRequestTO) throws CuentasException, SessionExpiredException, EliteDataException;
+
+	//localiza tu sucursal
+	public LocalizaSucursalResponseTO getObtieneEstados(LocalizaSucursalRequestTO localizaSucursalRequestTO) throws EJBException, UsuarioException, SessionExpiredException, EliteDataException;
+	
+	public LocalizaSucursalResponseTO getObtieneMunicipios(LocalizaSucursalRequestTO localizaSucursalRequestTO) throws EJBException, UsuarioException, SessionExpiredException, EliteDataException;
+	
+	public LocalizaSucursalResponseTO getObtieneTienda(LocalizaSucursalRequestTO localizaSucursalRequestTO) throws EJBException, UsuarioException, SessionExpiredException, EliteDataException;
+	
+	public LocalizaSucursalResponseTO getObtieneTiendaCP(LocalizaSucursalRequestTO localizaSucursalRequestTO) throws EJBException, UsuarioException, SessionExpiredException, EliteDataException;
+	
+	public LocalizaSucursalResponseTO getObtieneTiendaPalabra(LocalizaSucursalRequestTO localizaSucursalRequestTO) throws EJBException, UsuarioException, SessionExpiredException, EliteDataException;
+	
+	public LocalizaSucursalResponseTO getObtieneTiendas(LocalizaSucursalRequestTO localizaSucursalRequestTO) throws EJBException, UsuarioException, SessionExpiredException, EliteDataException;
+	//localiza tu sucursal
+	
+	//altas usuarios
+	public void consultarCuentaActivar(AltasUsuariosRequestTO requestTO) throws UsuarioException,SessionExpiredException, EliteDataException;
+	
+	public void validarDatosActivar(AltasUsuariosRequestTO requestTO) throws UsuarioException,SessionExpiredException, EliteDataException;
+	
+	public void validarContrato(AltasUsuariosRequestTO requestTO) throws UsuarioException,SessionExpiredException, EliteDataException;
+	
+	public void consultarUsuarioDisponible(AltasUsuariosRequestTO requestTO) throws UsuarioException,SessionExpiredException, EliteDataException;
+	
+	public void registrarUsuario(AltasUsuariosRequestTO requestTO) throws UsuarioException,SessionExpiredException, EliteDataException;
+	
+	public void activarUsuario(AltasUsuariosRequestTO requestTO) throws UsuarioException,SessionExpiredException, EliteDataException;
+	
+	//fin altas usuarios
+	//operaciones frecuentes
+	public OperacionesFrecuentesResponseTO setDatosOperacionesFrecuentes(OperacionesFrecuentesRequestTO operacionesFrecuentesRequestTO) throws SessionExpiredException, UsuarioException, EliteDataException;
+	
+	public OperacionesFrecuentesResponseTO getDatosOperacionesFrecuentes(OperacionesFrecuentesRequestTO operacionesFrecuentesRequestTO) throws SessionExpiredException, UsuarioException, EliteDataException;
+	
+	public OperacionesFrecuentesResponseTO eliminaDatosOperacionesFrecuentes(OperacionesFrecuentesRequestTO operacionesFrecuentesRequestTO) throws SessionExpiredException, UsuarioException, EliteDataException;
+	//operaciones frecuentes
+
+	public TransferenciasSpeiResponseTO insertaSpei30(SpeiProgramadoRequestTO speiRequestTO) throws  CuentasException, SessionExpiredException, EliteDataException, EJBException, TransferenciasException;
+	
+	public TerminalAlnovaResponseTO obtieneTerminalAlnova(String user) throws EJBException, UsuarioException, SessionExpiredException, DAOException;
+	
+	public void liberaTerminalAlnova(String user,String terminal) throws SessionExpiredException,DAOException, EJBException, UsuarioException;
+	
+	//  web service foto unica
+	public FotoUnicaResponseTO consultaFotoUnica(FotoUnicaRequestTO fotoUnicaRequestTO)throws SessionExpiredException, UsuarioException, EliteDataException;
+	//	web service foto unica
+	
+	//consulta express
+	public ConsultaExpressResponseTO consultarCuentaExpress(ConsultaExpressRequestTO requestTO) throws UsuarioException,SessionExpiredException, EliteDataException;
+	
+	public ConsultaExpressResponseTO validarCuentaExpress(ConsultaExpressRequestTO requestTO) throws UsuarioException,SessionExpiredException, EliteDataException;
+	
+	public ConsultaExpressResponseTO cerrarCuentaExpress(ConsultaExpressRequestTO requestTO) throws UsuarioException,SessionExpiredException, EliteDataException;
+	
+	public ConsultaExpressResponseTO getRecibosCuentaExpress(ConsultaExpressRequestTO requestTO) throws UsuarioException,SessionExpiredException, EliteDataException;
+	
+}

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/META-INF
+END
+MANIFEST.MF
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/META-INF/MANIFEST.MF
+END
+ejb-jar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/META-INF/ejb-jar.xml
+END
+sun-ejb-jar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/META-INF/sun-ejb-jar.xml
+END

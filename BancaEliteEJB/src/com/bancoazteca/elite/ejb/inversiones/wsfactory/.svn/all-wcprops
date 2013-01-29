@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/wsfactory
+END
+InversionesConnector.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/wsfactory/InversionesConnector.java
+END
+WSConnectionFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/wsfactory/WSConnectionFactory.java
+END
+WSFactoryInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/wsfactory/WSFactoryInterface.java
+END
+EjecutaTransaccion.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/wsfactory/EjecutaTransaccion.java
+END
+ReportosWS.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/wsfactory/ReportosWS.java
+END
+WebServiceInterfaceFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/wsfactory/WebServiceInterfaceFactory.java
+END
+Servicio_ConexionSoap.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/wsfactory/Servicio_ConexionSoap.java
+END
+WebServiceConnector.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/wsfactory/WebServiceConnector.java
+END
+TasMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/wsfactory/TasMain.java
+END

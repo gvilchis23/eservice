@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<response>
+			<data_service>
+				<cuentas>
+					<colleccion_cuentas>
+						<cuenta>
+							<producto value="13" />
+							<retenido value="0.0" />
+							<saldo value="200.28" />
+							<numeroCuenta value="01270172411317660493" />
+							<disponible value="200.28" />
+							<cuentaClabe value="127180013176604939" />
+						</cuenta>
+					</colleccion_cuentas>
+				</cuentas>
+			</data_service>
+			<status>
+				<idservicio value="saldos" />
+				<mensaje_interno />
+				<mensaje value="OK" />
+				<idsesion
+					cipher="FM4YzbJJQvROAODk89J8pq9su+YSRekdkI8npxUDAkE=" />
+				<codigo value="0" />
+			</status>
+		</response>
+	</eservices>
+</bancoazteca>

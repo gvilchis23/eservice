@@ -1,0 +1,3 @@
+bd.jndi=java:DBINVERSIONES
+bd.usuario=USR_BANCAELITE
+bd.esquema=BANCAELITE

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/75/eServiceWeb/src/com/bancoazteca/eservice/command/mediospago/alertaCelular
+END
+AlertaCelularEliminarCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/mediospago/alertaCelular/AlertaCelularEliminarCommand.java
+END
+AlertaCelularForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/mediospago/alertaCelular/AlertaCelularForm.java
+END
+AlertaCelularActivarCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/eService/!svn/ver/75/eServiceWeb/src/com/bancoazteca/eservice/command/mediospago/alertaCelular/AlertaCelularActivarCommand.java
+END
+AlertaCelularModificarCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/mediospago/alertaCelular/AlertaCelularModificarCommand.java
+END

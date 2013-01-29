@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/eService/!svn/ver/43/eServiceWeb/src/com/bancoazteca/eservice/validator
+END
+MessageResources.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/validator/MessageResources.java
+END
+MessageErrors.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/validator/MessageErrors.java
+END
+CommandErrorHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/validator/CommandErrorHandler.java
+END
+Errors.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/eService/!svn/ver/111/eServiceWeb/src/com/bancoazteca/eservice/validator/Errors.java
+END

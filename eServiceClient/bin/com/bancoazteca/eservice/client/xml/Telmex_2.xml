@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idsesion cipher="LmVv3+cH52o" />
+			<idservicio value="PAGO_SERVICIO" />
+			<tipo_operacion value="TELMEX" />
+			<comando value="VALIDACION" />
+			<numero_telefonico value="5551206369" />
+			<digito_verificacdor value="8" />
+			<cuenta_cargo value="17201814369875" />
+			<importe value="100.00" />
+			<concepto_pago value="Telmex Telefonia Local" />
+		</request>
+	</eservices>
+</bancoazteca>

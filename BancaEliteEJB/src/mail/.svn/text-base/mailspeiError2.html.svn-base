@@ -1,0 +1,105 @@
+<table width='500' border='0' cellpadding='0' cellspacing='0'>
+	<tr>
+		<td align='center'>
+			<img src='cid:imagenH'>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br>
+			<strong>
+				<font size='2' face='Verdana, Arial, Helvetica, sans-serif'>Ha ocurrido un error en SPEI programadas</font>
+			</strong>
+		</td>
+	</tr>
+	<tr>
+		<br>
+		<br>
+	</tr>
+</table>
+
+<table width='500' border='0'>
+	<tr>
+		<td colspan='2'>
+			<font size='2' face='Verdana, Arial, Helvetica, sans-serif'></font>
+			<br>
+			<br>
+		</td>
+	</tr>
+	<tr>
+		<td width='44%'>
+			<font size='2' face='Verdana, Arial, Helvetica, sans-serif'>Funci&oacute;n :</font>
+		</td>
+		<td width='56%'>
+			<strong>
+				<font size='2' face='Verdana, Arial, Helvetica, sans-serif'>#FUNCION#</font>
+			</strong>
+		</td>
+	</tr>
+	<tr>
+		<td width='44%'>
+			<font size='2' face='Verdana, Arial, Helvetica, sans-serif'>SPEI :</font>
+		</td>
+		<td width='56%'>
+			<strong>
+				<font size='2' face='Verdana, Arial, Helvetica, sans-serif'>#SPEI#</font>
+			</strong>
+		</td>
+	</tr>
+	<tr>
+		<td width='44%'>
+			<font size='2' face='Verdana, Arial, Helvetica, sans-serif'>Hora :</font>
+		</td>
+		<td width='56%'>
+			<strong>
+				<font size='2' face='Verdana, Arial, Helvetica, sans-serif'>#FECHA#</font>
+			</strong>
+		</td>
+	</tr>
+	<tr>
+		<td colspan='2'>
+			<hr color='AB1520' size='0'>
+		</td>
+		<td colspan='2'>&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan='2'>
+			<br>
+			#ERROR#
+		</td>
+	</tr>
+	<tr rowspan='2'>
+		<td colspan='2'>&nbsp;</td>
+	</tr>
+</table>
+
+<table width='500' border='0' cellpadding='0' cellspacing='0'>
+	<tr>
+		<td colspan='2'>
+			<hr color='AB1520' size='0'>
+		</td>
+	</tr>
+	<tr>
+		<td colspan='2'>
+			<font size='1' face='Verdana, Arial, Helvetica, sans-serif'>
+				Este correo se constituye como una referencia de los t&eacute;rminos 
+				en que la operaci&oacute;n se realiz&oacute;, el &uacute;nico comprobante 
+				oficial es el estado de cuenta que emite
+				Banco Azteca S.A.
+				<br><br>
+				Favor de no reenviar este documento.
+			</font>
+		</td>
+	</tr>
+</table>
+
+<table width='500' border='0' cellpadding='0' cellspacing='0'>
+	<tr>
+		<td align='center'>
+			<img src='cid:imagenF'>
+		</td>
+	</tr>
+	<tr>
+		<br><br>
+	</tr>
+</table>

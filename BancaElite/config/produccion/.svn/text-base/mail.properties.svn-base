@@ -1,0 +1,4 @@
+#Properties para el envio de correo de SPEI programado por media hora.
+mail.smtp.host=10.63.200.79
+mail.from="Banca por Internet" <bancaporinternet@bancoazteca.com.mx>
+mail.smtp.connectiontimeout=5000

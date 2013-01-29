@@ -1,0 +1,3 @@
+bd.jndi=java:DBCUENTAS
+bd.usuario=USR_WAPE
+bd.esquema=RMOVILAZT

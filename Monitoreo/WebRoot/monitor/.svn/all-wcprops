@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/eService/!svn/ver/18/Monitoreo/WebRoot/monitor
+END
+listaOperacionesRealizadas.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/eService/!svn/ver/13/Monitoreo/WebRoot/monitor/listaOperacionesRealizadas.jsp
+END
+totalConexionesUsuario.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/eService/!svn/ver/13/Monitoreo/WebRoot/monitor/totalConexionesUsuario.jsp
+END
+UsuariosporAplicacion.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/eService/!svn/ver/13/Monitoreo/WebRoot/monitor/UsuariosporAplicacion.jsp
+END
+listaUsuariosRegistrados.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/eService/!svn/ver/13/Monitoreo/WebRoot/monitor/listaUsuariosRegistrados.jsp
+END
+seleccionMonitoreo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/eService/!svn/ver/13/Monitoreo/WebRoot/monitor/seleccionMonitoreo.jsp
+END
+listaOperacionesMonto.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/eService/!svn/ver/18/Monitoreo/WebRoot/monitor/listaOperacionesMonto.jsp
+END
+totalUsuariosAplicacion.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/eService/!svn/ver/13/Monitoreo/WebRoot/monitor/totalUsuariosAplicacion.jsp
+END
+UsuariosdiferenteAplicacion.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/eService/!svn/ver/13/Monitoreo/WebRoot/monitor/UsuariosdiferenteAplicacion.jsp
+END
+totalOperacionesUsuario.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/eService/!svn/ver/13/Monitoreo/WebRoot/monitor/totalOperacionesUsuario.jsp
+END

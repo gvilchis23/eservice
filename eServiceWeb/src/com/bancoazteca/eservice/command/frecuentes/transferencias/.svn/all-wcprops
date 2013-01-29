@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/eService/!svn/ver/94/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/transferencias
+END
+EliminarFrecuentesTransferenciasForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/transferencias/EliminarFrecuentesTransferenciasForm.java
+END
+AltaFrecuentesOtrosBancosCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/transferencias/AltaFrecuentesOtrosBancosCommand.java
+END
+ConsultaFrecuentesTransferenciasCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/eService/!svn/ver/94/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/transferencias/ConsultaFrecuentesTransferenciasCommand.java
+END
+AltaFrecuentesOtrosBancosForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/transferencias/AltaFrecuentesOtrosBancosForm.java
+END
+AltaFrecuenteInternacionalCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/transferencias/AltaFrecuenteInternacionalCommand.java
+END
+ConsultaFrecuentesTransferenciasForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/transferencias/ConsultaFrecuentesTransferenciasForm.java
+END
+ModificarFrecuentesTransferenciasCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/transferencias/ModificarFrecuentesTransferenciasCommand.java
+END
+EliminarFrecuentesTransferenciasCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/transferencias/EliminarFrecuentesTransferenciasCommand.java
+END
+AltaFrecuenteInternacionalForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/transferencias/AltaFrecuenteInternacionalForm.java
+END
+ModificarFrecuentesTransferenciasForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/transferencias/ModificarFrecuentesTransferenciasForm.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/saldos
+END
+DetallesSaldoPorCuentasCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/saldos/DetallesSaldoPorCuentasCommand.java
+END
+SaldosCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/saldos/SaldosCommand.java
+END
+DetallesSaldoPorCuentasForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/saldos/DetallesSaldoPorCuentasForm.java
+END
+SaldosCacheCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/saldos/SaldosCacheCommand.java
+END

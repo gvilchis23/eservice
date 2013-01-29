@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/eService/!svn/ver/116/BancaEliteEJB/src/com/bancoazteca/elite/ejb/usuario
+END
+UsuarioRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/eService/!svn/ver/69/BancaEliteEJB/src/com/bancoazteca/elite/ejb/usuario/UsuarioRule.java
+END
+UsuarioSLHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/usuario/UsuarioSLHome.java
+END
+UsuarioException.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/usuario/UsuarioException.java
+END
+UsuarioSL.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/eService/!svn/ver/89/BancaEliteEJB/src/com/bancoazteca/elite/ejb/usuario/UsuarioSL.java
+END
+UsuarioDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/eService/!svn/ver/68/BancaEliteEJB/src/com/bancoazteca/elite/ejb/usuario/UsuarioDAO.java
+END
+UsuarioSLBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/eService/!svn/ver/116/BancaEliteEJB/src/com/bancoazteca/elite/ejb/usuario/UsuarioSLBean.java
+END

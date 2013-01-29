@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+           
+    
+	
+    <!-- Request Beans -->
+    <bean id="altasUsuariosForm"
+    	class="com.bancoazteca.eservice.command.usuarios.altas.AltasUsuariosForm"
+    	scope="prototype" />
+    <bean id="loginForm" class="com.bancoazteca.eservice.command.login.LoginForm" scope="prototype"/>
+    <bean id="loginCacheForm" class="com.bancoazteca.eservice.command.login.LoginForm" scope="prototype" />
+    <bean id="detalleSaldosPorCuentaForm" class="com.bancoazteca.eservice.command.saldos.DetallesSaldoPorCuentasForm" scope="prototype"/>
+    <bean id="appLoginForm" class="com.bancoazteca.eservice.command.login.ApplicationLoginForm" scope="prototype"/>
+    <bean id="movimientosForm" class="com.bancoazteca.eservice.command.movimientos.MovimientosForm" scope="prototype"/>
+    <bean id="movimientosCuentaInversionForm" class="com.bancoazteca.eservice.command.movimientos.inversion.MovimientosInversionForm" scope="prototype"/>
+	<bean id="consultaFrecuentesTransferenciasForm" class="com.bancoazteca.eservice.command.frecuentes.transferencias.ConsultaFrecuentesTransferenciasForm" scope="prototype"/>  
+	<bean id="eliminarFrecuentesTransferenciasForm" class="com.bancoazteca.eservice.command.frecuentes.transferencias.EliminarFrecuentesTransferenciasForm" scope="prototype"/>
+	<bean id="modificarFrecuentesTransferenciasForm" class="com.bancoazteca.eservice.command.frecuentes.transferencias.ModificarFrecuentesTransferenciasForm" scope="prototype"/>
+	<bean id="frecuenteServiciosConsultaForm" class="com.bancoazteca.eservice.command.frecuentes.pagoservicios.FrecuenteServiciosConsultaForm" scope="prototype"/>  
+	<bean id="frecuenteServiciosAgregaForm" class="com.bancoazteca.eservice.command.frecuentes.pagoservicios.FrecuenteServiciosAgregaForm" scope="prototype"/>  
+	<bean id="frecuenteServiciosEliminaForm" class="com.bancoazteca.eservice.command.frecuentes.pagoservicios.FrecuenteServiciosEliminaForm" scope="prototype"/>  
+	<bean id="frecuenteServiciosModificaForm" class="com.bancoazteca.eservice.command.frecuentes.pagoservicios.FrecuenteServiciosModificaForm" scope="prototype"/>  
+	<bean id="altaFrecuentesOtrosBancosForm" class="com.bancoazteca.eservice.command.frecuentes.transferencias.AltaFrecuentesOtrosBancosForm" scope="prototype"/>
+	<bean id="editarEliminarPagoTarjetaOtrosBancosForm" class="com.bancoazteca.eservice.command.frecuentes.tarjeta_otrosbancos.EditarEliminarFrecuentesPagoTarjetaOtrosBancosForm" scope="prototype"/>
+	
+    <bean id="traspasosPropiasForm" class="com.bancoazteca.eservice.command.traspasos.propias.TraspasosPropiasForm" scope="prototype"/>
+    <bean id="traspasosForm" class="com.bancoazteca.eservice.command.traspasos.TraspasosForm" scope="prototype"/>
+    <bean id="transferenciaSpeiForm" class="com.bancoazteca.eservice.command.transferencias.spei.TransferenciaSpeiForm" scope="prototype"/> 
+  	<bean id="transferenciaInternacionalForm" class="com.bancoazteca.eservice.command.transferencias.internacionales.TransferenciaInternacionalForm" scope="prototype"/>
+  	<bean id="transferenciaTefForm" class="com.bancoazteca.eservice.command.transferencias.tef.TransferenciaTefForm" scope="prototype"/> 
+  	<bean id="traspasosTercerosForm" class="com.bancoazteca.eservice.command.traspasos.terceros.TraspasosTercerosForm" scope="prototype"/> 
+  	<bean id="pagoServiciosTelmexForm" class="com.bancoazteca.eservice.command.pagoservicios.telmex.PagoServiciosTelmexForm" scope="prototype"/> 
+    <bean id="recuperaPasswordForm" class="com.bancoazteca.eservice.command.recuperar_password.RecuperaPasswordForm" scope="prototype"/>
+    <bean id="pagoServiciosSkyForm" class="com.bancoazteca.eservice.command.pagoservicios.sky.PagoServiciosSkyForm" scope="prototype"/>
+    <bean id="ciudadesForm" class="com.bancoazteca.eservice.command.catalogos.CiudadesForm" scope="prototype"/>
+    <bean id="swift_AbaForm" class="com.bancoazteca.eservice.command.catalogos.Swift_AbaForm" scope="prototype"/>
+    <bean id="tiempo_aireForm" class="com.bancoazteca.eservice.command.pagoservicios.tiempoaire.Tiempo_AireForm" scope="prototype"/>
+    <bean id="pagoServicioIusacellForm" class = "com.bancoazteca.eservice.command.pagoservicios.iusacell.IusacellForm" scope="prototype"/>   
+    <bean id="altaFrecuenteInternacionalForm" class="com.bancoazteca.eservice.command.frecuentes.transferencias.AltaFrecuenteInternacionalForm" scope="prototype"/>
+    <bean id="pagoTarjetaOtrosBancos" class = "com.bancoazteca.eservice.command.pagoservicios.tarjeta_otrosbancos.PagoTarjetaOtrosBancosForm" scope="prototype"/>         
+    <bean id="altaFrecuenteTraspasosTercerosForm" class = "com.bancoazteca.eservice.command.frecuentes.traspasos.AltaFrecuenteTraspasosTercerosForm" scope="prototype"/>
+	<bean id="aperturaCuentaPlataForm" class="com.bancoazteca.eservice.command.cuentas.plata.AperturaCuentaPlataFrom" scope="prototype"/>    														         
+    <bean id="frecuentesTiempoAireForm" class="com.bancoazteca.eservice.command.frecuentes.tiempoaire.FrecuentesTiempoAireForm" scope="prototype"/>
+    <bean id="pagoServiciosMovistarForm" class="com.bancoazteca.eservice.command.pagoservicios.movistar.PagoServiciosMovistarForm" scope="prototype"/>        
+    <bean id="pagoServiciosLuzForm" class="com.bancoazteca.eservice.command.pagoservicios.luz.PagoServiciosLuzForm" scope="prototype"/>
+    <bean id="pagoservicio_maxigasForm" class="com.bancoazteca.eservice.command.pagoservicios.maxigas.PagoServiciosMaxiGasForm" scope="prototype"/> 
+    <bean id="altaFrecuentesPagoTarjetaOtrosBancosForm" class="com.bancoazteca.eservice.command.frecuentes.tarjeta_otrosbancos.AltaFrecuentesPagoTarjetaOtrosBancosForm" scope="prototype"/>
+ 	<bean id="pagoServicioAztecaWebForm" class="com.bancoazteca.eservice.command.pagoservicios.aztecaweb.PagoServicioAztecaWebForm" scope="prototype"/>
+ 	<bean id="pagoServiciosAvicolaForm" class="com.bancoazteca.eservice.command.pagoservicios.avicola.PagoServiciosAvicolaForm" scope="prototype"/>
+ 	<bean id="editarEliminarPagoTarjetaOtrosBancos" class="com.bancoazteca.eservice.command.frecuentes.tarjeta_otrosbancos.EditarEliminarFrecuentesPagoTarjetaOtrosBancosForm" scope="prototype"/>
+ 	<bean id="estadoCuentaForm" class="com.bancoazteca.eservice.command.estadocuenta.EstadoCuentaForm" scope="prototype"/>
+ 	<bean id="consultaPlazoTasaForm" class="com.bancoazteca.eservice.command.reportos.consultaPlazoTasa.ConsultaPlazoTasaForm" scope="prototype"/>
+ 	<bean id="misFinanzasForm" class="com.bancoazteca.eservice.command.misfinanzas.MisFinanzasForm" scope="prototype"/>
+  	<bean id="cuentaMercadoDineroForm" class="com.bancoazteca.eservice.command.cuentas.mercadodinero.CuentaMercadoDineroForm" scope="prototype"/>
+  	<bean id="cuentaSocioForm" class="com.bancoazteca.eservice.command.cuentas.socionomina.CuentaSocioForm" scope="prototype"/>
+  	<bean id="otrosCreditosForm" class="com.bancoazteca.eservice.command.otroscreditos.OtrosCreditosForm" scope="prototype"/> 
+  	<bean id="cuentaEjeEliteForm" class="com.bancoazteca.eservice.command.cuentas.ejeelite.CuentaEjeEliteForm" scope="prototype"/> 
+  	<bean id="cuentaSocioPlusForm" class="com.bancoazteca.eservice.command.cuentas.socioplus.CuentaSocioPlusForm" scope="prototype"/>
+  	<bean id="nivelesSeguridadForm" class="com.bancoazteca.eservice.command.nivelseguridad.NivelesSeguridadForm" scope="prototype"/> 
+  	<bean id="bloquea_TarjetaForm" class="com.bancoazteca.eservice.command.bloquea.tarjetas.Bloquea_TarjetaForm" scope="prototype"/> 
+  	<bean id="pagoTarjetaCreditoForm" class="com.bancoazteca.eservice.command.pagoservicios.pagotarjetacredito.PagoTarjetaCreditoForm" scope="prototype"/>
+  	<bean id="cambioNipForm" class="com.bancoazteca.eservice.command.mediospago.cambionip.CambioNipForm" scope="prototype"/> 
+  	<bean id="efectivoCajeroForm" class="com.bancoazteca.eservice.command.mediospago.dispocicionefectivocajero.DisposicionEfectivoCajeroForm" scope="prototype"/>
+  	
+  	<bean id="donativosForm" class="com.bancoazteca.eservice.command.donativos.DonativosForm" scope="prototype"/>
+  	<bean id="activacionexpressForm" class="com.bancoazteca.eservice.command.activacionexpress.ActivacionExpressForm" scope="prototype"/>
+  	<bean id="bibliotecaRecibosForm" class="com.bancoazteca.eservice.command.bibliotecarecibos.BibliotecaRecibosForm" scope="prototype"/>
+  	<bean id="envioMailForm" class="com.bancoazteca.eservice.command.enviomail.EnvioMailForm" scope="prototype"/>
+  	<bean id="chequeraPresolicitudForm" class="com.bancoazteca.eservice.command.chequera.presolicitud.ChequeraPresolicitudForm" scope="prototype"/>
+  	<bean id="envioDineroExpressForm" class="com.bancoazteca.eservice.command.enviodineroexpress.EnvioDineroExpressForm" scope="prototype"/>
+  	<bean id="altaFrecuentesDineroExpressForm" class="com.bancoazteca.eservice.command.frecuentes.enviodineroexpress.AltaFrecuenteDineroExpressForm" scope="prototype"/>
+  	<bean id="busquedaFrecuentesDineroExpressForm" class="com.bancoazteca.eservice.command.frecuentes.enviodineroexpress.BusquedaFrecuenteDineroExpressForm" scope="prototype"/>
+ 	<bean id="consultaFrecuentesDineroExpressForm" class="com.bancoazteca.eservice.command.frecuentes.enviodineroexpress.ConsultaFrecuenteDineroExpressForm" scope="prototype"/> 	
+ 	<bean id="catalogoEstadosDineroExpressForm" class="com.bancoazteca.eservice.command.catalogos.EstadosDineroExpresForm" scope="prototype"/>
+ 	<bean id="catalogoCiudadesDineroExpressForm" class="com.bancoazteca.eservice.command.catalogos.CiudadesDineroExpressForm" scope="prototype"/>
+ 	<bean id="catalogoAgentesDineroExpressForm" class="com.bancoazteca.eservice.command.catalogos.AgentesDineroExpressForm" scope="prototype"/>
+ 	<bean id="catalogoSucursalesDineroExpressForm" class="com.bancoazteca.eservice.command.catalogos.SucursalesDineroExpressForm" scope="prototype"/>
+ 	
+ 	<bean id="envioCorreoDineroExpressForm" class="com.bancoazteca.eservice.command.enviodineroexpress.util.EnvioCorreoDineroExpressForm" scope="prototype"/>
+ 
+    <bean id="estatusCuentasForm" class="com.bancoazteca.eservice.command.estatuscuentas.EstatusCuentasForm" scope="prototype"/>
+    <bean id="validaTokenForm" class="com.bancoazteca.eservice.command.validatoken.ValidaTokenForm" scope="prototype"/>
+    <bean id="validaHuellaForm" class="com.bancoazteca.eservice.command.validahuella.ValidaHuellaForm" scope="prototype" />
+ 	<bean id="parametrizableForm" class="com.bancoazteca.eservice.command.pagoservicios.parametrizable.ParametrizableForm" scope="prototype"/>
+
+	<bean id="loginConciliacionForm" class="com.bancoazteca.eservice.command.conciliacion.LoginConciliacionForm" scope="prototype"/>
+ 	<bean id="conciliacionForm" class="com.bancoazteca.eservice.command.conciliacion.ConciliacionForm" scope="prototype"/>
+ 	<bean id="liberarNominaForm" class="com.bancoazteca.eservice.command.liberarnomia.LiberarNominaForm" scope="prototype"/>
+ 	
+ 	<bean id="rastreoPedidoForm" class="com.bancoazteca.eservice.command.dispositivos.rastreopedido.RastreoPedidoForm" scope="prototype"/>
+ 	<bean id="solicitudDispositivoForm" class="com.bancoazteca.eservice.command.dispositivos.solicitud.SolicitudDispositivoForm" scope="prototype"/>
+ 	<bean id="sincronizacionFirmaForm" class="com.bancoazteca.eservice.command.dispositivos.firma.sincronizacion.SincronizacionFirmaForm" scope="prototype"/>
+ 	<bean id="bloqueoFirmaForm" class="com.bancoazteca.eservice.command.dispositivos.firma.bloqueo.BloqueoFirmaForm" scope="prototype"/>
+ 	<bean id="activacionFirmaForm" class="com.bancoazteca.eservice.command.dispositivos.firma.activacion.ActivacionFirmaForm" scope="prototype"/>
+ 	 	
+ 	<bean id="estadoCuentaReportosForm" class="com.bancoazteca.eservice.command.estadocuenta.mercadodinero.EstadoCuentaMercadoDineroForm" scope="prototype"/>
+ 
+    <!-- CHEQUERA -->
+ 	<bean id="liberacionChequesForm" class="com.bancoazteca.eservice.command.chequera.liberacion.LiberacionChequesForm" scope="prototype"/>
+ 	<bean id="roboExtravioForm" class="com.bancoazteca.eservice.command.chequera.roboextravio.RoboExtravioForm" scope="prototype"/>
+ 	<bean id="activacionChequeraForm" class="com.bancoazteca.eservice.command.chequera.activacion.ActivacionChequeraForm" scope="prototype"/>
+ 	<bean id="presolicitudChequeraForm" class="com.bancoazteca.eservice.command.chequera.presolicitud.PresolicitudChequeraForm" scope="prototype"/>
+	<bean id="consultaChequeraForm" class="com.bancoazteca.eservice.command.chequera.consultacheques.ConsultaChequesForm" />
+	 	
+	<bean id="alertaCelularForm" class="com.bancoazteca.eservice.command.mediospago.alertaCelular.AlertaCelularForm" scope="prototype" /> 
+	<bean id="actualizaDatosForm" class="com.bancoazteca.eservice.command.actualizaDatosUsuario.ActualizaDatosForm" scope="prototype" /> 
+	<!-- Consulta express -->
+	 <bean id="consultaExpressForm" class="com.bancoazteca.eservice.command.consultaexpress.ConsultaExpressForm"/>
+	 
+	<!-- Cambio Contraseña -->
+	<bean id="changePasswordForm" class="com.bancoazteca.eservice.command.admonSeguridad.changePassword.ChangePasswordForm"/> 
+	 
+	 <!-- Todito Card -->
+	<bean id="toditoCardForm" class="com.bancoazteca.eservice.command.pagoservicios.toditoCard.ToditoCardForm"/> 
+	 
+	 
+	 <!-- Pago Tarjeta Azteca-->
+	
+	<bean id="pagoTarjetaAztecaForm" class = "com.bancoazteca.eservice.command.pagoservicios.pagotarjetaazteca.PagoTarjetaAztecaForm" scope="prototype"/>  
+	 
+	<!-- Alta de cuentas frecuentes Pago Tarjeta Azteca-->
+	
+	<bean id="AltaFrecuentesPagoTarjetaAztecaForm" class = "com.bancoazteca.eservice.command.frecuentes.tarjeta_azteca.AltaFrecuentesPagoTarjetaAztecaForm" scope="prototype"/>  
+	
+	<!-- Edicion cuentas frecuentes Pago Tarjeta Azteca-->
+	 
+	 <bean id="EditarFrecuentesPagoTarjetaAztecaForm" class = "com.bancoazteca.eservice.command.frecuentes.tarjeta_azteca.EditarFrecuentesPagoTarjetaAztecaForm" scope="prototype"/>  
+	
+	 	<!-- Eliminacion cuentas frecuentes Pago Tarjeta Azteca-->
+	 
+	 <bean id="EliminarFrecuentesPagoTarjetaAztecaForm" class = "com.bancoazteca.eservice.command.frecuentes.tarjeta_azteca.EliminarFrecuentesPagoTarjetaAztecaForm" scope="prototype"/>  
+	
+	 
+	  	<!-- Consulta de carta de retencines de socio plus-->
+	 
+	 <bean id="CartaRetencionesSocioPlusForm" class = "com.bancoazteca.eservice.command.movimientos.socioplus.retenciones.CartaRetencionesSocioPlusForm" scope="prototype"/>  
+	
+	 <!-- Localiza Sucursal -->
+	 <bean id="localizaSucursalForm" class="com.bancoazteca.eservice.command.localizasucursal.LocalizaSucursalForm" scope="prototype"/>
+	 
+	 <!-- web service foto cliente unico -->
+	 <bean id="fotoUnicaForm" class="com.bancoazteca.eservice.command.usuarios.fotounica.FotoUnicaForm" scope="prototype"/>
+	 <!-- web service foto cliente unico -->
+	 
+	 <!-- OPERACIONES FRECUENTES -->
+	 <bean id="operacionesFrecuentesForm" class="com.bancoazteca.eservice.command.operacionesFrecuentes.OperacionesFrecuentesForm" scope="prototype"/>
+	
+	 <bean id="cambioSucursalForm" class="com.bancoazteca.eservice.command.mediospago.cambiosucursal.CambioSucursalForm" scope="prototype"/>
+ 	<!-- Commands -->
+  	
+  	<bean id="consulta_express" class="com.bancoazteca.eservice.command.consultaexpress.ConsultaExpressCommand">
+  	  	<property name="notSession" value="true"/>
+  		<property name="formBean" ref="consultaExpressForm" />
+  		<property name="validate" value="false" />
+  	</bean>
+  	
+  	
+  	<bean id="alta_frecuente_trans.otros_bancos" class="com.bancoazteca.eservice.command.frecuentes.transferencias.AltaFrecuentesOtrosBancosCommand" scope="prototype">
+ 		<property name="formBean" ref="altaFrecuentesOtrosBancosForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean> 
+  	
+ 	
+ 	<bean id="alta_frecuente_trans.spei" class="com.bancoazteca.eservice.command.frecuentes.transferencias.AltaFrecuentesOtrosBancosCommand" scope="prototype">
+ 		<property name="formBean" ref="altaFrecuentesOtrosBancosForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean> 
+ 	
+ 	
+ 	<bean id="pago_servicio.luz" class="com.bancoazteca.eservice.command.pagoservicios.luz.PagoServiciosLuzCommand" scope="prototype">
+ 		<property name="formBean" ref="pagoServiciosLuzForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean> 
+ 	
+ 	<bean id="login.aplicacion" class="com.bancoazteca.eservice.command.login.ApplicationLoginCommand" >
+ 		<property name="notSession" value="true"/>
+ 		<property name="formBean" ref="appLoginForm"/>
+ 		<property name="validate" value="true"/> 	
+ 	</bean> 
+ 	
+ 	<bean id="login" class="com.bancoazteca.eservice.command.login.LoginCommand" scope="prototype" >
+ 		<property name="notSession" value="true"/>
+ 		<property name="formBean" ref="loginForm"/> 
+ 		<property name="validate" value="true"/>	
+ 	</bean>
+ 	
+ 	<bean id="login_tunning" class="com.bancoazteca.eservice.command.login.LoginCacheCommand" scope="prototype" >
+ 		<property name="notSession" value="true"/>
+ 		<property name="formBean" ref="loginCacheForm"/> 
+ 		<property name="validate" value="true"/>	
+ 	</bean>
+ 	 	 
+ 	<bean id="logout" class="com.bancoazteca.eservice.command.logout.LogoutCommand" scope="prototype"/>
+ 	 		 	 
+ 	<bean id="movimientos" class="com.bancoazteca.eservice.command.movimientos.MovimientosCommand" scope="prototype"> 
+ 		<property name="formBean" ref="movimientosForm"/>
+ 		<property name="validate" value="true"/>	 	
+  	</bean>
+  	
+  	<bean id="movimientos_cuenta_inversion" class="com.bancoazteca.eservice.command.movimientos.inversion.MovimientosCuentaInversionCommand" scope="prototype" >
+ 		<property name="formBean" ref="movimientosCuentaInversionForm"/>
+		<property name="validate" value="true"/>
+		<property name="notSession" value="false"/>
+ 	</bean> 
+  	
+ 	<bean id="saldos" class="com.bancoazteca.eservice.command.saldos.SaldosCommand" scope="prototype"/>
+ 	
+ 	<bean id="saldos_tunning" class="com.bancoazteca.eservice.command.saldos.SaldosCacheCommand" scope="prototype"/>
+  
+    <bean id="mostrar_frecuentes_trans" class="com.bancoazteca.eservice.command.frecuentes.transferencias.ConsultaFrecuentesTransferenciasCommand" scope="prototype">
+    	<property name="formBean" ref="consultaFrecuentesTransferenciasForm"/>
+    	<property name="validate" value="true"/>
+    </bean>
+  
+      <bean id="consulta_frecuentes_servicios" class="com.bancoazteca.eservice.command.frecuentes.pagoservicios.FrecuenteServiciosConsultaCommand" scope="prototype">
+    	<property name="formBean" ref="frecuenteServiciosConsultaForm"/>
+    	 		<property name="validate" value="true"/>
+    </bean>
+   <bean id="alta_frecuentes_servicios" class="com.bancoazteca.eservice.command.frecuentes.pagoservicios.FrecuenteServiciosAgregaCommand" scope="prototype">
+    	<property name="formBean" ref="frecuenteServiciosAgregaForm"/>
+    	 		<property name="validate" value="true"/>
+    </bean>
+    
+    <bean id="elimina_frecuentes_servicios" class="com.bancoazteca.eservice.command.frecuentes.pagoservicios.FrecuenteServiciosEliminaCommand" scope="prototype">
+    	<property name="formBean" ref="frecuenteServiciosEliminaForm"/>
+    	<property name="validate" value="true"/>
+    </bean>
+	<bean id="modifica_frecuentes_servicios" class="com.bancoazteca.eservice.command.frecuentes.pagoservicios.FrecuenteServiciosModificaCommand" scope="prototype">
+    	<property name="formBean" ref="frecuenteServiciosModificaForm"/>
+    	<property name="validate" value="true"/>
+    </bean>
+  
+    <bean id="traspasos.propias" class="com.bancoazteca.eservice.command.traspasos.propias.TraspasosPropiasCommand" scope="prototype">
+    	<property name="formBean" ref="traspasosPropiasForm"/>
+    	<property name="validate" value="true"/>
+    </bean>
+    
+		
+	<bean id="transferencias.spei" class="com.bancoazteca.eservice.command.transferencias.spei.TransferenciaSpeiCommand" scope="prototype">
+ 		<property name="formBean" ref="transferenciaSpeiForm" /> 
+  		<property name="validate" value="true" /> 
+	</bean>
+			
+	<bean id="transferencias.tef" class="com.bancoazteca.eservice.command.transferencias.tef.TransferenciaTefCommand" scope="prototype">
+ 		<property name="formBean" ref="transferenciaTefForm" /> 
+  		<property name="validate" value="true" /> 
+	</bean>
+	
+	<bean id="traspasos.terceros" class="com.bancoazteca.eservice.command.traspasos.terceros.TraspasosTercerosCommand" scope="prototype">
+  		<property name="formBean" ref="traspasosTercerosForm" /> 
+  		<property name="validate" value="true" /> 
+  	</bean>
+  	
+  	<bean id="transferencias.internacionales" class="com.bancoazteca.eservice.command.transferencias.internacionales.TransferenciaInternacionalCommand" scope="prototype">
+ 		<property name="formBean" ref="transferenciaInternacionalForm" /> 
+  		<property name="validate" value="true" /> 
+	</bean>
+  	
+  	<bean id="pago_servicio.telmex" class="com.bancoazteca.eservice.command.pagoservicios.parametrizable.ParametrizableCommand" scope="prototype">
+  		<property name="formBean" ref="parametrizableForm" /> 
+  		<property name="validate" value="true" /> 
+  	</bean>
+  	
+    <bean id="recuperar_password" class="com.bancoazteca.eservice.command.recuperar_password.Recupera_PasswordCommand" scope="prototype">
+ 		<property name="notSession" value="true"/>
+ 		<property name="formBean" ref="recuperaPasswordForm"/> 
+ 		<property name="validate" value="true"/>	
+ 	</bean>
+ 	 <bean id="pago_servicio.sky" class="com.bancoazteca.eservice.command.pagoservicios.parametrizable.ParametrizableCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="parametrizableForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="catalogos.bancos_spei" class="com.bancoazteca.eservice.command.catalogos.Bancos_SpeiCommand" scope="prototype">
+    	<!--<property name="formBean" ref="traspasosForm"/>  -->
+    	<property name="validate" value="true"/>
+    </bean>
+    
+    <bean id="catalogos.paises" class="com.bancoazteca.eservice.command.catalogos.PaisesCommand" scope="prototype">
+    	<!--<property name="formBean" ref="traspasosForm"/>  -->
+    	<property name="validate" value="true"/>
+    </bean>
+    
+    <bean id="catalogos.ciudades" class="com.bancoazteca.eservice.command.catalogos.CiudadesCommand" scope="prototype">
+    	<property name="formBean" ref="ciudadesForm"/>  
+    	<property name="validate" value="true"/>
+    </bean>
+    
+    <bean id="catalogos.swift_aba" class="com.bancoazteca.eservice.command.catalogos.Swift_AbaCommand" scope="prototype">
+    	<property name="formBean" ref="swift_AbaForm"/>  
+    	<property name="validate" value="true"/>
+    </bean>
+    
+    <bean id="catalogos.companias_celulares" class="com.bancoazteca.eservice.command.catalogos.Companias_CelularesCommand" scope="prototype">
+    	<!-- <property name="formBean" ref="swift_AbaForm"/> -->  
+    	<property name="validate" value="true"/>
+    </bean>
+    
+    <bean id="tiempo_aire" class="com.bancoazteca.eservice.command.pagoservicios.tiempoaire.Tiempo_AireCommand" scope="prototype">
+    	<property name="formBean" ref="tiempo_aireForm"/>
+    	<property name="validate" value="true"/>    	
+    </bean>
+    
+ 	<bean id="pago_servicio.iusacell" class="com.bancoazteca.eservice.command.pagoservicios.parametrizable.ParametrizableCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="parametrizableForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="pago_servicio.movistar" class="com.bancoazteca.eservice.command.pagoservicios.parametrizable.ParametrizableCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="parametrizableForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="alta_frecuentes_tiempo_aire" class="com.bancoazteca.eservice.command.frecuentes.tiempoaire.FrecuentesTiempoAireAltaCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="frecuentesTiempoAireForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	<bean id="mostrar_frecuentes_tiempo_aire" class="com.bancoazteca.eservice.command.frecuentes.tiempoaire.FrecuentesTiempoAireCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="frecuentesTiempoAireForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	<bean id="eliminar_frecuente_tiempo_aire" class="com.bancoazteca.eservice.command.frecuentes.tiempoaire.FrecuentesTiempoAireEliminarCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="frecuentesTiempoAireForm"/>
+		<property name="validate" value="true"/> 
+ 	</bean>
+ 	<bean id="modificar_frecuente_tiempo_aire" class="com.bancoazteca.eservice.command.frecuentes.tiempoaire.FrecuentesTiempoAireEditarCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="frecuentesTiempoAireForm"/>
+		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 		<!-- Frecuentes Internacionales -->
+ 	
+ 	<bean id="alta_frecuente_trans.internacionales" class="com.bancoazteca.eservice.command.frecuentes.transferencias.AltaFrecuenteInternacionalCommand" scope="prototype"> 
+ 		<property name="formBean" ref="altaFrecuenteInternacionalForm"/>
+ 		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	 	<!-- Pago de servicios Maxigas Command -->
+ 	<bean id="pago_servicio.maxigas" class="com.bancoazteca.eservice.command.pagoservicios.maxigas.PagoServicioMaxiGasCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="pagoservicio_maxigasForm"/>
+ 		<property name="validate" value="true"/>
+ 	</bean>
+  	
+ 	<bean id="pago_servicio.pago_credito" class="com.bancoazteca.eservice.command.pagoservicios.tarjeta_otrosbancos.PagoTarjetaOtrosBancosCommand" scope="prototype">
+ 		<property name="formBean" ref = "pagoTarjetaOtrosBancos"/>
+ 		<property name="validate" value="true"/> 		
+ 	</bean>
+ 	
+ 	<bean id="alta_frecuente_trans.terceros" class="com.bancoazteca.eservice.command.frecuentes.traspasos.AltaFrecuenteTraspasosTercerosCommand" scope="prototype"> 
+ 		<property name="formBean" ref="altaFrecuenteTraspasosTercerosForm"/>
+    	<property name="validate" value="true"/>
+  	</bean>
+ 	
+ 	<bean id="consulta_frecuentes_tarjetas.pago_credito" class="com.bancoazteca.eservice.command.frecuentes.tarjeta_otrosbancos.ConsultaFrecuentesPagoTarjetaOtrosBancosCommand" scope="prototype">
+ 	</bean>
+ 	
+ 	<bean id="alta_frecuentes_tarjetas.pago_credito" class="com.bancoazteca.eservice.command.frecuentes.tarjeta_otrosbancos.AltaFrecuentesPagoTarjetaOtrosBancosCommand" scope="prototype">
+ 		<property name="formBean" ref="altaFrecuentesPagoTarjetaOtrosBancosForm"/>
+ 		<property name="validate" value="true"/>
+ 	</bean>
+ 	
+ 	<bean id="modifica_frecuentes_tarjetas.pago_credito" class="com.bancoazteca.eservice.command.frecuentes.tarjeta_otrosbancos.EditarEliminarFrecuentesPagoTarjetaOtrosBancosCommand" scope="prototype">
+ 		<property name="formBean" ref="editarEliminarPagoTarjetaOtrosBancos"/>
+ 		<property name="validate" value="true"/>
+ 	</bean>
+ 	
+ 	<bean id="elimina_frecuentes_tarjetas.pago_credito" class="com.bancoazteca.eservice.command.frecuentes.tarjeta_otrosbancos.EditarEliminarFrecuentesPagoTarjetaOtrosBancosCommand" scope="prototype">
+ 		<property name="formBean" ref="editarEliminarPagoTarjetaOtrosBancos"/>
+ 		<property name="validate" value="true"/>
+ 	</bean>
+ 	
+ 	<bean id="pago_servicio.azteca_web" class="com.bancoazteca.eservice.command.pagoservicios.aztecaweb.PagoServicioAztecaWebCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="pagoServicioAztecaWebForm"/>
+ 		<property name="validate" value="true"/>
+ 	</bean>
+ 	<!-- Apertura Cuenta Plata -->
+ 	<bean id="apertura_cuenta.plata" class="com.bancoazteca.eservice.command.cuentas.plata.AperturaCuentaPlataCommand" scope="prototype">
+		<property name="formBean" ref="aperturaCuentaPlataForm"/>
+		<property name="notSession" value="false"/>
+		<property name="validate" value="true"/>
+ 	</bean>
+ 	<bean id="pago_servicio.avicola" class="com.bancoazteca.eservice.command.pagoservicios.avicola.PagoServiciosAvicolaCommand" scope="prototype">
+ 		<property name="formBean" ref="pagoServiciosAvicolaForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean> 
+ 	
+	<!-- Estado de Cuenta -->
+ 	<bean id="estado_cuenta" class="com.bancoazteca.eservice.command.estadocuenta.EstadoCuentaCommand" scope="prototype"> 
+ 		<property name="formBean" ref="estadoCuentaForm"/>
+ 		<property name="validate" value="true"/>	 	
+  	</bean>
+ 	
+ 	<!-- Estado de Cuenta Reportos-->
+ 	<bean id="estado_cuenta_mercado_dinero" class="com.bancoazteca.eservice.command.estadocuenta.mercadodinero.EstadoCuentaMercadoDineroCommand" scope="prototype"> 
+ 		<property name="formBean" ref="estadoCuentaReportosForm"/>
+ 		<property name="validate" value="true"/>	 	
+  	</bean>
+  	
+ 	<!--Modificacion cuentas frecuentes transferencias -->
+ 	
+ 	<bean id="modifica_cuenta_frecuente" class="com.bancoazteca.eservice.command.frecuentes.transferencias.ModificarFrecuentesTransferenciasCommand" scope="prototype"> 
+ 		<property name="formBean" ref="modificarFrecuentesTransferenciasForm"/>
+ 		<property name="validate" value="true" />
+  	</bean>
+  	
+  	<!-- Eliminacion cuentas frecuentes transferencias -->
+  
+  	<bean id="elimina_cuenta_frecuente" class="com.bancoazteca.eservice.command.frecuentes.transferencias.EliminarFrecuentesTransferenciasCommand" scope="prototype"> 
+ 		<property name="formBean" ref="eliminarFrecuentesTransferenciasForm"/>
+ 		<!-- property name="validate" value="true"/ -->
+  	</bean>
+  	
+  	<bean id="login_cliente" class="com.bancoazteca.eservice.command.login.LoginCommand" scope="prototype">
+ 		<property name="notSession" value="true"/>
+ 		<property name="formBean" ref="loginForm"/> 
+ 		<property name="validate" value="true"/>	
+ 	</bean>
+ 	
+ 	<bean id="saldos_por_cuenta" class="com.bancoazteca.eservice.command.saldos.DetallesSaldoPorCuentasCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="detalleSaldosPorCuentaForm"/> 
+ 		<property name="validate" value="true"/>	
+ 	</bean>
+  	
+  	<!-- Consulta Reportos Plazo y Tasa -->
+  	<bean id="reportos_plazo_tasa" class="com.bancoazteca.eservice.command.reportos.consultaPlazoTasa.ConsultaPlazoTasaCommand" scope="prototype">
+ 		<property name="notSession" value="true"/>
+ 		<property name="formBean" ref="consultaPlazoTasaForm"/> 
+ 		<property name="validate" value="true"/>	
+ 	</bean>
+ 	
+ 	<bean id="mis_finanzas" class="com.bancoazteca.eservice.command.misfinanzas.MisFinanzasCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="misFinanzasForm"/>
+ 		<property name="validate" value="true"/>
+ 	</bean>
+ 	
+ 	<!-- Movimentos Infinite -->
+ 	<bean id="movimientos_infinite" class="com.bancoazteca.eservice.command.movimientos.MovimientosInfiniteCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="movimientosForm"/>
+ 		<property name="validate" value="true"/>
+ 	</bean>
+ 	<!-- Mercado de dinero reportes -->
+  	<bean id="mercado_dinero" class="com.bancoazteca.eservice.command.cuentas.mercadodinero.CuentaMercadoDineroCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="formBean" ref="cuentaMercadoDineroForm"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	<!-- Mercado de Dinero Inversion -->
+  	<bean id="mercado_dinero.inversion" class="com.bancoazteca.eservice.command.cuentas.mercadodinero.CuentaMercadoDineroCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="formBean" ref="cuentaMercadoDineroForm"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  		<!-- Mercado de Dinero Inversion -->
+  	<bean id="apertura_cuenta.mercado_dinero" class="com.bancoazteca.eservice.command.cuentas.mercadodinero.CuentaMercadoDineroCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="formBean" ref="cuentaMercadoDineroForm"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	<!-- Movimientos Otros creditos -->
+ 	<bean id="movimientos_otros_creditos" class="com.bancoazteca.eservice.command.otroscreditos.OtrosCreditosCommand">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="otrosCreditosForm"/>
+ 		<property name="validate" value="true"/>
+ 	</bean>
+ 	
+ 	<!--  Cuenta Eje elite -->
+ 	<bean id="apertura_cuenta.eje_elite" class="com.bancoazteca.eservice.command.cuentas.ejeelite.CuentaEjeEliteCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="cuentaEjeEliteForm"/>
+ 		<property name="validate" value="true"/>
+ 	</bean>
+ 	
+ 	<!-- bloquea tarjeta -->
+ 	<bean id="bloquea_tarjeta" class="com.bancoazteca.eservice.command.bloquea.tarjetas.Bloquea_TarjetaCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="bloquea_TarjetaForm"/>
+ 		<property name="validate" value="true"/>
+ 	</bean>
+ 	
+ 	<bean id="medios_pago" class="com.bancoazteca.eservice.command.mediospago.Medios_PagoCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="validate" value="true"/>
+ 	</bean>
+ 	<bean id="medios_pago.efectivo_cajero" class="com.bancoazteca.eservice.command.mediospago.dispocicionefectivocajero.DispocicionEfectivoCajeroCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="validate" value="true"/>
+ 		<property name="formBean" ref="efectivoCajeroForm"/>
+ 	</bean>
+ 	
+  	<bean id="apertura_cuenta.socio" class="com.bancoazteca.eservice.command.cuentas.socionomina.CuentaSocioCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="formBean" ref="cuentaSocioForm"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	
+  	<bean id="apertura_cuenta.socio_plus" class="com.bancoazteca.eservice.command.cuentas.socioplus.CuentaSocioPlusCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="formBean" ref="cuentaSocioPlusForm"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	<bean id="niveles_seguridad" class="com.bancoazteca.eservice.command.nivelseguridad.NivelesSeguridadCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="formBean" ref="nivelesSeguridadForm"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	<bean id="pago_tarjeta_credito.banco_azteca" class="com.bancoazteca.eservice.command.pagoservicios.pagotarjetacredito.PagoTarjetaCreditoCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="formBean" ref="pagoTarjetaCreditoForm"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	<bean id="cambio_nip" class="com.bancoazteca.eservice.command.mediospago.cambionip.CambioNipCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="formBean" ref="cambioNipForm"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	<bean id="noticias.conexion_financiera" class="com.bancoazteca.eservice.command.noticias.conexionfinanciera.NoticiasConexionFinancieraCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	<bean id="pago_servicio.donativos" class="com.bancoazteca.eservice.command.donativos.DonativosCommand" scope="prototype">
+ 		<property name="formBean" ref="donativosForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean> 
+ 	
+ 	<bean id="activacion_express" class="com.bancoazteca.eservice.command.activacionexpress.ActivacionExpressCommand" scope="prototype">
+ 		<property name="notSession" value="true"/>
+ 		<property name="formBean" ref="activacionexpressForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean>
+ 	
+ 	<bean id="biblioteca_recibos" class="com.bancoazteca.eservice.command.bibliotecarecibos.BibliotecaRecibosCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="bibliotecaRecibosForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean> 
+ 	<bean id="envio_mail" class="com.bancoazteca.eservice.command.enviomail.EnvioMailCommand" scope="prototype">
+ 		<property name="formBean" ref="envioMailForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean> 	
+ 	<bean id="chequera_presolicitud" class="com.bancoazteca.eservice.command.chequera.presolicitud.ChequeraPresolicitudCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="chequeraPresolicitudForm"/>
+		<property name="validate" value="false"/> 	
+ 	</bean>	
+ 	<!--  Dinero Express -->
+ 	<bean id="envio_dinero_express" class="com.bancoazteca.eservice.command.enviodineroexpress.EnvioDineroExpressCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="envioDineroExpressForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean>
+ 	<bean id="alta_frecuentes.dinero_express" class="com.bancoazteca.eservice.command.frecuentes.enviodineroexpress.AltaFrecuenteDineroExpressComand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="altaFrecuentesDineroExpressForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean>
+ 	<bean id="busqueda_frecuentes.dinero_express" class="com.bancoazteca.eservice.command.frecuentes.enviodineroexpress.BusquedaFrecuenteDineroExpressComand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="busquedaFrecuentesDineroExpressForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean>
+ 	<bean id="consulta_frecuentes.dinero_express" class="com.bancoazteca.eservice.command.frecuentes.enviodineroexpress.ConsultaFrecuenteDineroExpressComand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="consultaFrecuentesDineroExpressForm"/>
+		<property name="validate" value="false"/> 	
+ 	</bean> 	
+ 	<bean id="catalogos.paises_dinero_express" class="com.bancoazteca.eservice.command.catalogos.PaisesDineroExpressCommand" scope="prototype">
+ 		<property name="validate" value="false"/> 	
+ 	</bean>
+ 	
+ 	<bean id="catalogos.estados_dinero_express"
+	class="com.bancoazteca.eservice.command.catalogos.EstadosDineroExpresCommand"
+	scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="catalogoEstadosDineroExpressForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean> 	
+ 	
+ 	<bean id="catalogos.ciudades_dinero_express"
+	class="com.bancoazteca.eservice.command.catalogos.CiudadesDineroExpressCommand"
+	scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="catalogoCiudadesDineroExpressForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean> 
+ 	
+ 	
+ 	<bean id="catalogos.agentes_dinero_express"
+	class="com.bancoazteca.eservice.command.catalogos.AgentesDineroExpressCommand"
+	scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="catalogoAgentesDineroExpressForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean>
+ 	
+ 	<bean id="catalogos.sucursales_dinero_express"
+	class="com.bancoazteca.eservice.command.catalogos.SucursalesDineroExpressCommand"
+	scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="catalogoSucursalesDineroExpressForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean> 	
+ 	
+ 	<bean id="envio_correo_dinero_express"
+	class="com.bancoazteca.eservice.command.enviodineroexpress.util.EnvioCorreoDineroExpressCommand"
+	scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="envioCorreoDineroExpressForm"/>
+		<property name="validate" value="true"/> 	
+ 	</bean>
+ 	
+ 	<!-- FIN Dinero Express -->
+ 	
+ 	<!-- Ocultar/Mostrar Cuentas -->
+ 	
+ 	<bean id="estatus_cuentas" class="com.bancoazteca.eservice.command.estatuscuentas.EstatusCuentasCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="estatusCuentasForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	 <bean id="valida_token" class="com.bancoazteca.eservice.command.validatoken.ValidaTokenCommand" scope="prototype">
+ 	 	<property name="notSession" value="true"/>
+ 		<property name="formBean" ref="validaTokenForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="valida_huella" class="com.bancoazteca.eservice.command.validahuella.ValidaHuellaCommand" >
+ 		<property name="formBean" ref="validaHuellaForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 		 	
+ 	<bean id="preguntas_frecuentes" class="com.bancoazteca.eservice.command.preguntasfrecuentes.PreguntasFrecuentesCommand" scope="prototype">
+ 	 	<property name="notSession" value="true"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="pago_servicio.cfe" class="com.bancoazteca.eservice.command.pagoservicios.parametrizable.ParametrizableCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="parametrizableForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+
+ 	 <bean id="pago_servicio.axtel" class="com.bancoazteca.eservice.command.pagoservicios.parametrizable.ParametrizableCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="parametrizableForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="login_conciliacion" class="com.bancoazteca.eservice.command.conciliacion.LoginConciliacionCommand" scope="prototype">
+ 	 	<property name="notSession" value="true"/>
+ 		<property name="formBean" ref="loginConciliacionForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="conciliacion_reportos" class="com.bancoazteca.eservice.command.conciliacion.ConciliacionCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 	 	<property name="formBean" ref="conciliacionForm"/>
+ 		<property name="validate" value="false"/> 
+ 	</bean>
+ 	
+ 	<bean id="liberar_nomina" class="com.bancoazteca.eservice.command.liberarnomia.LiberarNominaCommand" scope="prototype">
+ 		<property name="formBean" ref="liberarNominaForm"/>
+ 	 	<property name="notSession" value="false"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	 <bean id="rastreo_pedido_dispositivo" class="com.bancoazteca.eservice.command.dispositivos.rastreopedido.RastreoPedidoCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 	 	<property name="formBean" ref="rastreoPedidoForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	 <bean id="solicitud_dispositivo" class="com.bancoazteca.eservice.command.dispositivos.solicitud.SolicitudDispositivoCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 	 	<property name="formBean" ref="solicitudDispositivoForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	 <bean id="catalogos.estados_dispositivos_seguridad" class="com.bancoazteca.eservice.command.dispositivos.solicitud.CatalogoEstadosDispositivosCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 		<property name="validate" value="false"/> 
+ 	</bean>
+
+ 	<bean id="operaciones_firma_azteca.bloquear" class="com.bancoazteca.eservice.command.dispositivos.firma.bloqueo.BloqueoFirmaCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 	 	<property name="formBean" ref="bloqueoFirmaForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	 <bean id="operaciones_firma_azteca.desbloquear" class="com.bancoazteca.eservice.command.dispositivos.firma.bloqueo.BloqueoFirmaCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 	 	<property name="formBean" ref="bloqueoFirmaForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+
+ 	<bean id="operaciones_firma_azteca.cancelar" class="com.bancoazteca.eservice.command.dispositivos.firma.bloqueo.BloqueoFirmaCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 	 	<property name="formBean" ref="bloqueoFirmaForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="activacion_firma_azteca" class="com.bancoazteca.eservice.command.dispositivos.firma.activacion.ActivacionFirmaCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 	 	<property name="formBean" ref="activacionFirmaForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="sincronizacion_firma_azteca" class="com.bancoazteca.eservice.command.dispositivos.firma.sincronizacion.SincronizacionFirmaCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 	 	<property name="formBean" ref="sincronizacionFirmaForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="activacion_chequera" class="com.bancoazteca.eservice.command.chequera.activacion.ActivacionChequeraCommand" scope="prototype" >
+ 		<property name="notSession" value="false" />
+ 		<property name="formBean" ref="activacionChequeraForm" />
+ 		<property name="validate" value="true" />
+ 	</bean>
+	
+ 	<bean id="liberacion_cheques" class="com.bancoazteca.eservice.command.chequera.liberacion.LiberacionChequesCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 	 	<property name="formBean" ref="liberacionChequesForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="extravio_cheques" class="com.bancoazteca.eservice.command.chequera.roboextravio.RoboExtravioCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 	 	<property name="formBean" ref="roboExtravioForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="presolicitud_chequera" class="com.bancoazteca.eservice.command.chequera.presolicitud.PresolicitudChequeraCommand">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="presolicitudChequeraForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+
+ 	<bean id="consulta_chequera" class="com.bancoazteca.eservice.command.chequera.consultacheques.ConsultaChequesCommand">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="consultaChequeraForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="alerta_celular.modificar" class="com.bancoazteca.eservice.command.mediospago.alertaCelular.AlertaCelularModificarCommand" scope="prototype" >
+ 		<property name="notSession" value="false" />
+ 		<property name="formBean" ref="alertaCelularForm" />
+ 		<property name="validate" value="true" />
+ 	</bean>
+ 	
+ 	<bean id="alerta_celular.activar" class="com.bancoazteca.eservice.command.mediospago.alertaCelular.AlertaCelularActivarCommand" scope="prototype" >
+ 		<property name="notSession" value="false" />
+ 		<property name="formBean" ref="alertaCelularForm" />
+ 		<property name="validate" value="true" />
+ 	</bean> 
+ 	<bean id="alerta_celular.eliminar" class="com.bancoazteca.eservice.command.mediospago.alertaCelular.AlertaCelularEliminarCommand" scope="prototype" >
+ 		<property name="notSession" value="false" />
+ 		<property name="formBean" ref="alertaCelularForm" />
+ 		<property name="validate" value="false" />
+ 	</bean> 
+ 	
+ 	
+ 	<bean id="actualizar_datos" class="com.bancoazteca.eservice.command.actualizaDatosUsuario.ActualizaDatosCommand" scope="prototype" >
+ 		<property name="notSession" value="false" />
+ 		<property name="formBean" ref="actualizaDatosForm" />
+ 		<property name="validate" value="true" />
+ 	</bean>
+ 	 	
+ 	<bean id="cambio_contrasenia" class="com.bancoazteca.eservice.command.admonSeguridad.changePassword.ChangePasswordCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="changePasswordForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="todito_card" class="com.bancoazteca.eservice.command.pagoservicios.toditoCard.ToditoCardCommand" scope="prototype">
+ 	 	<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="toditoCardForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+ 	<bean id="pago_tarjeta_azteca" class="com.bancoazteca.eservice.command.pagoservicios.pagotarjetaazteca.PagoTarjetaAztecaCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="formBean" ref="pagoTarjetaAztecaForm"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	<bean id="consulta_frecuentes_pago_tarjeta_azteca" class="com.bancoazteca.eservice.command.frecuentes.tarjeta_azteca.ConsultaFrecuentesPagoTarjetaAztecaCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	<bean id="alta_frecuentes_pago_tarjeta_azteca" class="com.bancoazteca.eservice.command.frecuentes.tarjeta_azteca.AltaFrecuentesPagoTarjetaAztecaCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="formBean" ref="AltaFrecuentesPagoTarjetaAztecaForm"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	
+  	<bean id="editar_frecuentes_pago_tarjeta_azteca" class="com.bancoazteca.eservice.command.frecuentes.tarjeta_azteca.EditarFrecuentesPagoTarjetaAztecaCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="formBean" ref="EditarFrecuentesPagoTarjetaAztecaForm"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	<bean id="eliminar_frecuentes_pago_tarjeta_azteca" class="com.bancoazteca.eservice.command.frecuentes.tarjeta_azteca.EliminarFrecuentesPagoTarjetaAztecaCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="formBean" ref="EliminarFrecuentesPagoTarjetaAztecaForm"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	
+  	<bean id="carta_retenciones_socio_plus" class="com.bancoazteca.eservice.command.movimientos.socioplus.retenciones.CartaRetencionesSocioPlusCommand" scope="prototype">
+  		<property name="notSession" value="false"/>
+  		<property name="formBean" ref="CartaRetencionesSocioPlusForm"/>
+  		<property name="validate" value="true"/>
+  	</bean>
+  	
+  	<bean id="localizar_sucursal" class="com.bancoazteca.eservice.command.localizasucursal.LocalizaSucursalCommand" scope="prototype">
+ 		<property name="notSession" value="true"/>
+ 		<property name="formBean" ref="localizaSucursalForm"/>
+ 		<property name="validate" value="true"/> 
+ 	</bean>
+ 	
+  	<bean id="altas_usuarios" class="com.bancoazteca.eservice.command.usuarios.altas.AltasUsuariosCommand" scope="prototype" >
+ 		<property name="notSession" value="true" />
+ 		<property name="formBean" ref="altasUsuariosForm" />
+ 		<property name="validate" value="true" />
+ 	</bean>
+ 	
+ 	<!-- OPERACIONES FRECUENTES -->
+  	<bean id="operaciones_frecuentes.agregar" class="com.bancoazteca.eservice.command.operacionesFrecuentes.OperacionesFrecuentesAgregarCommand" scope="prototype">
+  	  	<property name="notSession" value="false"/>
+  		<property name="formBean" ref="operacionesFrecuentesForm" />
+  		<property name="validate" value="false" />
+  	</bean>
+  	
+  	<bean id="operaciones_frecuentes.consultar" class="com.bancoazteca.eservice.command.operacionesFrecuentes.OperacionesFrecuentesConsultarCommand" scope="prototype">
+  	  	<property name="notSession" value="false"/>
+  		<property name="validate" value="false" />
+  	</bean>
+  	
+  	<bean id="operaciones_frecuentes.eliminar" class="com.bancoazteca.eservice.command.operacionesFrecuentes.OperacionesFrecuentesEliminarCommand" scope="prototype">
+  	  	<property name="notSession" value="false"/>
+  	  	<property name="formBean" ref="operacionesFrecuentesForm" />
+  		<property name="validate" value="false" />
+  	</bean>
+ 	
+ 	<!-- web service foto cliente unico -->
+  	<bean id="foto_unica" class="com.bancoazteca.eservice.command.usuarios.fotounica.FotoUnicaCommand" scope="prototype" >
+ 		<property name="notSession" value="false" />
+ 		<property name="formBean" ref="fotoUnicaForm" />
+ 		<property name="validate" value="true" />
+ 	</bean>
+ 	<!-- web service foto cliente unico -->
+ 	
+ 	
+ 	<bean id="medios_pago.cambio_sucursal" class="com.bancoazteca.eservice.command.mediospago.cambiosucursal.CambioSucursalCommand" scope="prototype">
+ 		<property name="notSession" value="false"/>
+ 		<property name="formBean" ref="cambioSucursalForm"/>
+ 		<property name="validate" value="true"/>
+ 	</bean>
+ 	
+ 	<bean id="conexion_financiera" class="com.bancoazteca.eservice.command.conexionfinanciera.ConexionFinancieraCommand">
+ 		<property name="notSession" value="true"/>
+ 		<property name="validate" value="false"/>
+ 	</bean>
+ 	
+</beans>

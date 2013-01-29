@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/chequera
+END
+ChequeraDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/chequera/ChequeraDAO.java
+END
+ChequeraSLBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/chequera/ChequeraSLBean.java
+END
+ChequeraRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/chequera/ChequeraRule.java
+END
+ChequeraSLHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/chequera/ChequeraSLHome.java
+END
+ChequeraException.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/chequera/ChequeraException.java
+END
+ChequeraSL.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/chequera/ChequeraSL.java
+END

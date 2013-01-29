@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding="ISO-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idservicio value="login" />
+			<usuario value="ldcd" />
+			<password cipher="Y1g0EGsB4BxLJ5ecsxKzsg==" />
+			<idaplicacion cipher="T9XyzPvcUJFBNvz+qwiTyEgxQbvMwLe9" />
+		</request>
+	</eservices>
+</bancoazteca>

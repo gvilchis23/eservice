@@ -1,0 +1,7 @@
+webservice.alnova.config.url = http://10.50.166.223/conexion_tf/servicio_conexion.asmx/MTEjecutaTransaccion
+webservice.alnova.config.branch= 0172
+webservice.alnova.config.entity= 0127
+webservice.alnova.config.user= B596245
+webservice.alnova.config.terminal= Z015
+webservice.alnova.config.chanel= 01
+webservice.generic.packagename=com.bancoazteca.elite.ejb.inversiones.transacciones.

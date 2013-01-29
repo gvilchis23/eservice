@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/conciliacion
+END
+LoginConciliacionCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/conciliacion/LoginConciliacionCommand.java
+END
+LoginConciliacionForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/conciliacion/LoginConciliacionForm.java
+END
+ConciliacionCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/conciliacion/ConciliacionCommand.java
+END
+ConciliacionForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/conciliacion/ConciliacionForm.java
+END

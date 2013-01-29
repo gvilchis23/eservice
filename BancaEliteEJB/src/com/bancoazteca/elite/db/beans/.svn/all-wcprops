@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/db/beans
+END
+AltaClienteRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/db/beans/AltaClienteRequestTO.java
+END
+InsertaCompraInversionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/db/beans/InsertaCompraInversionTO.java
+END
+InsertaPlazoTasaRequesTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/db/beans/InsertaPlazoTasaRequesTO.java
+END
+InsertaTransaccionTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/db/beans/InsertaTransaccionTO.java
+END
+InsertaTransaccionAlnovaTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/db/beans/InsertaTransaccionAlnovaTO.java
+END

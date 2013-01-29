@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/login
+END
+ApplicationLoginForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/login/ApplicationLoginForm.java
+END
+LoginCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/login/LoginCommand.java
+END
+ApplicationLoginCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/login/ApplicationLoginCommand.java
+END
+LoginCacheCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/login/LoginCacheCommand.java
+END
+LoginForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/login/LoginForm.java
+END

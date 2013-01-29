@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/pagoservicios
+END
+FrecuenteServiciosConsultaCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/pagoservicios/FrecuenteServiciosConsultaCommand.java
+END
+FrecuenteServiciosAgregaForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/pagoservicios/FrecuenteServiciosAgregaForm.java
+END
+FrecuenteServiciosModificaCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/pagoservicios/FrecuenteServiciosModificaCommand.java
+END
+FrecuenteServiciosConsultaForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/pagoservicios/FrecuenteServiciosConsultaForm.java
+END
+FrecuenteServiciosEliminaCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/pagoservicios/FrecuenteServiciosEliminaCommand.java
+END
+FrecuenteServiciosModificaForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/pagoservicios/FrecuenteServiciosModificaForm.java
+END
+FrecuenteServiciosEliminaForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/pagoservicios/FrecuenteServiciosEliminaForm.java
+END
+FrecuenteServiciosAgregaCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/frecuentes/pagoservicios/FrecuenteServiciosAgregaCommand.java
+END

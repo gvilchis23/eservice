@@ -1,0 +1,7 @@
+package com.bancoazteca.eservice.command.consultaexpress;
+
+import com.bancoazteca.eservice.command.base.CommandBase;
+
+public class ConsultaExpressCommand extends CommandBase{
+	
+}

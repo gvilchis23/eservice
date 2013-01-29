@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/eService/!svn/ver/41/eServiceWeb/src/com/bancoazteca/eservice/command/base/session
+END
+SessionWatchThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/eService/!svn/ver/41/eServiceWeb/src/com/bancoazteca/eservice/command/base/session/SessionWatchThread.java
+END
+Session.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/base/session/Session.java
+END
+SessionValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/41/eServiceWeb/src/com/bancoazteca/eservice/command/base/session/SessionValidator.java
+END
+SessionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/eService/!svn/ver/41/eServiceWeb/src/com/bancoazteca/eservice/command/base/session/SessionManager.java
+END

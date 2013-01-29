@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/eService/!svn/ver/50/BancaEliteEJB/src/com/bancoazteca/elite/monitoreo/db/dao
+END
+MonitoreoAdminLiteDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/monitoreo/db/dao/MonitoreoAdminLiteDAO.java
+END
+ConsultaMonitoreoTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/monitoreo/db/dao/ConsultaMonitoreoTO.java
+END
+MonitorLiteDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/monitoreo/db/dao/MonitorLiteDAO.java
+END
+MonitorServiceLiteDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/50/BancaEliteEJB/src/com/bancoazteca/elite/monitoreo/db/dao/MonitorServiceLiteDAO.java
+END
+MonitoreoLiteDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/monitoreo/db/dao/MonitoreoLiteDAO.java
+END
+MonitoreoAdministradorResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/monitoreo/db/dao/MonitoreoAdministradorResponseTO.java
+END

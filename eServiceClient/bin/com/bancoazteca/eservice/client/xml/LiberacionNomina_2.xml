@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idservicio value="LIBERAR_NOMINA" />
+			<coleccion_recibos value="0033001234643740123401302" />
+			<idsesion cipher="OCWnToyk8nMpUXH" />
+			<comando value="VALIDACION" />
+		</request>
+	</eservices>
+</bancoazteca>

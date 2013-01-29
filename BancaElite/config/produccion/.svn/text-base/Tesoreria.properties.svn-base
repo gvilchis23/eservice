@@ -1,0 +1,2 @@
+webservice.reportos.address = http://10.63.85.153:8000/TestTas/ReportosWS
+webservice.reportos.portal = ELITE

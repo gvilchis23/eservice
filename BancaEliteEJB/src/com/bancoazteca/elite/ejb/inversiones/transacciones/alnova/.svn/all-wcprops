@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova
+END
+AlnovaGenericResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/AlnovaGenericResponseTO.java
+END
+AlnovaResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/AlnovaResponse.java
+END
+AlnovaConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/AlnovaConnection.java
+END
+TerminalManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/TerminalManager.java
+END
+AlnovaRequestAutomaticMulticall.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/AlnovaRequestAutomaticMulticall.java
+END
+AlnovaRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/AlnovaRequest.java
+END
+AlnovaTransactions.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/AlnovaTransactions.java
+END
+TerminalNotAvailableException.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/TerminalNotAvailableException.java
+END
+NombreRecursosJNDI.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/NombreRecursosJNDI.java
+END
+AlnovaCodec.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/alnova/AlnovaCodec.java
+END

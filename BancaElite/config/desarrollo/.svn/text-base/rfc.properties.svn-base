@@ -1,0 +1,18 @@
+rfc.rules.restricciones BUEI|BUEY|CACA|CACO|CAGA|CAGO|CAKA|CAKO|COGE|COJA|KOGE|KOJO|KAKA|KULO|MAME|MAMO|MEAR|MEAS|MEON|MION|COJE|COJI|COJO|CULO|FETO|GUEY|JOTO|KACA|KACO|KAGA|KAGO|MOCO|MULA|PEDA|PEDO|PENE|PUTA|PUTO|QULO|RATA|RUIN|SEXO|PITO|SIDA
+rfc.rules.vocales (?i)([\\p{Alpha}&&[^aeiouαινσϊ]]*)([aeiouαινσϊ]{1})([\\p{Alpha}]*)
+rfc.rules.articulos (?i)\\b(de(l)?|la(s)?|los|y|a|mac|von|van)\\s
+rfc.rules.otrosArticulos (?i)\\bmc
+rfc.rules.nombresComunes (?i)\\b(j(os[eι]|\\.)?|ma(r[iν]a|\\.)?)\\s
+
+rfc.rules.vocal.a [αβΰβγδεγ]
+rfc.rules.vocal.e [θικλκ]
+rfc.rules.vocal.i [νομξ]
+rfc.rules.vocal.o [σφςτ]
+rfc.rules.vocal.u [όϋωϊ]
+rfc.rules.acentos [^\\p{ASCII}]
+
+rfc.constantes.a a
+rfc.constantes.e e
+rfc.constantes.i i
+rfc.constantes.o o
+rfc.constantes.u u

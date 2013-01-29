@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/LoginAction.do" location="50,50" dimension="98,62" />
+  <StrutsActivity path="/SeleccionAction.do" location="1250,450" dimension="282,88" />
+  <StrutsActivity path="/LogoutAction.do" location="350,650" dimension="276,88" />
+  <StrutsActivity path="/RegistroAction.do" location="950,150" dimension="290,88" />
+  <StrutsActivity path="/ConsultaAction.do" location="350,250" dimension="295,88" />
+  <StrutsActivity path="/ConsultaMonitorAction.do" location="1250,750" dimension="295,88" />
+  <StrutsActivity path="/index.jsp" location="650,50" dimension="77,49" />
+  <StrutsActivity path="/pages/Registro.jsp" location="950,550" dimension="124,49" />
+  <StrutsActivity path="/monitoreo/SeleccionAlmacenamiento.jsp" location="350,850" dimension="225,49" />
+  <StrutsActivity path="/monitoreo/SeleccionMonitoreo.jsp" location="50,450" dimension="195,49" />
+  <StrutsActivity path="/monitor/seleccionMonitoreo.jsp" location="1550,150" dimension="182,49" />
+  <StrutsActivity path="/pages/RegistroExitoso.jsp" location="50,850" dimension="159,49" />
+  <StrutsActivity path="Registro.jsp" location="50,250" dimension="87,49" />
+  <StrutsActivity path="/monitoreo/UsuariosdiferenteAplicacion.jsp" location="50,350" dimension="235,49" />
+  <StrutsActivity path="/monitoreo/UsuariosporAplicacion.jsp" location="950,350" dimension="207,49" />
+  <StrutsActivity path="/monitor/listaOperacionesRealizadas.jsp" location="1550,250" dimension="221,49" />
+  <StrutsActivity path="/monitor/totalOperacionesUsuario.jsp" location="1550,350" dimension="209,49" />
+  <StrutsActivity path="/monitor/totalUsuariosAplicacion.jsp" location="1550,650" dimension="201,49" />
+  <StrutsActivity path="/monitor/listaUsuariosRegistrados.jsp" location="50,950" dimension="208,49" />
+  <StrutsActivity path="/monitor/totalConexionesUsuario.jsp" location="350,950" dimension="205,49" />
+  <StrutsActivity path="/monitor/SeleccionMonitoreo.jsp" location="1250,650" dimension="183,49" />
+  <StrutsActivity path="/monitor/UsuariosdiferenteAplicacion.jsp" location="1250,350" dimension="223,49" />
+  <StrutsActivity path="/monitor/UsuariosporAplicacion.jsp" location="650,850" dimension="195,49" />
+  <StrutsActivity path="SeleccionMonitoreo.jsp" location="350,450" dimension="139,49" />
+  <StrutsActivity path="/.jsp" location="950,50" dimension="51,49" />
+  <StrutsActivity path="/elite/principal.jsp" location="650,150" dimension="114,49" />
+  <StrutsActivity path="index.jsp" location="650,450" dimension="73,49" />
+  <StrutsActivity path="/SeleccionMonitoreo.jsp" location="950,450" dimension="143,49" />
+  <StrutsActivity path="monitoreo/SeleccionMonitoreo.jsp" location="50,550" dimension="191,49" />
+  <StrutsActivity path="/monitoreo/index.jsp" location="350,550" dimension="129,49" />
+  <StrutsActivity path="/pages/index.jsp" location="650,550" dimension="110,49" />
+  <StrutsActivity path="/Index.jsp" location="50,650" dimension="79,49" />
+  <StrutsActivity path="/monitoreo/DatosRegistro.jsp" location="950,650" dimension="171,49" />
+  <StrutsActivity path="/monitoreo/ResgistroExitoso.jsp" location="50,750" dimension="183,49" />
+  <StrutsActivity path="/pages/ResgistroExitoso.jsp" location="950,750" dimension="164,49" />
+  <StrutsActivity path="/monitor/" location="950,850" dimension="73,49" />
+  <StrutsTransition id="/SeleccionAction.do,new,/monitor/seleccionMonitoreo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1391,494" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="Registro.jsp,null,/RegistroAction.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="93,250" />
+      <AbsolutePoint location="93,214" />
+      <AbsolutePoint location="950,214" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/monitor/seleccionMonitoreo.jsp,null,/ConsultaMonitorAction.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="1397,794" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ConsultaMonitorAction.do,totalOperacionesUsuario,/monitor/totalOperacionesUsuario.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1397,794" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/monitoreo/SeleccionMonitoreo.jsp,null,/ConsultaAction.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="147,450" />
+      <AbsolutePoint location="147,414" />
+      <AbsolutePoint location="504,414" />
+      <AbsolutePoint location="504,338" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/LogoutAction.do,success,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="626,684" />
+      <AbsolutePoint location="809,684" />
+      <AbsolutePoint location="809,74" />
+      <AbsolutePoint location="727,74" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/LoginAction.do,failed,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="148,81" />
+      <AbsolutePoint location="650,81" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/SeleccionAction.do,old,/monitoreo/SeleccionMonitoreo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,514" />
+      <AbsolutePoint location="147,514" />
+      <AbsolutePoint location="147,499" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ConsultaAction.do,aplicacion,/monitoreo/UsuariosporAplicacion.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="645,264" />
+      <AbsolutePoint location="1053,264" />
+      <AbsolutePoint location="1053,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.jsp,null,/SeleccionAction.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="718,50" />
+      <AbsolutePoint location="718,-105" />
+      <AbsolutePoint location="1518,-105" />
+      <AbsolutePoint location="1518,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ConsultaAction.do,usuario,/monitoreo/UsuariosdiferenteAplicacion.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,284" />
+      <AbsolutePoint location="167,284" />
+      <AbsolutePoint location="167,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ConsultaMonitorAction.do,listaUsuariosRegistrados,/monitor/listaUsuariosRegistrados.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1397,794" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/SeleccionAction.do,failed,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1488,450" />
+      <AbsolutePoint location="1488,-45" />
+      <AbsolutePoint location="688,-45" />
+      <AbsolutePoint location="688,50" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.jsp,null,/LoginAction.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,51" />
+      <AbsolutePoint location="148,51" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ConsultaMonitorAction.do,listaOperacionesRealizadas,/monitor/listaOperacionesRealizadas.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1397,794" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/LoginAction.do,administrador,/pages/Registro.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="93,112" />
+      <AbsolutePoint location="93,127" />
+      <AbsolutePoint location="869,127" />
+      <AbsolutePoint location="869,574" />
+      <AbsolutePoint location="950,574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/LoginAction.do,success,/monitoreo/SeleccionAlmacenamiento.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,81" />
+      <AbsolutePoint location="-45,81" />
+      <AbsolutePoint location="-45,814" />
+      <AbsolutePoint location="462,814" />
+      <AbsolutePoint location="462,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ConsultaMonitorAction.do,totalUsuariosAplicacion,/monitor/totalUsuariosAplicacion.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1397,794" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ConsultaMonitorAction.do,failed,/monitor/seleccionMonitoreo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1397,794" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ConsultaMonitorAction.do,totalConexionesUsuario,/monitor/totalConexionesUsuario.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1397,794" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/RegistroAction.do,success,/pages/RegistroExitoso.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1095,194" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

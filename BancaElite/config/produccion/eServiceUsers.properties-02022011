@@ -1,0 +1,18 @@
+user.proxyelite.app_familia_azteca 3a109b61687fe92cb637679aab29baea
+user.proxyelite.app_banca_privada 0598419d4a5b6acf129e6e05229eee83
+user.proxyelite.app_banca_elite 81bf3474e115aed9f4dbfdcf7e21bc8f
+user.proxyelite.app_apertura_cuentas cc855ef47c875947dd941370f0ec5928
+user.proxyelite.app_wape f88e5cc999c23c3533d146164b6e9933
+
+# Reseteo de idSession
+
+user.proxyelite.reset.id.app_banca_elite false
+
+# Mensaje de Error extra
+
+user.proxyelite.user_iusacell.mensaje Ayuda 24 horas Línea Azteca 01800-040-7777 y 5447-8810.
+
+# URL del eService
+
+eservice.ip=10.63.85.153
+eservice.ip.port=9583

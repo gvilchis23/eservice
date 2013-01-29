@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idsesion cipher="mY5kIdW9COpLz9I5J9H7h+EegRKjEH/+CzzuiIdOhRc=" />
+			<idservicio value="MOVIMIENTOS" />
+			<comando value="EJECUCION" />
+			<numero_cuenta value="01720181405560" />
+		</request>
+	</eservices>
+</bancoazteca>

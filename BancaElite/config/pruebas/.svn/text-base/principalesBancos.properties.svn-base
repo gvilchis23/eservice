@@ -1,0 +1,13 @@
+#cantidad debe corresponder con los bancos a ordenar
+#recordando que el banco en aparecer sera banco azteca
+bancos.ordenados.cantidad 8
+
+#clave de los bancos que se van a colocar al inicio de la lista
+bancos.ordenados.clave1 0002
+bancos.ordenados.clave2 0012
+bancos.ordenados.clave3 0030
+bancos.ordenados.clave4 0072
+bancos.ordenados.clave5 0021
+bancos.ordenados.clave6 0036
+bancos.ordenados.clave7 0014
+bancos.ordenados.clave8 0044

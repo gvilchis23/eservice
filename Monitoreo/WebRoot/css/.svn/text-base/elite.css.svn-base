@@ -1,0 +1,508 @@
+.handHover{
+cursor: pointer;
+}
+
+a.opaco img{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+-moz-opacity: 1;
+}
+
+a.opaco:hover img{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+-moz-opacity: 0.6;
+}
+
+
+.blocker{
+	height: 100%;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: 50;
+	background: url(../images/fondos/fondoGris.jpg);
+	filter: alpha (opacity =70 );
+	opacity: .7
+}
+
+.moreIcon{
+	background-position: center;
+	background-image: url(../images/elite/bt_mas_r.gif);
+	width:50px;
+	height: 20px;
+	background-repeat: no-repeat; 
+	
+
+}
+
+.lessIcon{
+	background-position: center;
+	background-image: url(../images/elite/bt_cerrar_r.gif);
+	width:50px;
+	height: 20px;
+	background-repeat: no-repeat;
+}
+
+.popup {
+	position: absolute;
+	top: 300px;
+	left: 500px;
+	z-index: 100;
+	padding: 20px;
+	background-color: black;
+	/* Un color de fondo para que se vea sobre la capa anterior*/
+}
+
+
+
+.messageTran{
+	height: 175px;
+	width: 255px;	
+	cursor:wait;
+	border-style: ridge;
+	border-color: silver;
+	text-align: center;
+	background-color: white; 
+	background-position:center;
+	position: absolute;
+	z-index: 100;
+	top:280px;
+	left: 500px;
+	border:0;
+}
+
+.messageTranMoney {
+	background-color:#F7F7F7;
+	background-position:center;
+	border-color:silver;
+	border-style:ridge;
+	cursor:wait;
+	height:110px;
+	left:600px;
+	position:absolute;
+	text-align:center;
+	vertical-align: middle;
+	top:340px;
+	width:250px;
+	z-index:1;
+}
+
+.imageSend{	
+	background-image:url(../images/elite/loading.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	position:relative;
+	height: 170px;
+	width: 250px;
+
+}
+
+.imageWait{	
+	background-image:url(../images/elite/loading.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	position:inherit;
+	left:500px;
+	top:100px;	
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+
+}
+
+.textSend{
+	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#B22222;
+	cursor:pointer;
+	font-weight: bold;
+	text-decoration:none;
+	font-size: 13px;
+	padding-top: 15px;
+}
+
+.text1Transfer{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#B22222;
+	cursor:pointer;
+	font-weight: bold;
+	text-decoration:none;
+	font-size: 16px;
+	padding-top: 20px;
+}
+
+.text2Transfer{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#605f5f;
+	cursor:pointer;
+	font-weight: bold;
+	text-decoration:none;
+	font-size: 16px;
+	color: red;
+}
+
+.messageSend{
+	height: 25;
+	width: 25;
+	cursor:pointer;
+	background-color: blue;
+}
+.bulletColor{
+	background: #F7F7F7; 
+	border:0;
+}
+
+.ligaSelected{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#bc2815;
+	font-weight:normal;
+	text-decoration:none;
+	padding-left:26px;
+	padding-top:1px;
+	padding-bottom:1px;
+	background-image:url(../images/bullets/flecha_over.gif);
+	background-repeat: no-repeat;
+	background-position: 15px 4px;
+	background-color:#e2e4e5;
+	cursor: pointer;
+}
+
+.ligaSelectedMenu{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#bc2815;
+	font-weight:bold;
+	text-decoration:none;
+	padding-left:16px;
+	padding-top:1px;
+	padding-bottom:1px;
+	background-image:url(../images/bullets/flecha_over.gif);
+	background-repeat: no-repeat;
+	background-position: 5px 4px;
+	background-color:#e2e4e5;
+	cursor: pointer;
+}
+
+.ligaSelectedOpcion{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#bc2815;
+	font-weight:normal;
+	text-decoration:none;
+	padding-left:45px;
+	padding-top:1px;
+	padding-bottom:1px;
+	background-image:url(../images/bullets/flecha_over.gif);
+	background-repeat: no-repeat;
+	background-position: 30px 4px;
+	background-color:#e2e4e5;
+	cursor: pointer;
+}
+
+.error{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#8B0000;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration:none;
+}
+.aviso{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#BC2815;
+	font-size: 9px;
+	text-decoration: none;
+}
+
+.sliga_inferiores_menu_elite{
+	 color: #990000;
+}
+
+.textoBnrHomeRojo {
+color:#990000;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:13px;
+font-weight:bold;
+text-decoration:none;
+}
+
+a.liga4:hover {
+color:#FF9900;
+}
+.liga4 {
+color:#990000;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+font-weight:bold;
+text-decoration:none;
+}
+
+.Subtitulos2 {
+color:#CC0000;
+font-family:Arial,Helvetica,sans-serif;
+font-size:15px;
+font-style:italic;
+font-weight:bold;
+text-decoration:none;
+}
+
+.liga01blanca {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color:#CCCCCC;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.Subtitulo01 {
+color:#CC0000;
+font-family:Arial,Helvetica,sans-serif;
+font-size:15px;
+font-style:italic;
+font-weight:bold;
+text-decoration:none;
+}
+
+.textoCorrido2 {
+color:#333333;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+font-weight:normal;
+text-decoration:none;
+}
+
+.yesIcon{
+	background-position: center;
+	background-image: url(../images/elite/si_down.jpg);
+	width:80px;
+	height: 80px;
+	background-repeat: no-repeat; 
+}
+
+.yesIconOver{
+	background-position: center;
+	background-image: url(../images/btns/si_over.jpg);
+	width:80px;
+	height: 80px;
+	background-repeat: no-repeat; 
+}
+
+.noIcon{
+	background-position: center;
+	background-image: url(../images/elite/no_down.jpg);
+	width:80px;
+	height: 80px;
+	background-repeat: no-repeat; 
+}
+.noIconOver{
+	background-position: center;
+	background-image: url(../images/btns/no_over.jpg);
+	width:80px;
+	height: 80px;
+	background-repeat: no-repeat;
+}
+
+#principal {
+background-image:url(../images/estructura/pleca_fondo.jpg);
+height: auto;
+}
+
+.handImage {
+	cursor : hand;
+}
+
+.div01 {
+	width:12px; 
+	height:14px; 
+	background-image: url(../images/estructura/div_login01.gif);
+}
+
+.div02 {
+	width:12px; 
+	height:14px; 
+	background-image: url(../images/estructura/div_login02.gif);
+}
+
+.div03 {
+	width:12px; 
+	height:14px; 
+	background-image: url(../images/estructura/div_login03.gif);
+}
+
+.div04 {
+	width:12px; 
+	height:14px; 
+	background-image: url(../images/estructura/div_login04.gif);
+}
+
+.div05 {
+	width:12px; 
+	height:14px; 
+	background-image: url(../images/estructura/div_login05.gif);
+}
+
+.div06 {
+	width:12px; 
+	height:14px; 
+	background-image: url(../images/estructura/div_login06.gif);
+}
+
+.div07 {
+	width:650px; 
+	height:14px; 
+	background-image: url(../images/estructura/div_login07.gif);
+}
+
+.div07_2 {
+	width:300px; 
+	height:14px; 
+	background-image: url(../images/estructura/div_login07.gif);
+}
+
+.div08 {
+	width:12px; 
+	height:14px; 
+	background-image: url(../images/estructura/div_login08.gif);
+}
+
+.edoctaest_r1_c1 {
+	width:12px; 
+	height:10px; 
+	background-image: url(../images/estructura/edoctaest_r1_c1.gif);
+}
+
+.edoctaest_r1_c2 {
+	width:4px; 
+	height:10px; 
+	background-image: url(../images/estructura/edoctaest_r1_c2.gif);
+}
+
+.edoctaest_r1_c4 {
+	width:11px; 
+	height:10px; 
+	background-image: url(../images/estructura/edoctaest_r1_c4.gif);
+}
+
+.edoctaest_r1_c5 {
+	width:12px; 
+	height:10px; 
+	background-image: url(../images/estructura/edoctaest_r1_c6.gif);
+}
+
+.edoctaest_r1_c6 {
+	width:12px; 
+	height:14px; 
+	background-image: url(../images/estructura/edoctaest_r1_c6.gif);
+}
+
+.edoctaest_r1_c7 {
+	width:11px; 
+	height:10px; 
+	background-image: url(../images/estructura/edoctaest_r1_c7.gif);
+}
+
+.edoctaest_r2_c1 {
+	width:12px; 
+	height:6px; 
+	background-image: url(../images/estructura/edoctaest_r2_c1.gif);
+}
+
+.edoctaest_r2_c4 {
+	width:11px; 
+	height:6px; 
+	background-image: url(../images/estructura/edoctaest_r2_c4.gif);
+}
+
+.edoctaest_r4_c1 {
+	width:12px; 
+	height:11px; 
+	background-image: url(../images/estructura/edoctaest_r4_c1.gif);
+}
+
+.edoctaest_r4_c2 {
+	width:4px; 
+	height:11px; 
+	background-image: url(../images/estructura/edoctaest_r4_c2.gif);
+}
+
+.edoctaest_r4_c4 {
+	width:11px; 
+	height:11px; 
+	background-image: url(../images/estructura/edoctaest_r4_c4.gif);
+}
+
+.edoctaest_r5_c1 {
+	width:12px; 
+	height:10px; 
+	background-image: url(../images/estructura/edoctaest_r5_c1.gif);
+}
+
+.edoctaest_r5_c4 {
+	width:11px; 
+	height:8px; 
+	background-image: url(../images/estructura/edoctaest_r5_c4.gif);
+}
+
+.edoctaest_r8_c1 {
+	width:12px; 
+	height:11px; 
+	background-image: url(../images/estructura/edoctaest_r8_c1.gif);
+}
+
+.edoctaest_r8_c2 {
+	width:4px; 
+	height:11px; 
+	background-image: url(../images/estructura/edoctaest_r8_c2.gif);
+}
+
+.edoctaest_r8_c2_2 {
+	width:650px; 
+	height:11px; 
+	background-image: url(../images/estructura/edoctaest_r8_c2.gif);
+}
+
+.edoctaest_r8_c4 {
+	width:11px; 
+	height:11px; 
+	background-image: url(../images/estructura/edoctaest_r8_c4.gif);
+}
+
+.fondoMenu {
+	width:20px; 
+	background-image: url(../images/fondos/fondo01.jpg);
+}
+
+.logo_banco {
+	width:275px; 
+	height:73px; 
+	background-image: url(../images/estructura/logo.gif);
+	cursor: pointer;
+}
+
+.logo_bancaElite {
+	width:186px; 
+	height:40px; 
+	background-image: url(../images/estructura/logo_bancaelite.gif);
+}
+
+.tarjeta_banco {
+	width:53px; 
+	height:32px; 
+	background-image: url(../images/tarjetas/logo_banco.gif);
+}
+
+.tarjeta_oro {
+	width:53px; 
+	height:32px; 
+	background-image: url(../images/tarjetas/tarjeta_oro.jpg);
+}
+
+.dummyMode{
+	text-decoration: blink;
+	size: 35px;
+	color: gray;
+	font-weight: bold;
+	
+}

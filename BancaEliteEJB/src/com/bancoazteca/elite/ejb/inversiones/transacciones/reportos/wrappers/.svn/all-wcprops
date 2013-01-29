@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers
+END
+ReportosEstadoCuentaResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosEstadoCuentaResponseTO.java
+END
+ReportosAltaClienteRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosAltaClienteRequestTO.java
+END
+ReportosOperacionesDirectoEstadoCuentaResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosOperacionesDirectoEstadoCuentaResponseTO.java
+END
+ReportosAperturaResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosAperturaResponseTO.java
+END
+ReportosConciliacionRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosConciliacionRequestTO.java
+END
+ReportosAltaClienteResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosAltaClienteResponseTO.java
+END
+ReportosPlazoTasaRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosPlazoTasaRequest.java
+END
+AsignacionesComprobanteInversionReportosResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/AsignacionesComprobanteInversionReportosResponse.java
+END
+ReportosConciliacionResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosConciliacionResponseTO.java
+END
+ReportosPlazoTasaResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosPlazoTasaResponse.java
+END
+ReportosComprobanteInversionRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosComprobanteInversionRequest.java
+END
+ReportosResumenOperacionesRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosResumenOperacionesRequestTO.java
+END
+ReportosComprobanteInversionResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosComprobanteInversionResponse.java
+END
+ReportosFechaAperturaRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosFechaAperturaRequestTO.java
+END
+ReportosResumenOperacionesResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosResumenOperacionesResponseTO.java
+END
+ReportosOperacionesEstadoCuentaResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosOperacionesEstadoCuentaResponseTO.java
+END
+ReportosMovimientosEstadoCuentaResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosMovimientosEstadoCuentaResponseTO.java
+END
+ReportosEstadoCuentaRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosEstadoCuentaRequestTO.java
+END
+ReportosValidaPlazoTasaRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosValidaPlazoTasaRequestTO.java
+END
+ReportosFechaAperturaResponseTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosFechaAperturaResponseTO.java
+END
+ReportosAperturaRequestTO.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/eService/!svn/ver/13/BancaEliteEJB/src/com/bancoazteca/elite/ejb/inversiones/transacciones/reportos/wrappers/ReportosAperturaRequestTO.java
+END

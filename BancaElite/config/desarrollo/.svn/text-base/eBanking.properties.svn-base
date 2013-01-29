@@ -1,0 +1,10 @@
+ebanking.ip=https://elite:38181/eBanking
+ebanking.ip.port=38181
+ebanking.ip.protocol=https
+
+
+elite.certificate=elite.keystore
+elite.certificate.password=adminadmin
+
+http.socket.timeout = 940000
+

@@ -1,0 +1,5 @@
+# Datos para el parceo del Tipo de Cambio para Transferencias Internacionales
+elite.transferencia.internacional.tipocambio.entero=6
+elite.transferencia.internacional.tipocambio.decimal=7
+elite.transferencia.internacional.tipocambio.longdecimal=2
+elite.transferencia.internacional.tipocambio.longtotal=11

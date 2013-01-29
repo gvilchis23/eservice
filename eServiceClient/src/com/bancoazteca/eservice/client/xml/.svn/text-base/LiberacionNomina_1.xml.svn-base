@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idservicio value="LIBERAR_NOMINA" />
+			<idsesion cipher="+toIqCJR7DH1KlVtUs3+Y9WynwGroe4zibIteFXKy9w=" />
+			<comando value="SOLICITUD" />
+		</request>
+	</eservices>
+</bancoazteca>

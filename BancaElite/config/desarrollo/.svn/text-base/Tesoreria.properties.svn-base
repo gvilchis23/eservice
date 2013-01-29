@@ -1,0 +1,7 @@
+webservice.reportos.wsdl = http://10.51.202.39/TestTas/ReportosWS?wsdl
+webservice.reportos.namespace = http://ws.tas.mx.org/
+webservice.reportos.servicename = ReportosWSService
+webservice.reportos.portname = ReportosWSPort
+webservice.reportos.portbinding = tns:ReportosWSBinding
+webservice.reportos.interface = com.bancoazteca.elite.ejb.inversiones.wsfactory.ReportosWS
+webservice.reportos.portal = ELITE

@@ -1,0 +1,308 @@
+package com.bancoazteca.elite.ejb.preferencias;
+
+import java.io.IOException;
+import java.rmi.RemoteException;
+import java.util.ArrayList;
+import java.util.Collection;
+
+import javax.ejb.CreateException;
+import javax.ejb.EJBException;
+import javax.ejb.SessionBean;
+import javax.ejb.SessionContext;
+
+import org.apache.axis.message.MessageElement;
+
+
+import com.bancoazteca.elite.beans.AltasUsuariosRequestTO;
+import com.bancoazteca.elite.beans.ConsultaExpressRequestTO;
+import com.bancoazteca.elite.beans.ConsultaExpressResponseTO;
+import com.bancoazteca.elite.beans.CuentaBloqueadaDBTO;
+import com.bancoazteca.elite.beans.CuentaTO;
+import com.bancoazteca.elite.beans.EstatusCuentaRequestTO;
+import com.bancoazteca.elite.beans.EstatusCuentaResponseTO;
+import com.bancoazteca.elite.beans.EstatusCuentaTO;
+import com.bancoazteca.elite.beans.FiltroCuentaRequestTO;
+import com.bancoazteca.elite.beans.FiltroCuentaResponseTO;
+import com.bancoazteca.elite.beans.PreguntasFrecuentesResponseTO;
+import com.bancoazteca.elite.beans.TerminalAlnovaResponseTO;
+import com.bancoazteca.elite.commons.xml.XmlDecodeException;
+import com.bancoazteca.elite.commons.xml.XmlDecoder;
+import com.bancoazteca.elite.ejb.exception.DAOException;
+import com.bancoazteca.elite.ejb.exception.EliteDataException;
+import com.bancoazteca.elite.ejb.exception.SessionExpiredException;
+import com.bancoazteca.elite.ejb.usuario.UsuarioException;
+import com.bancoazteca.elite.preferencias.db.dao.PreferenciasDao;
+
+public class PreferenciasSLBean implements SessionBean{
+
+	private static final long serialVersionUID = 1L;
+	private static final String ESTADO_OCULTO = "oculto";
+	private static final String ESTADO_VISIBLE = "visible";
+	
+	public void ejbActivate() throws EJBException, RemoteException {}
+	public void ejbPassivate() throws EJBException, RemoteException {}
+	public void ejbRemove() throws EJBException, RemoteException {}
+	public void setSessionContext(SessionContext ctx) throws EJBException, RemoteException {}
+	public void ejbCreate() throws CreateException{}
+		
+	public EstatusCuentaResponseTO getCuentasUsuarioStatus(EstatusCuentaRequestTO statusCuentaRequestTO) throws DAOException{
+	
+	
+		EstatusCuentaResponseTO statusCuentaResponseTO = new EstatusCuentaResponseTO(); 
+		PreferenciasDao preferenciasDao = new PreferenciasDao();
+		
+		CuentaBloqueadaDBTO to=new CuentaBloqueadaDBTO();
+		to.setIdUsuario(statusCuentaRequestTO.getIdusuario());
+		
+		Collection<CuentaBloqueadaDBTO> cuentasBloqueadas = preferenciasDao.getCuentasOcultas(to);
+		Collection<EstatusCuentaTO> statusCuentas = new ArrayList<EstatusCuentaTO>();
+		
+		for(CuentaTO cuenta: statusCuentaRequestTO.getCuentas()){
+			
+			double retenido = cuenta.getRetenido();
+			double disponible = cuenta.getDisponible();
+			double saldoTotal = retenido + disponible;
+			
+			EstatusCuentaTO cuentaTO = new EstatusCuentaTO();
+			
+			cuentaTO.setCuenta_cargo(cuenta.getCuentaFormateada().replace(" ", ""));
+			cuentaTO.setProducto(cuenta.getDescripcion());
+			cuentaTO.setSaldo_total(String.valueOf(saldoTotal));
+			to.setNumero_cuenta(cuentaTO.getCuenta_cargo());
+			
+			cuentaTO.setEstatus(ESTADO_VISIBLE);
+			for (CuentaBloqueadaDBTO bloqueada: cuentasBloqueadas) {
+//				String toIdUsuario=to.getIdUsuario();
+				String toNumeroCuenta=to.getNumero_cuenta();
+//				String bloqueadaIdUsuario=bloqueada.getIdUsuario();
+				String bloqueadaNumeroCuenta=bloqueada.getNumero_cuenta();
+				if (/*Integer.parseInt(bloqueadaIdUsuario)==Integer.parseInt(toIdUsuario) &&*/ bloqueadaNumeroCuenta.equalsIgnoreCase(toNumeroCuenta)) {
+					cuentaTO.setEstatus(ESTADO_OCULTO);
+					break;
+				}
+			}				
+			statusCuentas.add(cuentaTO);
+		}
+		statusCuentaResponseTO.setEstatusCuentas(statusCuentas);				
+		return statusCuentaResponseTO;
+	}
+		
+	public EstatusCuentaResponseTO getCambiarEstatus(EstatusCuentaRequestTO statusCuentaRequestTO) throws DAOException{
+		
+		EstatusCuentaResponseTO statusCuentaResponseTO = new EstatusCuentaResponseTO(); 
+		PreferenciasDao preferenciasDao = new PreferenciasDao();
+		
+		CuentaBloqueadaDBTO to=new CuentaBloqueadaDBTO();
+		to.setIdUsuario(statusCuentaRequestTO.getIdusuario());
+		to.setNumero_cuenta(statusCuentaRequestTO.getNumero_cuenta());
+		
+		if (statusCuentaRequestTO.getEstatus().equals(ESTADO_VISIBLE)) {
+			preferenciasDao.insertarCuenta(to);
+		}
+		else if (statusCuentaRequestTO.getEstatus().equals(ESTADO_OCULTO)) {
+			preferenciasDao.eliminarCuenta(to);
+		}
+		
+		statusCuentaResponseTO = getCuentasUsuarioStatus(statusCuentaRequestTO);
+		return statusCuentaResponseTO;
+	} 
+	
+	public FiltroCuentaResponseTO filtraCuentasOcultas(FiltroCuentaRequestTO filtroCuentaRequestTO) throws DAOException {
+		FiltroCuentaResponseTO filtroCuentaResponseTO = new FiltroCuentaResponseTO(); 
+		PreferenciasDao preferenciasDao = new PreferenciasDao();
+		String xmlResponse = preferenciasDao.filtraCuentasOcultas(filtroCuentaRequestTO.getXml(), filtroCuentaRequestTO.getIdUsuario());
+		filtroCuentaResponseTO.setXml(xmlResponse);
+		return filtroCuentaResponseTO; 
+
+	}
+	
+	public PreguntasFrecuentesResponseTO getPreguntasFrecuentes() throws IOException, XmlDecodeException {
+		PreguntasFrecuentesResponseTO responseTO = new PreguntasFrecuentesResponseTO();
+		PreferenciasDao preferenciasDao = new PreferenciasDao();
+		 
+		responseTO = preferenciasDao.getPreguntasFrecuentes();	
+		return responseTO;
+	}
+	
+	//altas usuarios
+	@SuppressWarnings("unchecked")
+	public void consultarCuentaActivar(AltasUsuariosRequestTO requestTO) throws UsuarioException, SessionExpiredException, EliteDataException{
+		
+		PreferenciasDAO dao = new PreferenciasDAO();
+		try{
+			MessageElement messageElement = dao.consultarCuentaActivar(requestTO);
+			PreferenciasRule rule = new PreferenciasRule(messageElement);
+			rule.validarConsultarCuenta();
+			
+		}catch(DAOException exception){
+			throw new UsuarioException(exception);
+		}
+	}
+	
+	@SuppressWarnings("unchecked")
+	public void validarDatosActivar(AltasUsuariosRequestTO requestTO) throws UsuarioException, SessionExpiredException, EliteDataException{
+		
+		PreferenciasDAO dao = new PreferenciasDAO();
+		try{
+			MessageElement messageElement = dao.validarDatosActivar(requestTO);
+			PreferenciasRule rule = new PreferenciasRule(messageElement);
+			rule.validarDatosActivar();
+			
+		}catch(DAOException exception){
+			throw new UsuarioException(exception);
+		}
+	}
+	
+	@SuppressWarnings("unchecked")
+	public void validarContrato(AltasUsuariosRequestTO requestTO) throws UsuarioException, SessionExpiredException, EliteDataException{
+		
+		PreferenciasDAO dao = new PreferenciasDAO();
+		try{
+			MessageElement messageElement = dao.validarContrato(requestTO);
+			PreferenciasRule rule = new PreferenciasRule(messageElement);
+			rule.validarContrato();
+			
+		}catch(DAOException exception){
+			throw new UsuarioException(exception);
+		}
+	}
+	
+	@SuppressWarnings("unchecked")
+	public void consultarUsuarioDisponible(AltasUsuariosRequestTO requestTO) throws UsuarioException, SessionExpiredException, EliteDataException{
+		
+		PreferenciasDAO dao = new PreferenciasDAO();
+		try{
+			MessageElement messageElement = dao.consultarUsuarioDisponible(requestTO);
+			PreferenciasRule rule = new PreferenciasRule(messageElement);
+			rule.consultarUsuarioDisponible();
+			
+		}catch(DAOException exception){
+			throw new UsuarioException(exception);
+		}
+	}
+	
+	@SuppressWarnings("unchecked")
+	public void registrarUsuario(AltasUsuariosRequestTO requestTO) throws UsuarioException, SessionExpiredException, EliteDataException{
+		
+		PreferenciasDAO dao = new PreferenciasDAO();
+		try{
+			MessageElement messageElement = dao.registrarUsuario(requestTO);
+			PreferenciasRule rule = new PreferenciasRule(messageElement);
+			rule.registrarUsuario();
+			
+		}catch(DAOException exception){
+			throw new UsuarioException(exception);
+		}
+	}
+	
+	@SuppressWarnings("unchecked")
+	public void activarUsuario(AltasUsuariosRequestTO requestTO) throws UsuarioException, SessionExpiredException, EliteDataException{
+		
+		PreferenciasDAO dao = new PreferenciasDAO();
+		try{
+			MessageElement messageElement = dao.activarUsuario(requestTO);
+			PreferenciasRule rule = new PreferenciasRule(messageElement);
+			rule.activarUsuario();
+			
+		}catch(DAOException exception){
+			throw new UsuarioException(exception);
+		}
+	}
+	
+	//fin altas usuarios
+	
+	public TerminalAlnovaResponseTO getTerminalAlnova(String user)throws SessionExpiredException,DAOException{
+		TerminalAlnovaResponseTO to=new TerminalAlnovaResponseTO();
+		PreferenciasDao preferenciasDao = new PreferenciasDao();
+		XmlDecoder decoder = new XmlDecoder();
+		String terminal=null;
+		try {
+			MessageElement messageElement=preferenciasDao.getTerminalAlnova(user);
+			terminal = (String) decoder.toDeserialize("codigo_terminal", messageElement, null);
+			
+			if("terminal no disponible".equalsIgnoreCase(terminal)){
+				
+			}
+			
+		} catch (DAOException e) {
+			throw e;
+		} 
+		to.setCodigoTerminalAlnova(terminal);
+		return to;
+	}
+	
+	public void liberaTerminalAlnova(String user,String terminal) throws SessionExpiredException,DAOException{
+		PreferenciasDao dao=new PreferenciasDao();
+		dao.liberaTerminal(user, terminal);
+		return;
+	}
+	
+	@SuppressWarnings("unchecked")
+	public ConsultaExpressResponseTO consultarCuentaExpress(ConsultaExpressRequestTO requestTO) throws UsuarioException, SessionExpiredException, EliteDataException{
+		
+		PreferenciasDAO dao = new PreferenciasDAO();
+		ConsultaExpressResponseTO response = new ConsultaExpressResponseTO();
+		try{
+			MessageElement messageElement = dao.consultarCuentaExpress(requestTO);
+			PreferenciasRule rule = new PreferenciasRule(messageElement);
+			rule.consultarCuentaExpress();
+			
+		}catch(DAOException exception){
+			throw new UsuarioException(exception);
+		}
+		
+		return response;
+	}
+	
+	@SuppressWarnings("unchecked")
+	public ConsultaExpressResponseTO validarCuentaExpress(ConsultaExpressRequestTO requestTO) throws UsuarioException, SessionExpiredException, EliteDataException{
+		
+		PreferenciasDAO dao = new PreferenciasDAO();
+		ConsultaExpressResponseTO response = new ConsultaExpressResponseTO();
+		try{
+			MessageElement messageElement = dao.validarCuentaExpress(requestTO);
+			PreferenciasRule rule = new PreferenciasRule(messageElement);
+			rule.validarCuentaExpress();
+			
+		}catch(DAOException exception){
+			throw new UsuarioException(exception);
+		}
+		
+		return response;
+	}
+	
+	@SuppressWarnings("unchecked")
+	public ConsultaExpressResponseTO cerrarCuentaExpress(ConsultaExpressRequestTO requestTO) throws UsuarioException, SessionExpiredException, EliteDataException{
+		
+		PreferenciasDAO dao = new PreferenciasDAO();
+		ConsultaExpressResponseTO response = new ConsultaExpressResponseTO();
+		try{
+			MessageElement messageElement = dao.cerrarCuentaExpress(requestTO);
+			//PreferenciasRule rule = new PreferenciasRule(messageElement);
+			//rule.activarUsuario();
+			
+		}catch(DAOException exception){
+			throw new UsuarioException(exception);
+		}
+		
+		return response;
+	}
+	
+	@SuppressWarnings("unchecked")
+	public ConsultaExpressResponseTO getRecibosCuentaExpress(ConsultaExpressRequestTO requestTO) throws UsuarioException, SessionExpiredException, EliteDataException{
+		
+		PreferenciasDAO dao = new PreferenciasDAO();
+		ConsultaExpressResponseTO response = new ConsultaExpressResponseTO();
+		try{
+			MessageElement messageElement = dao.getRecibosCuentaExpress(requestTO);
+			//PreferenciasRule rule = new PreferenciasRule(messageElement);
+			//rule.activarUsuario();
+			
+		}catch(DAOException exception){
+			throw new UsuarioException(exception);
+		}
+		
+		return response;
+	}
+	
+}

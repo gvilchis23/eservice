@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE application PUBLIC "-//Sun Microsystems, Inc.//DTD J2EE Application 1.3//EN" "http://java.sun.com/dtd/application_1_3.dtd">
+
+<application>
+  <display-name>BancaElite</display-name>
+  <module id="myeclipse.1237800299562">
+    <web>
+      <web-uri>eServiceWeb.war</web-uri>
+      <context-root>/eServiceWeb</context-root>
+    </web>
+  </module>
+  <module id="myeclipse.1219419647578">
+    <web>
+      <web-uri>BancaEliteWeb.war</web-uri>
+      <context-root>/bancaelite</context-root>
+    </web>
+  </module>
+  <module id="myeclipse.1278947804015">
+    <web>
+      <web-uri>Monitoreo.war</web-uri>
+      <context-root>/monitoreo</context-root>
+    </web>
+  </module>
+  <module id="myeclipse.1219419636468">
+    <ejb>BancaEliteEJB.jar</ejb>
+  </module>
+</application>
+

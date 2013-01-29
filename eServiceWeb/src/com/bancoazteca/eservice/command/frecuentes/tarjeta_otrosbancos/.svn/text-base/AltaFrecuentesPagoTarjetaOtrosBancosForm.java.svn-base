@@ -1,0 +1,40 @@
+package com.bancoazteca.eservice.command.frecuentes.tarjeta_otrosbancos;
+
+import com.bancoazteca.elite.util.Validator;
+import com.bancoazteca.eservice.command.base.FormBean;
+import com.bancoazteca.eservice.validator.MessageErrors;
+
+public class AltaFrecuentesPagoTarjetaOtrosBancosForm extends FormBean{
+	private String alias_beneficiario;
+	private String numero_tarjeta;
+	
+	public MessageErrors validate (){
+		MessageErrors error = new MessageErrors();
+		
+		if(Validator.isEmptyData(alias_beneficiario)){
+			error.add("alias_beneficiario", PAGO_SERVICIOS_FRECUENTES_ALIAS_BENEFICIARIO_ERROR, "nuevo");
+		}
+		if(Validator.isEmptyData(numero_tarjeta)){
+			error.add("numero_tarjeta", PAGO_SERVICIOS_FRECUENTES_NUMERO_TARJETA_ERROR, "");
+		}else{	
+			if(!Validator.checkNumeric(numero_tarjeta)){
+				error.add("numero_tarjeta", PAGO_SERVICIOS_FRECUENTES_NUMERO_TARJETA_NUMERICA_ERROR, "");
+			}
+		}
+		return error;
+	}
+	
+	public String getAlias_beneficiario() {
+		return alias_beneficiario;
+	}
+	public void setAlias_beneficiario(String alias_beneficiario) {
+		this.alias_beneficiario = alias_beneficiario;
+	}
+	public String getNumero_tarjeta() {
+		return numero_tarjeta;
+	}
+	public void setNumero_tarjeta(String numero_tarjeta) {
+		this.numero_tarjeta = numero_tarjeta;
+	} 
+
+}

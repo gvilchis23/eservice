@@ -1,0 +1,10 @@
+# Resources for parameter 'com.yourcompany.struts.ApplicationResources'
+# Project Monitoreo
+
+error.monitoreo.fechainicial=Formato Incorrecto de la Fecha Inicial.<br>
+error.monitoreo.fechafinal=Formato Incorrecto de la Fecha Final.
+error.monitoreo.rangofechas=Si la búsqueda será por rango de fechas, fecha inicial y fecha final son requeridas
+error.monitoreo.fechaobligatoria=Para esta opcion de busqueda la fecha inicial y fecha final son requeridas
+
+error.monitoreo.usuarioincorrecto=Usuario Incorrecto.<br>
+error.monitoreo.contraseniaincorrecta=Contraseña Incorrecta.<br>

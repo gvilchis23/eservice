@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idportal value='user_iusacell' />
+			<idservicio value="estado_cuenta_mercado_dinero" />
+			<comando value="EJECUCION" />
+			<idsesion cipher="QsMgMZFdGVv8sgSZl7NPwbSYovAWf4wthruMli3JchA=" />
+			<portal value='Elite' />
+			<anio_periodo value=' 2 0 1 0 ' />
+			<mes_periodo value='ENERO' />
+		</request>
+	</eservices>
+</bancoazteca>

@@ -1,0 +1,31 @@
+#filtros.path /export/home/elite/jboss-4.0.2/server/default/conf/elite/produccion/produccion/filter-manager.xml
+#filtros.path /worskspace/BElite/BancaElite/config/pruebas/filter-manager.xml
+filtros.path /belite/config/pruebas/filter-manager.xml
+
+filtros.app_familia_azteca.alnova.producto 13
+filtros.app_familia_azteca.alnova.subproducto 0022
+filtros.app_familia_azteca.alnova.opcion C
+filtros.app_familia_azteca.alnova.estatus 1
+filtros.app_familia_azteca.error.usuario.nuevo Estimado cliente, para ingresar a Banca Elite es necesario que contrate el servicio desde Internet en BancoAzteca.com ó en el celular en BancoAzteca.com/rma Línea Azteca 5447-8810 / 01-800-040-7777
+filtros.app_familia_azteca.error.usuario.no.pago Estimado cliente, para ingresar a Banca Elite es necesario que se realice el pago correspondiente Línea Azteca 5447-8810 / 01-800-040-7777
+filtros.app_familia_azteca.error.alnova Estimado cliente, no se ha podido procesar su solicitud porfavor intente más tarde. 
+
+filtros.app_wape.alnova.producto 13
+filtros.app_wape.alnova.subproducto 0022
+filtros.app_wape.alnova.opcion C
+filtros.app_wape.alnova.estatus 1
+filtros.app_wape.error.usuario.nuevo Estimado cliente, para ingresar a RMA es necesario que contrate el servicio desde Internet en BancoAzteca.com ó en el celular en BancoAzteca.com/rma, Línea Azteca 5447-8810 / 01-800-040-7777
+filtros.app_wape.error.usuario.no.pago Estimado cliente, para ingresar a RMA es necesario que se realice el pago correspondiente, Línea Azteca 5447-8810 / 01-800-040-7777 
+filtros.app_wape.error.alnova Estimado cliente, no se ha podido procesar su solicitud porfavor intente más tarde.
+
+
+filtros.app_banca_elite.alnova.producto 13
+filtros.app_banca_elite.alnova.subproducto 0022
+filtros.app_banca_elite.alnova.opcion C
+filtros.app_banca_elite.alnova.estatus 1
+filtros.app_banca_elite.error.usuario.nuevo Estimado cliente, para ingresar a Banca Elite es necesario que contrate el servicio desde Internet en BancoAzteca.com ó en el celular en BancoAzteca.com/rma Línea Azteca 5447-8810 / 01-800-040-7777
+filtros.app_banca_elite.error.usuario.no.pago Estimado cliente, para ingresar a Banca Elite es necesario que se realice el pago correspondiente Línea Azteca 5447-8810 / 01-800-040-7777
+filtros.app_banca_elite.error.alnova Estimado cliente, no se ha podido procesar su solicitud porfavor intente más tarde. 
+
+
+filtros.alnova.exception.code=BGE0236

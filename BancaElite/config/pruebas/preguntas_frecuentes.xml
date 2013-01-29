@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+<preguntas_frecuentes>
+	<coleccion_preguntas_frecuentes>
+		<pregunta_frecuente>
+			<pregunta value="¿Cómo obtengo mi usuario y contraseña?" />
+			<id_pregunta value="1" />
+			<respuesta value="Si tienes una cuenta de Ahorro en Banco Azteca como un Guardadito o Red Móvil Azteca, acude a tu sucursal presenta una identificación, solicita el registro de tu cuenta de internet y actívalo con tu huella digital" />
+		</pregunta_frecuente>
+		<pregunta_frecuente>
+			<pregunta value="¿Cuáles son los requisitos para adquirirlo?" />
+			<id_pregunta value="2" />
+			<respuesta value="Si no tienes una línea de crédito, debes presentar la documentación necesaria para obtenerla (Identificación oficial, comprobante de ingresos, comprobante de domicilio y un aval) Si ya cuentas con una línea de crédito no es necesario solicitar otra puedes adquirir un paquete RMA de inmediato" />
+		</pregunta_frecuente>
+		<pregunta_frecuente>
+			<pregunta value="¿Por qué no funciona mi usuario y contraseña?" />
+			<id_pregunta value="3" />
+			<respuesta value="Asegúrate de estar escribiendo correctamente las mayúsculas y los números en de tu contraseña y revisa en el campo de usuario no hayan caracteres en blanco antes o después de escribir tu usuario  " />
+		</pregunta_frecuente>
+		<pregunta_frecuente>
+			<pregunta value="¿Qué hago en caso de robo o extravío?" />
+			<id_pregunta value="4" />
+			<respuesta value="Acércate a tu sucursal Elektra para hacer válido tu seguro o para adquirir un equipo nuevo. Para desactivar la línea comunícate desde un Iusacell *611 ó 01800 333 0611" />
+		</pregunta_frecuente>
+		<pregunta_frecuente>
+			<pregunta value="¿El servicio de RMA es a nivel nacional?" />
+			<id_pregunta value="5" />
+			<respuesta value="Todo el paquete funciona a nivel internacional, tanto la aplicación para Blackberry como la de Wap, así como las tarjetas Master Card de crédito y débito" />
+		</pregunta_frecuente>
+		<pregunta_frecuente>
+			<pregunta value="¿Los depósitos a la cuenta de Débito pueden ser a nivel nacional?" />
+			<id_pregunta value="6" />
+			<respuesta value="No, únicamente en tu región" />
+		</pregunta_frecuente>
+		<pregunta_frecuente>
+			<pregunta value="¿El costo del equipo ya viene dentro del plan tarifario semanal con el que se contratara?" />
+			<id_pregunta value="7" />
+			<respuesta value="Si, el cobro semanal incluye todos los costos (el equipo Blackberry, el tiempo aire semanal y el uso de la aplicación)" />
+		</pregunta_frecuente>
+		<pregunta_frecuente>
+			<pregunta value="¿Cuesta utilizar RMA para clientes de Banco Azteca sin paquete de RMA?" />
+			<id_pregunta value="8" />
+			<respuesta value="Si, tendrá un costo de $30.00 mensuales y pueden descargar la aplicación en su Blackberry o utilizar la versión Wap el único requisito es contar con usuario y contraseña de BancoAzteca.com" />
+		</pregunta_frecuente>
+		<pregunta_frecuente>
+			<pregunta value="¿Si ya tengo un Guardadito y quiere RMA puede ocupar la que tengo o me darán una nueva?" />
+			<id_pregunta value="9" />
+			<respuesta value="Te daremos gratis una cuenta de débito, podrás utilizar las dos desde tu aplicación en Blackberry o Wap, solicita a tu ejecutivo que cuando cree tú cuenta RMA quede vinculada a tu cuenta de Guardadito para que puedas administrarlas " />
+		</pregunta_frecuente>
+		<pregunta_frecuente>
+			<pregunta value="¿Qué tasa de interés tiene la tarjeta RMA de débito?" />
+			<id_pregunta value="10" />
+			<respuesta value="Tiene un interés del 2.5% anual" />
+		</pregunta_frecuente>
+	</coleccion_preguntas_frecuentes>
+</preguntas_frecuentes>
+</root>

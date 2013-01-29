@@ -1,0 +1,29 @@
+user.proxyelite.user_iusacell 3a109b61687fe92cb637679aab29baea
+user.proxyelite.user_iusacell_1 3a109b61687fe92cb637679aab29baea
+user.proxyelite.user_iusacell_2 3a109b61687fe92cb637679aab29baea
+user.proxyelite.user_iusacell_3 3a109b61687fe92cb637679aab29baea
+user.proxyelite.user_iusacell_4 3a109b61687fe92cb637679aab29baea
+user.proxyelite.user_iusacell_5 3a109b61687fe92cb637679aab29baea
+user.proxyelite.user_iusacell_6 3a109b61687fe92cb637679aab29baea
+user.proxyelite.user_iusacell_7 3a109b61687fe92cb637679aab29baea
+user.proxyelite.user_iusacell_8 3a109b61687fe92cb637679aab29baea
+user.proxyelite.user_iusacell_9 3a109b61687fe92cb637679aab29baea
+user.proxyelite.user_iusacell_10 3a109b61687fe92cb637679aab29baea
+user.proxyelite.userpruebas 202cb962ac59075b964b07152d234b70
+user.proxyelite.user_banca_privada 0598419d4a5b6acf129e6e05229eee83
+user.proxyelite.app_banca_elite 81bf3474e115aed9f4dbfdcf7e21bc8f
+user.proxyelite.app_apertura_cuentas cc855ef47c875947dd941370f0ec5928
+user.proxyelite.app_wape f88e5cc999c23c3533d146164b6e9933
+
+# Reseteo de idSession
+
+user.proxyelite.reset.id.app_banca_elite false
+
+# Mensaje de Error extra
+
+user.proxyelite.user_iusacell.mensaje Ayuda 24 horas Línea Azteca 01800-040-7777 y 5447-8810.
+
+# URL del eService
+
+eservice.ip=10.50.16.97
+eservice.ip.port=9090

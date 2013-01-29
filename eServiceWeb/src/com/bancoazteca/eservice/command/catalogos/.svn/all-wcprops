@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/eService/!svn/ver/55/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos
+END
+AgentesDineroExpressCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/55/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/AgentesDineroExpressCommand.java
+END
+SucursalesDineroExpressCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/eService/!svn/ver/55/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/SucursalesDineroExpressCommand.java
+END
+CiudadesForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/CiudadesForm.java
+END
+Companias_CelularesCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/Companias_CelularesCommand.java
+END
+EstadosDineroExpresForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/EstadosDineroExpresForm.java
+END
+CiudadesDineroExpressForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/CiudadesDineroExpressForm.java
+END
+CiudadesCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/CiudadesCommand.java
+END
+Swift_AbaForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/Swift_AbaForm.java
+END
+PaisesCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/PaisesCommand.java
+END
+Bancos_SpeiCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/eService/!svn/ver/29/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/Bancos_SpeiCommand.java
+END
+AgentesDineroExpressForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/eService/!svn/ver/55/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/AgentesDineroExpressForm.java
+END
+SucursalesDineroExpressForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/eService/!svn/ver/55/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/SucursalesDineroExpressForm.java
+END
+EstadosDineroExpresCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/eService/!svn/ver/55/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/EstadosDineroExpresCommand.java
+END
+CiudadesDineroExpressCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/eService/!svn/ver/55/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/CiudadesDineroExpressCommand.java
+END
+Swift_AbaCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/Swift_AbaCommand.java
+END
+PaisesDineroExpressCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/eService/!svn/ver/55/eServiceWeb/src/com/bancoazteca/eservice/command/catalogos/PaisesDineroExpressCommand.java
+END

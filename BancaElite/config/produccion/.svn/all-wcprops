@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/eService/!svn/ver/138/BancaElite/config/produccion
+END
+pbamxapp.cer
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/pbamxapp.cer
+END
+TipoCambio.properties
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/TipoCambio.properties
+END
+eMail.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/eMail.properties
+END
+filter-manager-cuentas.xml_8Mar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/filter-manager-cuentas.xml_8Mar
+END
+BaseDatosCuentas.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/BaseDatosCuentas.properties
+END
+dummy.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/dummy.properties
+END
+Tesoreria.properties
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/Tesoreria.properties
+END
+filter-manager.xml-20abril2010
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/filter-manager.xml-20abril2010
+END
+ConfiguracionesAlnova.properties_10Feb2010
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/ConfiguracionesAlnova.properties_10Feb2010
+END
+preguntas_frecuentes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/preguntas_frecuentes.xml
+END
+BaseDatos.properties
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/BaseDatos.properties
+END
+elite.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/elite.keystore
+END
+eMailPlantillas.properties
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/eMailPlantillas.properties
+END
+Monitoreo.properties
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/Monitoreo.properties
+END
+eServiceUsers.properties-02022011
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/eServiceUsers.properties-02022011
+END
+ConfiguracionesAlnova.properties
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/ConfiguracionesAlnova.properties
+END
+CuentaPlataFiltro.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/CuentaPlataFiltro.properties
+END
+eMailDestinatarios.properties
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/eMailDestinatarios.properties
+END
+mail.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/eService/!svn/ver/138/BancaElite/config/produccion/mail.properties
+END
+eServiceUsers.properties-09022011
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/eServiceUsers.properties-09022011
+END
+eServiceUsers.properties
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/eServiceUsers.properties
+END
+CatalogoMunicipiosSolicitudDispositivos.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/CatalogoMunicipiosSolicitudDispositivos.xml
+END
+elite.keystore.back081208
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/elite.keystore.back081208
+END
+elite2.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/elite2.keystore
+END
+filtro.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/filtro.properties
+END
+CuentasInversion.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/CuentasInversion.properties
+END
+ContratosCuentas.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/ContratosCuentas.properties
+END
+PagoServicioParametrizable.properties-01032011
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/PagoServicioParametrizable.properties-01032011
+END
+mailspei.properties
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/eService/!svn/ver/138/BancaElite/config/produccion/mailspei.properties
+END
+filter-manager.xml-15jun2010
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/filter-manager.xml-15jun2010
+END
+AperturaCuentaPlata.properties
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/AperturaCuentaPlata.properties
+END
+rfc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/rfc.properties
+END
+PagoServicioParametrizable.properties
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/eService/!svn/ver/14/BancaElite/config/produccion/PagoServicioParametrizable.properties
+END
+ConciliacionesUsuarios.properties
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/ConciliacionesUsuarios.properties
+END
+preguntas_frecuentes.xml_13Sep2010
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/preguntas_frecuentes.xml_13Sep2010
+END
+eBanking.properties
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/eBanking.properties
+END
+CatalogoBibliotecaRecibos.properties
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/CatalogoBibliotecaRecibos.properties
+END
+Alnova.properties
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/eService/!svn/ver/121/BancaElite/config/produccion/Alnova.properties
+END
+monitoreo.sqlite
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/monitoreo.sqlite
+END
+eMailDestinatarios.properties-11-mayo-2010
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/eService/!svn/ver/13/BancaElite/config/produccion/eMailDestinatarios.properties-11-mayo-2010
+END

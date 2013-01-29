@@ -1,0 +1,86 @@
+10
+
+dir
+47
+http://baz532882.bancoazteca.com.mx:6666/svn/eService/Monitoreo/WebRoot
+http://baz532882.bancoazteca.com.mx:6666/svn/eService
+
+
+
+2011-07-18T17:32:16.777891Z
+47
+nestor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2ced7f65-a126-ab4b-8610-3584594cecab
+
+pages
+dir
+
+META-INF
+dir
+
+index.jsp
+file
+
+
+
+
+2011-07-18T18:44:46.562500Z
+9047eb95fcab3202c765a71546a02e3b
+2011-07-08T17:48:26.457315Z
+13
+daniel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6800
+
+images
+dir
+
+WEB-INF
+dir
+
+monitor
+dir
+
+css
+dir
+
+monitoreo
+dir
+
+js
+dir
+

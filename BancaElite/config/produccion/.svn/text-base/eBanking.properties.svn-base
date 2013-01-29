@@ -1,0 +1,8 @@
+ebanking.ip=https://pbamxapp:8081/eBanking
+ebanking.ip.port=8081
+ebanking.ip.protocol=https
+
+elite.certificate=elite.keystore
+elite.certificate.password=adminadmin
+
+http.socket.timeout = 120000

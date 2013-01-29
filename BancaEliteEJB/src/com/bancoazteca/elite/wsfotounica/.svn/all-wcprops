@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/eService/!svn/ver/117/BancaEliteEJB/src/com/bancoazteca/elite/wsfotounica
+END
+Service.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/eService/!svn/ver/91/BancaEliteEJB/src/com/bancoazteca/elite/wsfotounica/Service.java
+END
+ServiceSoapStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/eService/!svn/ver/91/BancaEliteEJB/src/com/bancoazteca/elite/wsfotounica/ServiceSoapStub.java
+END
+ServiceSoap.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/eService/!svn/ver/91/BancaEliteEJB/src/com/bancoazteca/elite/wsfotounica/ServiceSoap.java
+END
+ServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/eService/!svn/ver/91/BancaEliteEJB/src/com/bancoazteca/elite/wsfotounica/ServiceLocator.java
+END
+ServiceSoap12Stub.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/eService/!svn/ver/91/BancaEliteEJB/src/com/bancoazteca/elite/wsfotounica/ServiceSoap12Stub.java
+END
+ServiceSoapProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/eService/!svn/ver/91/BancaEliteEJB/src/com/bancoazteca/elite/wsfotounica/ServiceSoapProxy.java
+END
+BuscaFotoxCuentaResponseBuscaFotoxCuentaResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/eService/!svn/ver/91/BancaEliteEJB/src/com/bancoazteca/elite/wsfotounica/BuscaFotoxCuentaResponseBuscaFotoxCuentaResult.java
+END
+FotoUnicaDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/eService/!svn/ver/117/BancaEliteEJB/src/com/bancoazteca/elite/wsfotounica/FotoUnicaDAO.java
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/filters
+END
+FilterManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/filters/FilterManager.java
+END
+ConstantesFiltro.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/filters/ConstantesFiltro.java
+END
+CuentaFilterException.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/filters/CuentaFilterException.java
+END
+CuentaFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/filters/CuentaFilter.java
+END
+Filter.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/filters/Filter.java
+END
+AlnovaRedMovilFilterException.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/filters/AlnovaRedMovilFilterException.java
+END
+RedMovilFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/filters/RedMovilFilter.java
+END
+AlnovaRedMovilFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/filters/AlnovaRedMovilFilter.java
+END
+CuentasRedMovilFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/eService/!svn/ver/13/eServiceWeb/src/com/bancoazteca/eservice/filters/CuentasRedMovilFilter.java
+END

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idsesion
+				cipher="n2SGSa/F75vLz1HRS1sV2TeychC3eKhPcVi4dyM9yNY=" />
+			<idservicio value="LOGOUT" />
+		</request>
+	</eservices>
+</bancoazteca>

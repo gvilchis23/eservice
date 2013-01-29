@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<bancoazteca>
+	<eservices>
+		<request>
+			<idservicio value="LOGIN" />
+			<tipo_operacion value="APLICACION" />
+			<aplicacion value="userpruebas" />
+			<certificado cipher="BBeJm+fqaZ8=" />
+		</request>
+	</eservices>
+</bancoazteca>
+
+
+
+<!-- 
+	<aplicacion value="app_iphone" />
+	<certificado cipher="v/kpOweRmjDmWgj6NMXIug==" />
+
+	<aplicacion value="app_total_bank" />
+	<certificado cipher="K8v9VolkPhCmtMbHyCPzC7ECRnYdvyHaxAFf8dnyyGg=" />
+
+	<certificado cipher="K8v9VolkPhAwuNoY4Ily/rECRnYdvyHaxAFf8dnyyGg=" />
+	
+	<aplicacion value="userpruebas" />
+	<certificado cipher="BBeJm+fqaZ8=" />
+	
+	<aplicacion value="app_familia_azteca" />
+	<certificado cipher="72iZwgYSvhcGi0dhFxTZ4l2zbST73S9n" />
+			
+-->
+
